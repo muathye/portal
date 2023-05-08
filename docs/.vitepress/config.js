@@ -45,20 +45,20 @@ export default {
                 link: '/articles',
                 activeMatch: '/articles|/articles/'
             },
-            // {
-            //     items: [
-            //         { 
-            //             text: 'ar',
-            //             link: '/ar/',
-            //             activeMatch: '/ar|/ar/'
-            //         },
-            //         { 
-            //             text: 'en',
-            //             link: '/en/',
-            //             activeMatch: '/en|/en/'
-            //         },
-            //     ]
-            // },
+            {
+                // add global icon instead of text string
+                // text:'تغيير اللغة',
+                items: [
+                    { 
+                        text: 'عربي (ar)',
+                        link: 'https://ar.muathye.com'
+                    },
+                    { 
+                        text: 'English (en)',
+                        link: 'https://muathye.com'
+                    },
+                ]
+            }
         ],
         socialLinks: [
             { icon: 'github', link: 'https://github.com/muath-ye' },

@@ -364,8 +364,8 @@
     height: 48px !important;
 }
 
-* {
-    direction: ltr;
+.VPMenu{
+    min-width: 85px !important;
 }
 
 table {
