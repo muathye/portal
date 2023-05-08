@@ -389,12 +389,15 @@ header.VPNav.no-sidebar {
 .VPFooter,
 .VPNav.no-sidebar {
     background: rgba(255, 255, 255, 0.2);
-    padding: 5px;
+    padding: 5px !important;
 }
 
 
 .dark .VPFooter,
 .dark .VPNav.no-sidebar {
     background: rgba(36, 36, 36, 0.2);
-    padding: 5px;
+    padding: 5px !important;
+}
+.VPFooter {
+    display: flex;
 }
