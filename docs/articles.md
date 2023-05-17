@@ -75,6 +75,11 @@ layout: doc
 <h1 class="title">Articles</h1>
 
 <div class="article-list text-center">
+  <span>17 May 2023</span>
+  <a href="/articles/2023-05-17-bard-database-schema-and-implementation-in-mysql">Bard Database Schema and Implementation in MySQL</a>
+</div>
+
+<div class="article-list text-center">
   <span>23 Apr 2023</span>
   <a href="/articles/2023-04-23-how-to-use-google-maps-api-to-choose-a-location-on-your-website">Step-by-Step Guide: How to Use Google Maps API to Choose a Location on Your Website</a>
 </div>
