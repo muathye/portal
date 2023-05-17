@@ -46,6 +46,11 @@ export default {
                 activeMatch: '/articles|/articles/'
             },
             {
+                text: 'Snippets',
+                link: '/snippets',
+                activeMatch: '/snippets|/snippets/'
+            },
+            {
                 // add global icon instead of text string
                 // text:'تغيير اللغة',
                 items: [
