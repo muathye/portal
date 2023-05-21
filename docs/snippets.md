@@ -75,6 +75,11 @@ layout: doc
 <h1 class="title">Snippets</h1>
 
 <div class="article-list text-center">
+  <span>21 May 2023</span>
+  <a href="/snippets/2023-05-21-convert-png-and-jpg-to-webp">Convert png and jpg to webp</a>
+</div>
+
+<div class="article-list text-center">
   <span>16 May 2023</span>
   <a href="/snippets/2023-05-16-retrieve-related-tables-of-a-specific-table-in-mysql">Retrieve Related Tables Of A Specific Table In Mysql</a>
 </div>
