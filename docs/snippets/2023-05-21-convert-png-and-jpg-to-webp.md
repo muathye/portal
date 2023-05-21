@@ -39,7 +39,3 @@ for %%i in (*.png) do cwebp -q 80 "%%i" -o "%%~ni.webp"
 for %%i in (*.jpg) do cwebp -q 80 "%%i" -o "%%~ni.webp"
 for %%i in (*.jpeg) do cwebp -q 80 "%%i" -o "%%~ni.webp"
 ```
-
-:::info
-
-:::
