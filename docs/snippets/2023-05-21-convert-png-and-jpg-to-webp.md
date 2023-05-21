@@ -28,7 +28,7 @@ Convert jpg to webp
 for %%i in (*.jpg) do cwebp -q 80 "%%i" -o "%%~ni.webp"
 ```
 
-Convert jpثg to webp
+Convert jpeg to webp
 ```bat
 for %%i in (*.jpeg) do cwebp -q 80 "%%i" -o "%%~ni.webp"
 ```
