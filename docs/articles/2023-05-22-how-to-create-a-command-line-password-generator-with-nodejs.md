@@ -11,7 +11,7 @@ head:
       content: article
   - - meta
     - name: og:url
-      content: /articles/2023-05-22-how-to-create-a-command-line-password-generator-with-nodejs
+      content: https://muathye.com/articles/2023-05-22-how-to-create-a-command-line-password-generator-with-nodejs
   - - meta
     - name: og:title
       content: How to Create a Command-Line Password Generator with Node.js And Deploy it to npmjs
@@ -20,7 +20,7 @@ head:
       content: In this tutorial, we'll show you how to create a command-line password generator that allows users to generate strong passwords of any length and including any combination of symbols, numbers, and capital letters.
   - - meta
     - name: og:image
-      content: /articles/2023-05-22/muath-ye-password-generator.png
+      content: https://muathye.com/articles/2023-05-22/muath-ye-password-generator.png
 ---
 
 ![An image](/articles/2023-05-22/muath-ye-password-generator.png)
