@@ -75,6 +75,11 @@ layout: doc
 <h1 class="title">Snippets</h1>
 
 <div class="article-list text-center">
+  <span>23 May 2023</span>
+  <a href="/snippets/2023-05-23-how-to-zip-or-unzip-files-from-the-linux-terminal">How to Zip or Unzip Files From the Linux Terminal</a>
+</div>
+
+<div class="article-list text-center">
   <span>21 May 2023</span>
   <a href="/snippets/2023-05-21-convert-png-and-jpg-to-webp">Convert png and jpg to webp</a>
 </div>
