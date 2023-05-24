@@ -1,3 +1,28 @@
+---
+layout: doc
+title: Convert png and jpg to webp
+description: A tool to convert images.
+head:
+  - - meta
+    - name: keywords
+      content: image convert png jpg webp
+  - - meta
+    - name: og:type
+      content: article
+  - - meta
+    - name: og:url
+      content: https://muathye.com/snippets/2023-05-21-convert-png-and-jpg-to-webp.html
+  - - meta
+    - name: og:title
+      content: Convert png and jpg to webp
+  - - meta
+    - name: og:description
+      content: A tool to convert images.
+  - - meta
+    - name: og:image
+      content: https://muathye.com/snippets/2023-05-21/convert-png-and-jpg-to-webp.png
+---
+
 ![An image](/snippets/2023-05-21/convert-png-and-jpg-to-webp.png)
 
 [chalk.ist](https://chalk.ist)
