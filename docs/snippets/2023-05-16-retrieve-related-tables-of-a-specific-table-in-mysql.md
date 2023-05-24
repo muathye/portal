@@ -29,6 +29,8 @@ head:
 
 # Retrieve Related Tables Of A Specific Table In Mysql
 
+You can retrieve related tables of a specific table in your mysql.
+
 ```sql
 SELECT DISTINCT TABLE_NAME
 FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE
