@@ -91,7 +91,7 @@ define(['./workbox-3589c0c5'], (function (workbox) { 'use strict';
 
   workbox.precacheAndRoute([{
     "url": "404.html",
-    "revision": "5ea91f62dfef3c554ee87b0170957c03"
+    "revision": "a45602452f35ba12de35b5ea15ac6f40"
   }, {
     "url": "android-chrome-192x192.png",
     "revision": "8b6f412bda677ba08ec46492d2dbbb23"
@@ -103,49 +103,49 @@ define(['./workbox-3589c0c5'], (function (workbox) { 'use strict';
     "revision": "25ab1e6e2615ec76f1febb7ecacf1ba4"
   }, {
     "url": "articles.html",
-    "revision": "dcb6e7791b4fad05048b187e06bf573c"
+    "revision": "b25b36ec2f3173a4bfa4573f0956ac08"
   }, {
     "url": "articles/2022-08-20-gitmoji.html",
-    "revision": "1e42a9fc5ff65899df86d808d6b8ab97"
+    "revision": "ba8f3c0ab6b3437b5ad1af7f84b7ccd1"
   }, {
     "url": "articles/2022-08-21-realtime-input-validation.html",
-    "revision": "4fd1380659ef66ebdc41f399b8efad32"
+    "revision": "b84ab689576a32ae4c9f07c4cb044afe"
   }, {
     "url": "articles/2022-11-24-change-default-Laravel-breeze-in-login.html",
-    "revision": "67eed2d7eb10d1cd37b74d65ef5423d6"
+    "revision": "a12166baf09e0b69ebdadf0b36fcad96"
   }, {
     "url": "articles/2022-12-23-laravel-nested-eager-loading-on-polymorphic-relationships.html",
-    "revision": "a138cf476201def5c8413d40046f9f5d"
+    "revision": "7d50687863d76b75bdada9fd3afecb6b"
   }, {
     "url": "articles/2022-12-26-add-bootstrap-datepicker-in-modal.html",
-    "revision": "d9cc00c2d4c1f1cb59dad6318c2241f5"
+    "revision": "a0f51087c4a76a9c03974911ec4d43a3"
   }, {
     "url": "articles/2022-12-26/modal-datetime-picker.png",
     "revision": "15769119e7cce9ba9a116fac03e9f5d6"
   }, {
     "url": "articles/2022-12-27-chatgpt-arabic-morning-azkar.html",
-    "revision": "1ba4a62ec1d6b4e3c731d1358912414e"
+    "revision": "4a81de8ee4ae86b1d87a02e7e7625eb1"
   }, {
     "url": "articles/2022-12-27/morning-azkar.png",
     "revision": "6f92ec237639cc9874eef93d02fd24ec"
   }, {
     "url": "articles/2023-03-08-mini-self-hosted-version-chatgpt.html",
-    "revision": "04493e622bea62bc7ba43be96ddf1748"
+    "revision": "ee875608c98e664317aafb8b322736af"
   }, {
     "url": "articles/2023-03-08/mini-self-hosted-verison-chatgpt.png",
     "revision": "a20d809a2b93470f70bed0c150f3502c"
   }, {
     "url": "articles/2023-03-09-from-javascript-to-mastring-nodejs.html",
-    "revision": "555eb11339c84b3f0e881e286597c68a"
+    "revision": "050e06da0796e97676d59ecc75a918ba"
   }, {
     "url": "articles/2023-04-10-add-ssh-to-bitbucket-for-windows.html",
-    "revision": "b03da3a022f72c7ec792c8912fdaf549"
+    "revision": "ad50bb24875e250b8381a83f31c80ed8"
   }, {
     "url": "articles/2023-04-17-export-vscode-extensions-list-and-download-them.html",
-    "revision": "a7a76a8691fcd9473f7d633b9e4fcd88"
+    "revision": "fb60bd336d5a458c19f924540acef4f2"
   }, {
     "url": "articles/2023-04-23-how-to-use-google-maps-api-to-choose-a-location-on-your-website.html",
-    "revision": "7cca7ab415415ae2c30dc0f04b6b554f"
+    "revision": "141d49c477c1ac776970675aeb76a775"
   }, {
     "url": "articles/2023-04-24/add-deploy-key.png",
     "revision": "d3f730d15093bdf2f47998f05704b31d"
@@ -163,10 +163,10 @@ define(['./workbox-3589c0c5'], (function (workbox) { 'use strict';
     "revision": "9d61d2526077ba165148c154ab8853a7"
   }, {
     "url": "articles/2023-05-17-bard-database-schema-and-implementation-in-mysql.html",
-    "revision": "8f5acf6794a3757771d27ef7634d674d"
+    "revision": "5931c9f7bf3cc460d5f51e6a28049218"
   }, {
     "url": "articles/2023-05-22-how-to-create-a-command-line-password-generator-with-nodejs.html",
-    "revision": "287aebdf37cd2885e022f0b071cd45a1"
+    "revision": "e93674301179661abbf332445c0543a1"
   }, {
     "url": "articles/2023-05-22/muath-ye-password-generator.png",
     "revision": "a54a570b09f66e44aef3dfc23c9055a1"
@@ -348,16 +348,16 @@ define(['./workbox-3589c0c5'], (function (workbox) { 'use strict';
     "url": "assets/resume.md.57aae160.lean.js",
     "revision": null
   }, {
-    "url": "assets/snippets_2023-05-16-retrieve-related-tables-of-a-specific-table-in-mysql.md.1012e42c.js",
+    "url": "assets/snippets_2023-05-16-retrieve-related-tables-of-a-specific-table-in-mysql.md.7229b8fe.js",
     "revision": null
   }, {
-    "url": "assets/snippets_2023-05-16-retrieve-related-tables-of-a-specific-table-in-mysql.md.1012e42c.lean.js",
+    "url": "assets/snippets_2023-05-16-retrieve-related-tables-of-a-specific-table-in-mysql.md.7229b8fe.lean.js",
     "revision": null
   }, {
-    "url": "assets/snippets_2023-05-21-convert-png-and-jpg-to-webp.md.8e3ff8c7.js",
+    "url": "assets/snippets_2023-05-21-convert-png-and-jpg-to-webp.md.730caae6.js",
     "revision": null
   }, {
-    "url": "assets/snippets_2023-05-21-convert-png-and-jpg-to-webp.md.8e3ff8c7.lean.js",
+    "url": "assets/snippets_2023-05-21-convert-png-and-jpg-to-webp.md.730caae6.lean.js",
     "revision": null
   }, {
     "url": "assets/snippets_2023-05-23-how-to-zip-or-unzip-files-from-the-linux-terminal.md.7a0ee372.js",
@@ -376,7 +376,7 @@ define(['./workbox-3589c0c5'], (function (workbox) { 'use strict';
     "revision": null
   }, {
     "url": "en/index.html",
-    "revision": "266d2dde292d8c0d397a14346bc057ee"
+    "revision": "44865fba1ffec6e9bed9be9eb2650af6"
   }, {
     "url": "favicon-16x16.png",
     "revision": "d4de349fd29d46f50aeac6cb294ae991"
@@ -409,7 +409,7 @@ define(['./workbox-3589c0c5'], (function (workbox) { 'use strict';
     "revision": "81d17cd619d70863a1b5745105efe45c"
   }, {
     "url": "index.html",
-    "revision": "707008b319cc4836444d0392b2327ddd"
+    "revision": "db1a012a78a89e42fb10c6cdcd6afbd3"
   }, {
     "url": "masked-icon.svg",
     "revision": "8b8e61771570c80c5470b1adaf2c44ee"
@@ -418,7 +418,7 @@ define(['./workbox-3589c0c5'], (function (workbox) { 'use strict';
     "revision": "f020256b2109323117574ed955e15b13"
   }, {
     "url": "projects.html",
-    "revision": "812c17d33666b1dfb97442113df4e600"
+    "revision": "0a1c7179eb228d2cfd31f698f3abe263"
   }, {
     "url": "projects/eazycare.app/new-logo.svg",
     "revision": "8bcc0aef753052adae872ffae4e45ac4"
@@ -445,7 +445,7 @@ define(['./workbox-3589c0c5'], (function (workbox) { 'use strict';
     "revision": "1872c500de691dce40960bb85481de07"
   }, {
     "url": "resume.html",
-    "revision": "7a773a7c2d3c76ea113ae780925c21b3"
+    "revision": "784db50fa5695f59afe21351ffe8fa43"
   }, {
     "url": "robots.txt",
     "revision": "5e0bd1c281a62a380d7a948085bfe2d1"
@@ -454,22 +454,22 @@ define(['./workbox-3589c0c5'], (function (workbox) { 'use strict';
     "revision": "896ff3300aa31eae3864243b6f116f66"
   }, {
     "url": "snippets.html",
-    "revision": "10a726bec1dd29063d4b49f1e14a6b33"
+    "revision": "25754a45d01a0707ab601c80a69c22c2"
   }, {
     "url": "snippets/2023-05-16-retrieve-related-tables-of-a-specific-table-in-mysql.html",
-    "revision": "346af7218d708fb06359200a02e2faef"
+    "revision": "8cc62c85663eefca5ae444020ec907ea"
   }, {
     "url": "snippets/2023-05-16/retrieve-related-tables-of-a-specific-table-in-mysql.png",
     "revision": "ba013ed07b09fbf3c05eb1aa158c5a3f"
   }, {
     "url": "snippets/2023-05-21-convert-png-and-jpg-to-webp.html",
-    "revision": "dedd65fb8225c11a56e35602de3a0dec"
+    "revision": "0ce164513c6d9c2dcd2ffea7ffac47d6"
   }, {
     "url": "snippets/2023-05-21/convert-png-and-jpg-to-webp.png",
     "revision": "9667e96bae19de5d23ef82768548f6c4"
   }, {
     "url": "snippets/2023-05-23-how-to-zip-or-unzip-files-from-the-linux-terminal.html",
-    "revision": "6d0a891af6538b7bbe7909297083c7cd"
+    "revision": "6c8bc68c419e1b7f9a412d32b4ea6cef"
   }, {
     "url": "snippets/2023-05-23/how-to-zip-or-unzip-files-from-the-linux-terminal.png",
     "revision": "ded43dc04062ed2d54fe342abaab9a72"
