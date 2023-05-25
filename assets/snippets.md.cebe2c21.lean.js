@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as s,a}from"./app.a61e2ebf.js";const h=JSON.parse('{"title":"","description":"","frontmatter":{"layout":"doc"},"headers":[],"relativePath":"snippets.md"}'),n={name:"snippets.md"},i=a("",4),p=[i];function r(o,c,l,_,d,f){return s(),t("div",null,p)}const v=e(n,[["render",r]]);export{h as __pageData,v as default};
