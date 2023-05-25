@@ -25,7 +25,7 @@ head:
 
 ![An image](/snippets/2023-04-15/laravel-model-truncate.png)
 
-[ray.so](https://ray.so/#code=Ly8gVG8gdHJhbmNhdGUgKGVtcHR5KSB1c2VycyB0YWJsZQoKVXNlcjo6dHJ1bmNhdGUoKTs&darkMode=true&background=true&title=export-vscode-extensions-list.bat&language=powershell&padding=64)
+[ray.so](https://ray.so/#code=Ly8gVG8gdHJhbmNhdGUgKGVtcHR5KSB1c2VycyB0YWJsZQoKVXNlcjo6dHJ1bmNhdGUoKTs&darkMode=true&background=true&title=laravel-model-truncate.bat&language=powershell&padding=64)
 
 # Laravel Model Truncate
 
