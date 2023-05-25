@@ -75,6 +75,16 @@ layout: doc
 <h1 class="title">Articles</h1>
 
 <div class="article-list text-center">
+  <span>25 May 2023</span>
+  <a href="/articles/2023-05-25-drop-all-tables-of-a-database">Drop All Tables Of A Database</a>
+</div>
+
+<div class="article-list text-center">
+  <span>25 May 2023</span>
+  <a href="/articles/2023-05-25-drop-all-constraints-from-all-tables-of-a-database">Drop All Constraints From All Tables Of A Database</a>
+</div>
+
+<div class="article-list text-center">
   <span>22 May 2023</span>
   <a href="/articles/2023-05-22-how-to-create-a-command-line-password-generator-with-nodejs">How to Create a Command-Line Password Generator with Node.js</a>
 </div>
