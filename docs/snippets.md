@@ -99,3 +99,8 @@ layout: doc
   <span>16 May 2023</span>
   <a href="/snippets/2023-05-16-retrieve-related-tables-of-a-specific-table-in-mysql">Retrieve Related Tables Of A Specific Table In Mysql</a>
 </div>
+
+<div class="article-list text-center">
+  <span>17 Apr 2023</span>
+  <a href="/snippets/2023-04-17-export-vscode-extensions-list">Export VSCode Extensions List</a>
+</div>
