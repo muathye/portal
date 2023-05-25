@@ -109,3 +109,8 @@ layout: doc
   <span>15 Apr 2023</span>
   <a href="/snippets/2023-04-15-laravel-model-truncate">Laravel Model Truncate</a>
 </div>
+
+<div class="article-list text-center">
+  <span>19 Mar 2023</span>
+  <a href="/snippets/2023-03-19-import-db-using-command-line">Import DB Using Command Line</a>
+</div>
