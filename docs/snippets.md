@@ -104,3 +104,8 @@ layout: doc
   <span>17 Apr 2023</span>
   <a href="/snippets/2023-04-17-export-vscode-extensions-list">Export VSCode Extensions List</a>
 </div>
+
+<div class="article-list text-center">
+  <span>15 Apr 2023</span>
+  <a href="/snippets/2023-04-15-laravel-model-truncate">Laravel Model Truncate</a>
+</div>
