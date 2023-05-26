@@ -119,3 +119,8 @@ layout: doc
   <span>19 Mar 2023</span>
   <a href="/snippets/2023-03-19-array-destructuring-in-php">Array destructuring in PHP</a>
 </div>
+
+<div class="article-list text-center">
+  <span>01 Mar 2023</span>
+  <a href="/snippets/2023-03-01-git-update-last-commit-message">Git Update Last Commit Message</a>
+</div>
