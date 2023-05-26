@@ -114,3 +114,8 @@ layout: doc
   <span>19 Mar 2023</span>
   <a href="/snippets/2023-03-19-import-db-using-command-line">Import DB Using Command Line</a>
 </div>
+
+<div class="article-list text-center">
+  <span>19 Mar 2023</span>
+  <a href="/snippets/2023-03-19-array-destructuring-in-php">Array destructuring in PHP</a>
+</div>
