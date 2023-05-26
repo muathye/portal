@@ -32,7 +32,7 @@ head:
 Remove all records and reset id incremental column identity.
 
 ```sh
-// To trancate (empty) users table
+// To truncate (empty) users table
 
 User::truncate();
 ```
