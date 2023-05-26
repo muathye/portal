@@ -124,3 +124,8 @@ layout: doc
   <span>01 Mar 2023</span>
   <a href="/snippets/2023-03-01-git-update-last-commit-message">Git Update Last Commit Message</a>
 </div>
+
+<div class="article-list text-center">
+  <span>14 Feb 2023</span>
+  <a href="/snippets/2023-02-14-extend-laravel-validator-morph-exists">Extend Laravel Validator Morph Exists</a>
+</div>
