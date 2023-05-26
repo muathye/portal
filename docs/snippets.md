@@ -121,6 +121,11 @@ layout: doc
 </div>
 
 <div class="article-list text-center">
+  <span>19 Mar 2023</span>
+  <a href="/snippets/2023-03-19-git-developers-list">List all developers on a project in Git</a>
+</div>
+
+<div class="article-list text-center">
   <span>01 Mar 2023</span>
   <a href="/snippets/2023-03-01-git-update-last-commit-message">Git Update Last Commit Message</a>
 </div>
