@@ -33,10 +33,10 @@ head:
       content: You'll practice two prompting principles and their related tactics in order to write effective prompts for large language models.
   - - meta
     - name: og:image
-      content: https://muathye.com/articles/2023-05-30/chatgpt-prompt-engineering-for-developers-part-1.jpg
+      content: https://muathye.com/articles/2023-05-30/chatgpt-prompt-engineering-for-developers-part-1.webp
 --- 
 
-![An image](/articles/2023-05-30/chatgpt-prompt-engineering-for-developers-part-1.jpg)
+![An image](/articles/2023-05-30/chatgpt-prompt-engineering-for-developers-part-1.webp)
 
 Photo by [Mariia Shalabaieva](https://unsplash.com/@maria_shalabaieva?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/openai?license=free&utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
