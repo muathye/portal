@@ -13,7 +13,7 @@ export default withPwa(defineConfig({
     title: 'Muath Alsowadi',
     description: 'Founder of @open-sale. On a mission to improve programming quality..',
 
-    // lastUpdated: true,
+    lastUpdated: true,
     // cleanUrls: true,
 
     // base: '/vita-journal/',
@@ -77,6 +77,10 @@ export default withPwa(defineConfig({
             ]
         }
         ],
+        // editLink: {
+        //     pattern: 'https://github.com/muathye/portal/tree/father/docs/:path',
+        //     text: 'Edit this page on GitHub'
+        // },
         socialLinks: [
             { icon: 'github', link: 'https://github.com/muath-ye' },
             { icon: 'twitter', link: 'https://twitter.com/muathye' },

@@ -1,6 +1,19 @@
 ---
 layout: doc
+# aside: true
+# editLink:
+#   pattern: https://github.com/vuejs/vitepress/edit/main/docs/:path
+# prev: 'How to Create a Command-Line Password Generator with Node.js | Muath Alsowadi'
+# prev: 
+#   text: "How to Create a Command-Line Password Generator with Node.js"
+#   link: "/articles/2023-05-22-how-to-create-a-command-line-password-generator-with-nodejs"
+# prev: false
+# next: false
+# next:
+#   text: 'Markdown'
+#   link: '/guide/markdown'
 title: ChatGPT Prompt Engineering for Developers
+# titleTemplate: Muath Alsowadi
 description: You'll practice two prompting principles and their related tactics in order to write effective prompts for large language models.
 head:
   - - meta
@@ -11,7 +24,7 @@ head:
       content: article
   - - meta
     - name: og:url
-      content: https://muathye.com/snippets/2023-05-30-chatgpt-prompt-engineering-for-developers-part-1
+      content: https://muathye.com/articles/2023-05-30-chatgpt-prompt-engineering-for-developers-part-1
   - - meta
     - name: og:title
       content: ChatGPT Prompt Engineering for Developers
@@ -30,6 +43,8 @@ Photo by [Mariia Shalabaieva](https://unsplash.com/@maria_shalabaieva?utm_source
 # ChatGPT Prompt Engineering for Developers (Part: 1)
 
 Large Language Models (LLMs) have been a game-changer in the field of artificial intelligence and natural language processing. They have been used in various applications, such as language translation, speech recognition, and chat bots, to name a few. In this article, we'll dive into the ChatGPT Prompt Engineering for Developers and learn about the best practices for using LLM technology in software applications.
+
+[[toc]]
 
 ## Setup
 
