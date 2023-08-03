@@ -75,6 +75,11 @@ layout: doc
 <h1 class="title">Snippets</h1>
 
 <div class="article-list text-center">
+  <span>03 Aug 2023</span>
+  <a href="/snippets/2023-08-03-disable-composer-https-on-project">Disable composer https on a project</a>
+</div>
+
+<div class="article-list text-center">
   <span>25 May 2023</span>
   <a href="/snippets/2023-05-25-drop-all-tables-of-a-database">Drop All Tables Of A Database</a>
 </div>
