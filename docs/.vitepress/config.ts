@@ -45,16 +45,16 @@ export default withPwa(defineConfig({
     //     }
     // },
     themeConfig: {
-        sidebar: [
-            {
-            //   text: '',
-              items: []
-            //   items: [
-            //     { text: 'Introduction', link: '/introduction' },
-            //     { text: 'Getting Started', link: '/getting-started' },
-            //   ]
-            }
-          ],
+        // sidebar: [
+        //     {
+        //     //   text: '',
+        //     //   items: []
+        //       items: [
+        //         { text: 'Introduction', link: '/introduction' },
+        //         { text: 'Getting Started', link: '/getting-started' },
+        //       ]
+        //     }
+        //   ],
         logo: '/images/muathye.svg',
         siteTitle: false,
         nav: [{
