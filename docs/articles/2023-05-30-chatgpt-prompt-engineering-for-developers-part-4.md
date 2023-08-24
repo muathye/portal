@@ -89,6 +89,12 @@ response = get_completion(prompt)
 print(response)
 ```
 
+> output:
+
+```txt
+The sentiment of the product review is positive.
+```
+
 ```python
 prompt = f"""
 What is the sentiment of the following product review, 
@@ -101,6 +107,12 @@ Review text: '''{lamp_review}'''
 """
 response = get_completion(prompt)
 print(response)
+```
+
+> output:
+
+```txt
+positive
 ```
 
 ## Identify types of emotions
@@ -118,6 +130,12 @@ response = get_completion(prompt)
 print(response)
 ```
 
+> output:
+
+```txt
+happy, satisfied, impressed, grateful, pleased
+```
+
 ## Identify anger
 
 ```python
@@ -130,6 +148,12 @@ Review text: '''{lamp_review}'''
 """
 response = get_completion(prompt)
 print(response)
+```
+
+> output:
+
+```txt
+No
 ```
 
 ## Extract product and company name from customer reviews
@@ -151,6 +175,15 @@ Review text: '''{lamp_review}'''
 """
 response = get_completion(prompt)
 print(response)
+```
+
+> output:
+
+```json
+{
+  "Item": "lamp",
+  "Brand": "Lumina"
+}
 ```
 
 ## Doing multiple tasks at once
@@ -175,6 +208,17 @@ Review text: '''{lamp_review}'''
 """
 response = get_completion(prompt)
 print(response)
+```
+
+> output:
+
+```json
+{
+  "Sentiment": "positive",
+  "Anger": false,
+  "Item": "lamp",
+  "Brand": "Lumina"
+}
 ```
 
 ## Inferring topics
@@ -218,7 +262,7 @@ following text, which is delimited by triple backticks.
 
 Make each item one or two words long. 
 
-Format your response as a list of items separated by commas.
+Format your response as a list of items separated by commas on  one line like '''hi, hello'''
 
 Text sample: '''{story}'''
 """
@@ -226,8 +270,23 @@ response = get_completion(prompt)
 print(response)
 ```
 
+> output
+
+```txt
+survey, satisfaction rating, NASA, Social Security Administration, job satisfaction
+```
+
 ```python
 response.split(sep=',')
+```
+
+```txt
+
+['survey',
+ ' satisfaction rating',
+ ' NASA',
+ ' Social Security Administration',
+ ' job satisfaction']
 ```
 
 ```python
@@ -241,6 +300,7 @@ topic_list = [
 
 ```python
 prompt = f"""
+prompt = f"""
 Determine whether each item in the following list of \
 topics is a topic in the text below, which
 is delimited with triple backticks.
@@ -248,17 +308,33 @@ is delimited with triple backticks.
 Give your answer as list with 0 or 1 for each topic.\
 
 List of topics: {", ".join(topic_list)}
-
+the output should look like this nasa: 1\n local: 0
 Text sample: '''{story}'''
 """
 response = get_completion(prompt)
 print(response)
 ```
 
+> output:
+
+```txt
+nasa: 1
+local government: 0
+engineering: 0
+employee satisfaction: 1
+federal government: 1
+```
+
 ```python
 topic_dict = {i.split(': ')[0]: int(i.split(': ')[1]) for i in response.split(sep='\n')}
 if topic_dict['nasa'] == 1:
     print("ALERT: New NASA story!")
+```
+
+> output:
+
+```txt
+ALERT: New NASA story!
 ```
 
 ## Try experimenting on your own
