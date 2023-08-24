@@ -33,6 +33,10 @@ Large Language Models (LLMs) have been a game-changer in the field of artificial
 
 [[toc]]
 
+## Introduction
+
+One of the exciting things about a large language model is that it can be used to build custom chatbots. In this series, you'll learn how to build your own chatbot using the OpenAI chat completions format. The format involves providing a list of messages, including system messages for guiding the assistant's behavior. Examples of chatbot interactions, such as a Shakespearean joke-teller and an order-taking chatbot for a pizza restaurant, are demonstrated. The tutorial also covers context management and generating a JSON summary of the conversation for further processing.
+
 ## Guidelines for Prompting
 
 In this lesson, you'll practice two prompting principles and their related tactics in order to write effective prompts for large language models.
