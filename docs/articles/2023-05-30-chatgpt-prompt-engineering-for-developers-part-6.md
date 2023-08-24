@@ -122,6 +122,26 @@ response = get_completion(prompt)
 print(response)
 ```
 
+> output:
+
+```txt
+Dear Valued Customer,
+
+Thank you for taking the time to share your review with us. We appreciate your feedback and apologize for any inconvenience you may have experienced.
+
+We are sorry to hear about the price increase you noticed in December. We strive to provide competitive pricing for our products, and we understand your frustration. If you have any further concerns regarding pricing, we recommend reaching out to our customer service team who will be happy to assist you.
+
+We also appreciate your feedback regarding the base of the system. We continuously work to improve the quality of our products, and your comments will be taken into consideration for future enhancements.
+
+Regarding the motor issue you encountered, we apologize for any inconvenience caused. Our customer service team is available to assist you with any technical difficulties you may encounter, even if the warranty has expired. Please do not hesitate to reach out to them for further assistance.
+
+Thank you once again for your review. We value your loyalty and appreciate your support. If you have any further questions or concerns, please feel free to contact our customer service team.
+
+Best regards,
+
+AI customer agent
+```
+
 ## Remind the model to use details from the customer's email
 
 ```python
@@ -142,6 +162,24 @@ Review sentiment: {sentiment}
 """
 response = get_completion(prompt, temperature=0.7)
 print(response)
+```
+
+> output:
+
+```txt
+Dear Valued Customer,
+
+Thank you for taking the time to share your review with us. We appreciate your feedback and are sorry to hear about your experience with the pricing changes and the decrease in quality.
+
+We apologize for any inconvenience caused by the sudden increase in prices for the 17 piece system and the 11 piece system. We understand that this may have been frustrating for you, and we appreciate your understanding. We will take note of this issue and address it internally to ensure a better customer experience in the future.
+
+Regarding the quality of the base and the motor noise, we apologize for any disappointment caused. Our aim is to provide products of the highest quality, and we are sorry to hear that you encountered these issues. If you would like further assistance or have any other concerns, we encourage you to reach out to our customer service team. They will be more than happy to assist you in finding a solution.
+
+Thank you for your loyalty and support as a customer. We value your feedback as it helps us improve our products and services. If there is anything else we can assist you with, please do not hesitate to let us know.
+
+Best regards,
+
+AI customer agent
 ```
 
 ## Try experimenting on your own
