@@ -20,7 +20,7 @@ export default withPwa(defineConfig({
     description: 'Founder of @open-sale. On a mission to improve programming quality..',
 
     lastUpdated: true,
-    // cleanUrls: true,
+    cleanUrls: true,
 
     // base: '/vita-journal/',
     head: [
