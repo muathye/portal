@@ -76,6 +76,11 @@ layout: doc
 
 <div class="article-list text-center">
   <span>30 May 2023</span>
+  <a href="/articles/2023-05-30-chatgpt-prompt-engineering-for-developers-part-5">ChatGPT Prompt Engineering for Developers [Part 5/7]</a>
+</div>
+
+<div class="article-list text-center">
+  <span>30 May 2023</span>
   <a href="/articles/2023-05-30-chatgpt-prompt-engineering-for-developers-part-4">ChatGPT Prompt Engineering for Developers [Part 4/7]</a>
 </div>
 
