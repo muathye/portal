@@ -235,3 +235,14 @@ Please let me know if everything looks correct or if you would like to add anyth
 ## Try experimenting on your own
 
 You can modify the menu or instructions to create your own `orderbot`!
+
+## Conclusion
+
+Here is a list of what we learned.
+
+- Principles:
+  1. Write clear and specific instructions.
+  2. Give the model time to "think".
+- Iterative prompt development
+- Capabilities: Summarizing, Inferring, Transforming, Expanding.
+- Building a chatbot.
