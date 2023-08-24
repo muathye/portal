@@ -4,7 +4,7 @@
         <title>Muath Alsowadi</title>
         <link>https://laros.io</link>
         <description>Web designer &amp; developer.</description>
-        <lastBuildDate>Thu, 24 Aug 2023 07:12:37 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 24 Aug 2023 07:27:10 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -15,8 +15,8 @@
         </image>
         <copyright>Copyright (c) 2022-present, Muath Alsowadi</copyright>
         <item>
-            <link>https://laros.io/articles.html</link>
-            <guid>https://laros.io/articles.html</guid>
+            <link>https://laros.io/articles</link>
+            <guid>https://laros.io/articles</guid>
             <content:encoded><![CDATA[<h1 class="title">Articles</h1>
 <div class="article-list text-center">
   <span>30 May 2023</span>
@@ -83,8 +83,8 @@
             <author>muath.ye@gmail.com (Muath Alsowadi)</author>
         </item>
         <item>
-            <link>https://laros.io/projects.html</link>
-            <guid>https://laros.io/projects.html</guid>
+            <link>https://laros.io/projects</link>
+            <guid>https://laros.io/projects</guid>
             <content:encoded><![CDATA[<h1 class="title">Projects</h1>
 <div class="card project-list text-center">
   <span>Not released</span>
@@ -138,8 +138,8 @@
             <author>muath.ye@gmail.com (Muath Alsowadi)</author>
         </item>
         <item>
-            <link>https://laros.io/resume.html</link>
-            <guid>https://laros.io/resume.html</guid>
+            <link>https://laros.io/resume</link>
+            <guid>https://laros.io/resume</guid>
             <content:encoded><![CDATA[<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1248,8 +1248,8 @@
             <author>muath.ye@gmail.com (Muath Alsowadi)</author>
         </item>
         <item>
-            <link>https://laros.io/snippets.html</link>
-            <guid>https://laros.io/snippets.html</guid>
+            <link>https://laros.io/snippets</link>
+            <guid>https://laros.io/snippets</guid>
             <content:encoded><![CDATA[<h1 class="title">Snippets</h1>
 <div class="article-list text-center">
   <span>03 Aug 2023</span>
