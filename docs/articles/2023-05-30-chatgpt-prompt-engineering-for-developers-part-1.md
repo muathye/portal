@@ -1,19 +1,6 @@
 ---
 layout: doc
-# aside: true
-# editLink:
-#   pattern: https://github.com/vuejs/vitepress/edit/main/docs/:path
-# prev: 'How to Create a Command-Line Password Generator with Node.js | Muath Alsowadi'
-# prev: 
-#   text: "How to Create a Command-Line Password Generator with Node.js"
-#   link: "/articles/2023-05-22-how-to-create-a-command-line-password-generator-with-nodejs"
-# prev: false
-# next: false
-# next:
-#   text: 'Markdown'
-#   link: '/guide/markdown'
 title: ChatGPT Prompt Engineering for Developers [Part 1/7]
-# titleTemplate: Muath Alsowadi
 description: You'll practice two prompting principles and their related tactics in order to write effective prompts for large language models.
 head:
   - - meta
@@ -45,6 +32,10 @@ Photo by [Mariia Shalabaieva](https://unsplash.com/@maria_shalabaieva?utm_source
 Large Language Models (LLMs) have been a game-changer in the field of artificial intelligence and natural language processing. They have been used in various applications, such as language translation, speech recognition, and chat bots, to name a few. In this article, we'll dive into the ChatGPT Prompt Engineering for Developers and learn about the best practices for using LLM technology in software applications.
 
 [[toc]]
+
+## Guidelines for Prompting
+
+In this lesson, you'll practice two prompting principles and their related tactics in order to write effective prompts for large language models.
 
 ## Setup
 
@@ -83,11 +74,9 @@ def get_completion(prompt, model="gpt-3.5-turbo"):
 Contact me to integrate `ChatGPT` with `Telegram` or `WhatsApp` for your business.
 :::
 
-## Guidelines for Prompting
-
 In this step, you'll practice two prompting principles and their related tactics in order to write effective prompts for large language models.
 
-**Prompting Principles**:
+#### Prompting Principles
 
 - Principle 1: Write clear and specific instructions
 - Principle 2: Give the model time to “think”
