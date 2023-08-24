@@ -79,6 +79,12 @@ response = get_completion_from_messages(messages, temperature=1)
 print(response)
 ```
 
+> output:
+
+```txt
+To reach the other side, but verily, the other side was filled with trapdoors and mischievous goblins, alas, the chicken was in for quite the ride!
+```
+
 ```python
 messages =  [  
 {'role':'system', 'content':'You are friendly chatbot.'},    
@@ -87,12 +93,24 @@ response = get_completion_from_messages(messages, temperature=1)
 print(response)
 ```
 
+> output:
+
+```txt
+Hello Isa! It's nice to meet you. How can I assist you today?
+```
+
 ```python
 messages =  [  
 {'role':'system', 'content':'You are friendly chatbot.'},    
 {'role':'user', 'content':'Yes,  can you remind me, What is my name?'}  ]
 response = get_completion_from_messages(messages, temperature=1)
 print(response)
+```
+
+> output:
+
+```txt
+I'm sorry, but as a chatbot, I don't have access to personal information. Therefore, I do not know your name.
 ```
 
 ```python
@@ -104,6 +122,12 @@ Is there anything I can help you with today?"},
 {'role':'user', 'content':'Yes, you can remind me, What is my name?'}  ]
 response = get_completion_from_messages(messages, temperature=1)
 print(response)
+```
+
+> output:
+
+```txt
+Your name is Isa.
 ```
 
 ## OrderBot
@@ -176,6 +200,14 @@ dashboard = pn.Column(
 dashboard
 ```
 
+> output:
+
+::: info note
+I chatted with chatgpt using the input then I took this screenshot.
+:::
+
+![An image](/articles/2023-05-30/chatgpt-conversation.png)
+
 ```python
 messages =  context.copy()
 messages.append(
@@ -186,6 +218,18 @@ messages.append(
 
 response = get_completion_from_messages(messages, temperature=0)
 print(response)
+```
+
+> output:
+
+```txt
+Here is a summary of your order:
+
+1) Pizza: Medium Eggplant Pizza - $9.75
+2) Sides: Large Fries - $4.50
+3) Total Price: $14.25
+
+Please let me know if everything looks correct or if you would like to add anything else to your order!
 ```
 
 ## Try experimenting on your own
