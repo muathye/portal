@@ -34,6 +34,7 @@ Large Language Models (LLMs) have been a game-changer in the field of artificial
 [[toc]]
 
 ## Summarizing
+
 In this lesson, you will summarize text with a focus on specific topics.
 
 ## Setup
@@ -91,6 +92,12 @@ response = get_completion(prompt)
 print(response)
 ```
 
+> output:
+
+```txt
+This panda plush toy is loved by the reviewer's daughter, but they feel it is a bit small for the price.
+```
+
 ## Summarize with a focus on shipping and delivery
 
 ```python
@@ -108,6 +115,12 @@ Review: ```{prod_review}```
 
 response = get_completion(prompt)
 print(response)
+```
+
+> output:
+
+```txt
+The customer is happy with the product but suggests offering larger options for the same price. They were pleased with the early delivery.
 ```
 
 ## Summarize with a focus on price and value
@@ -128,6 +141,12 @@ Review: ```{prod_review}```
 
 response = get_completion(prompt)
 print(response)
+```
+
+> output:
+
+```txt
+The customer loves the panda plush toy for its softness and cuteness, but feels it is overpriced compared to other options available.
 ```
 
 ::: tip Comment
@@ -153,6 +172,12 @@ Review: ```{prod_review}```
 
 response = get_completion(prompt)
 print(response)
+```
+
+> output:
+
+```txt
+The shipping department should take note that the product arrived a day earlier than expected.
 ```
 
 ## Summarize multiple product reviews
@@ -245,6 +270,18 @@ for i in range(len(reviews)):
 
     response = get_completion(prompt)
     print(i, response, "\n")
+```
+
+> output:
+
+```txt
+0 Soft and cute panda plush toy loved by daughter, but small for the price. Arrived early. 
+
+1 Great lamp with storage, fast delivery, excellent customer service, and easy assembly. Highly recommended. 
+
+2 The reviewer recommends the electric toothbrush for its impressive battery life, but criticizes the small brush head. 
+
+3 The reviewer found the price increase after the sale disappointing and noticed a decrease in quality. 
 ```
 
 ## Try experimenting on your own
