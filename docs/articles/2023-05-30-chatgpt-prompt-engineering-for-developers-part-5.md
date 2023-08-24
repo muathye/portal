@@ -73,6 +73,12 @@ response = get_completion(prompt)
 print(response)
 ```
 
+> output:
+
+```txt
+Hola, me gustaría ordenar una licuadora.
+```
+
 ```python
 prompt = f"""
 Tell me which language this is: 
@@ -80,6 +86,12 @@ Tell me which language this is:
 """
 response = get_completion(prompt)
 print(response)
+```
+
+> output:
+
+```txt
+This language is French.
 ```
 
 ```python
@@ -92,6 +104,14 @@ response = get_completion(prompt)
 print(response)
 ```
 
+> output:
+
+```txt
+French: ```Je veux commander un ballon de basket```
+Spanish: ```Quiero ordenar una pelota de baloncesto```
+English: ```I want to order a basketball```
+```
+
 ```python
 prompt = f"""
 Translate the following text to Spanish in both the \
@@ -100,6 +120,13 @@ formal and informal forms:
 """
 response = get_completion(prompt)
 print(response)
+```
+
+> output:
+
+```txt
+Formal: ¿Le gustaría ordenar una almohada?
+Informal: ¿Te gustaría ordenar una almohada?
 ```
 
 ### Universal Translator
@@ -130,6 +157,32 @@ for issue in user_messages:
     print(response, "\n")
 ```
 
+> output:
+
+```txt
+Original message (The language is French.): La performance du système est plus lente que d'habitude.
+The performance of the system is slower than usual.
+
+시스템의 성능이 평소보다 느립니다. 
+
+Original message (The language is Spanish.): Mi monitor tiene píxeles que no se iluminan.
+English: "My monitor has pixels that do not light up."
+
+Korean: "내 모니터에는 밝아지지 않는 픽셀이 있습니다." 
+
+Original message (The language is Italian.): Il mio mouse non funziona
+English: "My mouse is not working."
+Korean: "내 마우스가 작동하지 않습니다." 
+
+Original message (The language is Polish.): Mój klawisz Ctrl jest zepsuty
+English: "My Ctrl key is broken"
+Korean: "내 Ctrl 키가 고장 났어요" 
+
+Original message (The language is Chinese.): 我的屏幕在闪烁
+English: My screen is flickering.
+Korean: 내 화면이 깜박거립니다.
+```
+
 ## Try it yourself
 
 Try some translations on your own!
@@ -151,6 +204,21 @@ response = get_completion(prompt)
 print(response)
 ```
 
+> output:
+
+```txt
+Dear Sir/Madam,
+
+I hope this letter finds you well. My name is Joe, and I am writing to bring your attention to a specification document regarding a standing lamp. 
+
+I kindly request that you take a moment to review the attached document, as it provides detailed information about the features and specifications of the aforementioned standing lamp. 
+
+Thank you for your time and consideration. I look forward to discussing this further with you.
+
+Yours sincerely,
+Joe
+```
+
 ## Format Conversion
 
 ChatGPT can translate between formats. The prompt should describe the input and output formats.
@@ -170,10 +238,73 @@ response = get_completion(prompt)
 print(response)
 ```
 
+> output:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>Restaurant Employees</h2>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+  </tr>
+  <tr>
+    <td>Shyam</td>
+    <td>shyamjaiswal@gmail.com</td>
+  </tr>
+  <tr>
+    <td>Bob</td>
+    <td>bob32@gmail.com</td>
+  </tr>
+  <tr>
+    <td>Jai</td>
+    <td>jai87@gmail.com</td>
+  </tr>
+</table>
+
+</body>
+</html>
+```
+
 ```python
 from IPython.display import display, Markdown, Latex, HTML, JSON
 display(HTML(response))
 ```
+
+> output
+
+::: tip note
+The following output is a rendered HTML but I make it in markdown table syntax to simulate the output from Python.
+:::
+
+> | Name  | Email                  |
+> |-------|------------------------|
+> | Shyam | shyamjaiswal@gmail.com |
+> | Bob   | bob32@gmail.com        |
+> | Jai   | jai87@gmail.com        |
 
 ## Spellcheck/Grammar check
 
@@ -201,6 +332,18 @@ for t in text:
     print(response)
 ```
 
+> output:
+
+```txt
+The girl with the black and white puppies has a ball.
+No errors found.
+No errors found.
+There goes my freedom. They're going to bring their suitcases.
+You're going to need your notebook.
+That medicine affects my ability to sleep. Have you heard of the butterfly effect?
+This phrase is to check chatGPT for spelling ability.
+```
+
 ```python
 text = f"""
 Got this for my daughter for her birthday cuz she keeps taking \
@@ -217,12 +360,26 @@ response = get_completion(prompt)
 print(response)
 ```
 
+> output:
+
+```txt
+Got this for my daughter for her birthday because she keeps taking mine from my room. Yes, adults also like pandas too. She takes it everywhere with her, and it's super soft and cute. However, one of the ears is a bit lower than the other, and I don't think that was designed to be asymmetrical. Additionally, it's a bit small for what I paid for it. I believe there might be other options that are bigger for the same price. On the positive side, it arrived a day earlier than expected, so I got to play with it myself before I gave it to my daughter.
+```
+
 ```python
 from redlines import Redlines
 
 diff = Redlines(text,response)
 display(Markdown(diff.output_markdown))
 ```
+
+> output:
+
+::: tip note
+The following output is a rendered Markdown but I rewrite it in markdown syntax to simulate the output from Python.
+:::
+
+> Got this for my daughter for her birthday <span style="color: red;">~~cuz~~ because</span> she keeps taking mine from my <span style="color: red;">~~room.~~ room.</span> Yes, adults also like pandas <span style="color: red;">~~too.~~ too.</span> She takes it everywhere with her, and it's super soft and <span style="color: red;">~~cute. One~~cute. However, one</span> of the ears is a bit lower than the other, and I don't think that was designed to be asymmetrical. <span style="color: red;">~~It's~~ Additionally, it's</span> a bit small for what I paid for <span style="color: red;">~~it though.~~ it.</span> I <span style="color: red;">~~think~~ believe</span> there might be other options that are bigger for the same <span style="color: red;">~~price. It~~ price. On the positive side, it</span> arrived a day earlier than expected, so I got to play with it myself before I gave it to my <span style="color: red;">~~daughter.~~ daughter.</span>
 
 ```python
 prompt = f"""
@@ -234,6 +391,24 @@ Text: ```{text}```
 response = get_completion(prompt)
 display(Markdown(response))
 ```
+
+> output:
+
+::: tip note
+The following output is a rendered Markdown but I rewrite it in markdown syntax to simulate the output from Python.
+:::
+
+> **Review of the Panda Plush Toy: A Perfect Gift for All Ages**
+>
+> I purchased this delightful panda plush toy as a birthday gift for my daughter, who has a penchant for sneaking into my room and "borrowing" my belongings. > However, it turns out that adults can also find joy in the company of these adorable creatures.
+>
+> The moment my daughter laid eyes on this panda, she instantly fell in love. Its irresistibly soft and cuddly texture makes it the perfect companion for her > daily adventures. However, I did notice a minor flaw in its design - one of the ears is slightly lower than the other, which seems unintentional. > Nevertheless, this asymmetry does not detract from its overall charm.
+>
+> While the quality of the plush toy is exceptional, I must admit that I expected it to be slightly larger given its price. It would be worthwhile to explore > other options that offer a larger size for the same cost.
+>
+> On a positive note, the delivery of the panda plush toy exceeded my expectations. It arrived a day earlier than anticipated, allowing me to indulge in some > playtime with it before presenting it to my daughter. This unexpected bonus added to the excitement and anticipation surrounding her birthday celebration.
+>
+> In conclusion, the panda plush toy is a delightful and endearing gift suitable for individuals of all ages. Its softness and cuteness make it an instant > favorite, despite the minor design flaw and size discrepancy. With its prompt delivery and universal appeal, this panda plush toy is sure to bring joy and > comfort to anyone lucky enough to own it.
 
 ## Try it yourself
 Try changing the instructions to form your own review.
