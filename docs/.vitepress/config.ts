@@ -5,7 +5,7 @@ import { defineConfig, createContentLoader, type SiteConfig } from 'vitepress'
 import { withPwa } from '@vite-pwa/vitepress'
 
 // TODO: use .env file for APP_URL
-const hostname: string = 'https://laros.io'
+const hostname: string = 'https://muathye.ye'
 
 export default withPwa(defineConfig({
     vite: {
