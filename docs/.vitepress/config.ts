@@ -166,8 +166,8 @@ export default withPwa(defineConfig({
     // RSS
     buildEnd: async (config: SiteConfig) => {
         const feed = new Feed({
-            title: 'Muath Alsowadi',
-            description: 'Web designer & developer.',
+            title: 'Muath Alsowadi - Web designer and developer',
+            description: 'Passionate and highly skilled senior full-stack web developer proficient in HTML, CSS, JavaScript, Vue.js, PHP, SQL, Laravel, and API development, with a strong commitment to leveraging technology to create innovative solutions and positively impact the world.',
             id: hostname,
             link: hostname,
             language: 'en',
