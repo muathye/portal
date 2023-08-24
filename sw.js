@@ -79,7 +79,7 @@ define(['./workbox-3d51fe70'], (function (workbox) { 'use strict';
    */
   workbox.precacheAndRoute([{
     "url": "404.html",
-    "revision": "4e508e717dca173de6cfaa8a4417a4bb"
+    "revision": "e0ede9d52ae91e78ba83c914f3bb4029"
   }, {
     "url": "android-chrome-192x192.png",
     "revision": "8b6f412bda677ba08ec46492d2dbbb23"
@@ -91,49 +91,49 @@ define(['./workbox-3d51fe70'], (function (workbox) { 'use strict';
     "revision": "25ab1e6e2615ec76f1febb7ecacf1ba4"
   }, {
     "url": "articles.html",
-    "revision": "57cccea2124bc96f78e5cdfecc4dfadb"
+    "revision": "8e2352b07cdab9ad538f4cc490ef4dd8"
   }, {
     "url": "articles/2022-08-20-gitmoji.html",
-    "revision": "ba30e161d404e5345f032ee5b5dc0a18"
+    "revision": "3d923a0abf2b7a82e2d2b1dd3c9c4e47"
   }, {
     "url": "articles/2022-08-21-realtime-input-validation.html",
-    "revision": "bb7260ea34546f72ecaeb481995e5735"
+    "revision": "f0b896c3bc3c1f5c93f1aa874ffd00e9"
   }, {
     "url": "articles/2022-11-24-change-default-Laravel-breeze-in-login.html",
-    "revision": "9f7619f2fdc0f3525d5e2281cf5e21bb"
+    "revision": "467e02276021e01157887d6cd497b234"
   }, {
     "url": "articles/2022-12-23-laravel-nested-eager-loading-on-polymorphic-relationships.html",
-    "revision": "40708be1bb9b160ab1e000ce8369dff8"
+    "revision": "c98c4ba26fdf479f653580367a7c3b49"
   }, {
     "url": "articles/2022-12-26-add-bootstrap-datepicker-in-modal.html",
-    "revision": "59e5d921e9a796877999bee52964ea9f"
+    "revision": "e065ba5c67e84e4899de171b96a5c9df"
   }, {
     "url": "articles/2022-12-26/modal-datetime-picker.png",
     "revision": "15769119e7cce9ba9a116fac03e9f5d6"
   }, {
     "url": "articles/2022-12-27-chatgpt-arabic-morning-azkar.html",
-    "revision": "8e83489676b7e5f687bf54bb1fe0b6f4"
+    "revision": "8cff12543919033d5d18a9f406bd8bf0"
   }, {
     "url": "articles/2022-12-27/morning-azkar.png",
     "revision": "6f92ec237639cc9874eef93d02fd24ec"
   }, {
     "url": "articles/2023-03-08-mini-self-hosted-version-chatgpt.html",
-    "revision": "593140db0a76df1006277096a0a7d436"
+    "revision": "74fa8283956ffc8c749fc70152a0ad1f"
   }, {
     "url": "articles/2023-03-08/mini-self-hosted-verison-chatgpt.png",
     "revision": "a20d809a2b93470f70bed0c150f3502c"
   }, {
     "url": "articles/2023-03-09-from-javascript-to-mastring-nodejs.html",
-    "revision": "fed88abca83811059c3524751226f59c"
+    "revision": "bd44150534ba9ea7090bd5c824b362a1"
   }, {
     "url": "articles/2023-04-10-add-ssh-to-bitbucket-for-windows.html",
-    "revision": "2abce6c0870516f3156489f9ac0214fc"
+    "revision": "2161c0abb1ba86cdfd4b4c55e4b5a5ac"
   }, {
     "url": "articles/2023-04-17-export-vscode-extensions-list-and-download-them.html",
-    "revision": "1bb74e6d569fa7143809d06991b00228"
+    "revision": "f28a2aa739c34c0417ac8b186edad9af"
   }, {
     "url": "articles/2023-04-23-how-to-use-google-maps-api-to-choose-a-location-on-your-website.html",
-    "revision": "92f386af6ea39fbb87fbfaadb5f67223"
+    "revision": "a5463f2dca935597fe5efa266f57c7aa"
   }, {
     "url": "articles/2023-04-24/add-deploy-key.png",
     "revision": "d3f730d15093bdf2f47998f05704b31d"
@@ -151,10 +151,10 @@ define(['./workbox-3d51fe70'], (function (workbox) { 'use strict';
     "revision": "9d61d2526077ba165148c154ab8853a7"
   }, {
     "url": "articles/2023-05-17-bard-database-schema-and-implementation-in-mysql.html",
-    "revision": "1a7b119694ecd83cdd864f18ad383bbb"
+    "revision": "532a5f1102c5ef4599c673a8bfe95b89"
   }, {
     "url": "articles/2023-05-22-how-to-create-a-command-line-password-generator-with-nodejs.html",
-    "revision": "9817865286977d8a612b4c890a76f14c"
+    "revision": "d9733725172fc25b881eeaeadba61cdd"
   }, {
     "url": "articles/2023-05-22/muath-ye-password-generator.png",
     "revision": "a54a570b09f66e44aef3dfc23c9055a1"
@@ -163,99 +163,111 @@ define(['./workbox-3d51fe70'], (function (workbox) { 'use strict';
     "revision": "28ade83e54cd48c1d8563fb301a9baba"
   }, {
     "url": "articles/2023-05-30-chatgpt-prompt-engineering-for-developers-part-1.html",
-    "revision": "218ae826bd692462a24687b628825493"
+    "revision": "fe9f8c90477c4d891779794e346f796c"
+  }, {
+    "url": "articles/2023-05-30-chatgpt-prompt-engineering-for-developers-part-2.html",
+    "revision": "2db157cb85b41dedab8218de992cbd7a"
   }, {
     "url": "assets/app.7cbf48e7.js",
     "revision": null
   }, {
-    "url": "assets/articles_2022-08-20-gitmoji.md.da422d15.js",
+    "url": "assets/articles_2022-08-20-gitmoji.md.d3a1c7e0.js",
     "revision": null
   }, {
-    "url": "assets/articles_2022-08-20-gitmoji.md.da422d15.lean.js",
+    "url": "assets/articles_2022-08-20-gitmoji.md.d3a1c7e0.lean.js",
     "revision": null
   }, {
-    "url": "assets/articles_2022-08-21-realtime-input-validation.md.40a4ec80.js",
+    "url": "assets/articles_2022-08-21-realtime-input-validation.md.56d19a11.js",
     "revision": null
   }, {
-    "url": "assets/articles_2022-08-21-realtime-input-validation.md.40a4ec80.lean.js",
+    "url": "assets/articles_2022-08-21-realtime-input-validation.md.56d19a11.lean.js",
     "revision": null
   }, {
-    "url": "assets/articles_2022-11-24-change-default-Laravel-breeze-in-login.md.abe32949.js",
+    "url": "assets/articles_2022-11-24-change-default-Laravel-breeze-in-login.md.f7ed6034.js",
     "revision": null
   }, {
-    "url": "assets/articles_2022-11-24-change-default-Laravel-breeze-in-login.md.abe32949.lean.js",
+    "url": "assets/articles_2022-11-24-change-default-Laravel-breeze-in-login.md.f7ed6034.lean.js",
     "revision": null
   }, {
-    "url": "assets/articles_2022-12-23-laravel-nested-eager-loading-on-polymorphic-relationships.md.88a8dd18.js",
+    "url": "assets/articles_2022-12-23-laravel-nested-eager-loading-on-polymorphic-relationships.md.ab512da7.js",
     "revision": null
   }, {
-    "url": "assets/articles_2022-12-23-laravel-nested-eager-loading-on-polymorphic-relationships.md.88a8dd18.lean.js",
+    "url": "assets/articles_2022-12-23-laravel-nested-eager-loading-on-polymorphic-relationships.md.ab512da7.lean.js",
     "revision": null
   }, {
-    "url": "assets/articles_2022-12-26-add-bootstrap-datepicker-in-modal.md.83b7f079.js",
+    "url": "assets/articles_2022-12-26-add-bootstrap-datepicker-in-modal.md.e26b299c.js",
     "revision": null
   }, {
-    "url": "assets/articles_2022-12-26-add-bootstrap-datepicker-in-modal.md.83b7f079.lean.js",
+    "url": "assets/articles_2022-12-26-add-bootstrap-datepicker-in-modal.md.e26b299c.lean.js",
     "revision": null
   }, {
-    "url": "assets/articles_2022-12-27-chatgpt-arabic-morning-azkar.md.6d1f31a4.js",
+    "url": "assets/articles_2022-12-27-chatgpt-arabic-morning-azkar.md.9cdb31b0.js",
     "revision": null
   }, {
-    "url": "assets/articles_2022-12-27-chatgpt-arabic-morning-azkar.md.6d1f31a4.lean.js",
+    "url": "assets/articles_2022-12-27-chatgpt-arabic-morning-azkar.md.9cdb31b0.lean.js",
     "revision": null
   }, {
-    "url": "assets/articles_2023-03-08-mini-self-hosted-version-chatgpt.md.0b819ae3.js",
+    "url": "assets/articles_2023-03-08-mini-self-hosted-version-chatgpt.md.79071acb.js",
     "revision": null
   }, {
-    "url": "assets/articles_2023-03-08-mini-self-hosted-version-chatgpt.md.0b819ae3.lean.js",
+    "url": "assets/articles_2023-03-08-mini-self-hosted-version-chatgpt.md.79071acb.lean.js",
     "revision": null
   }, {
-    "url": "assets/articles_2023-03-09-from-javascript-to-mastring-nodejs.md.fdff7753.js",
+    "url": "assets/articles_2023-03-09-from-javascript-to-mastring-nodejs.md.15b713d1.js",
     "revision": null
   }, {
-    "url": "assets/articles_2023-03-09-from-javascript-to-mastring-nodejs.md.fdff7753.lean.js",
+    "url": "assets/articles_2023-03-09-from-javascript-to-mastring-nodejs.md.15b713d1.lean.js",
     "revision": null
   }, {
-    "url": "assets/articles_2023-04-10-add-ssh-to-bitbucket-for-windows.md.ff3c2720.js",
+    "url": "assets/articles_2023-04-10-add-ssh-to-bitbucket-for-windows.md.084af0e0.js",
     "revision": null
   }, {
-    "url": "assets/articles_2023-04-10-add-ssh-to-bitbucket-for-windows.md.ff3c2720.lean.js",
+    "url": "assets/articles_2023-04-10-add-ssh-to-bitbucket-for-windows.md.084af0e0.lean.js",
     "revision": null
   }, {
-    "url": "assets/articles_2023-04-17-export-vscode-extensions-list-and-download-them.md.ba951ed1.js",
+    "url": "assets/articles_2023-04-17-export-vscode-extensions-list-and-download-them.md.eadc04c1.js",
     "revision": null
   }, {
-    "url": "assets/articles_2023-04-17-export-vscode-extensions-list-and-download-them.md.ba951ed1.lean.js",
+    "url": "assets/articles_2023-04-17-export-vscode-extensions-list-and-download-them.md.eadc04c1.lean.js",
     "revision": null
   }, {
-    "url": "assets/articles_2023-04-23-how-to-use-google-maps-api-to-choose-a-location-on-your-website.md.3f849cde.js",
+    "url": "assets/articles_2023-04-23-how-to-use-google-maps-api-to-choose-a-location-on-your-website.md.f35e4891.js",
     "revision": null
   }, {
-    "url": "assets/articles_2023-04-23-how-to-use-google-maps-api-to-choose-a-location-on-your-website.md.3f849cde.lean.js",
+    "url": "assets/articles_2023-04-23-how-to-use-google-maps-api-to-choose-a-location-on-your-website.md.f35e4891.lean.js",
     "revision": null
   }, {
-    "url": "assets/articles_2023-05-17-bard-database-schema-and-implementation-in-mysql.md.2cce9c8a.js",
+    "url": "assets/articles_2023-05-17-bard-database-schema-and-implementation-in-mysql.md.db05437f.js",
     "revision": null
   }, {
-    "url": "assets/articles_2023-05-17-bard-database-schema-and-implementation-in-mysql.md.2cce9c8a.lean.js",
+    "url": "assets/articles_2023-05-17-bard-database-schema-and-implementation-in-mysql.md.db05437f.lean.js",
     "revision": null
   }, {
-    "url": "assets/articles_2023-05-22-how-to-create-a-command-line-password-generator-with-nodejs.md.d5824342.js",
+    "url": "assets/articles_2023-05-22-how-to-create-a-command-line-password-generator-with-nodejs.md.1a9a340f.js",
     "revision": null
   }, {
-    "url": "assets/articles_2023-05-22-how-to-create-a-command-line-password-generator-with-nodejs.md.d5824342.lean.js",
+    "url": "assets/articles_2023-05-22-how-to-create-a-command-line-password-generator-with-nodejs.md.1a9a340f.lean.js",
     "revision": null
   }, {
-    "url": "assets/articles_2023-05-30-chatgpt-prompt-engineering-for-developers-part-1.md.df45b25e.js",
+    "url": "assets/articles_2023-05-30-chatgpt-prompt-engineering-for-developers-part-1.md.87d1cccc.js",
     "revision": null
   }, {
-    "url": "assets/articles_2023-05-30-chatgpt-prompt-engineering-for-developers-part-1.md.df45b25e.lean.js",
+    "url": "assets/articles_2023-05-30-chatgpt-prompt-engineering-for-developers-part-1.md.87d1cccc.lean.js",
     "revision": null
   }, {
-    "url": "assets/articles.md.d58c9e0f.js",
+    "url": "assets/articles_2023-05-30-chatgpt-prompt-engineering-for-developers-part-2.md.c6678cec.js",
     "revision": null
   }, {
-    "url": "assets/articles.md.d58c9e0f.lean.js",
+    "url": "assets/articles_2023-05-30-chatgpt-prompt-engineering-for-developers-part-2.md.c6678cec.lean.js",
+    "revision": null
+  }, {
+    "url": "assets/articles.md.760d413d.js",
+    "revision": null
+  }, {
+    "url": "assets/articles.md.760d413d.lean.js",
+    "revision": null
+  }, {
+    "url": "assets/chunks/chatgpt-prompt-engineering-for-developers-part-1.242329a7.js",
     "revision": null
   }, {
     "url": "assets/chunks/facebook.9107dbc3.js",
@@ -267,16 +279,16 @@ define(['./workbox-3d51fe70'], (function (workbox) { 'use strict';
     "url": "assets/chunks/theme.089036e4.js",
     "revision": null
   }, {
-    "url": "assets/en_index.md.a7729d24.js",
+    "url": "assets/en_index.md.347bda6e.js",
     "revision": null
   }, {
-    "url": "assets/en_index.md.a7729d24.lean.js",
+    "url": "assets/en_index.md.347bda6e.lean.js",
     "revision": null
   }, {
-    "url": "assets/index.md.f728d232.js",
+    "url": "assets/index.md.5ab3d474.js",
     "revision": null
   }, {
-    "url": "assets/index.md.f728d232.lean.js",
+    "url": "assets/index.md.5ab3d474.lean.js",
     "revision": null
   }, {
     "url": "assets/inter-italic-cyrillic-ext.33bd5a8e.woff2",
@@ -321,107 +333,107 @@ define(['./workbox-3d51fe70'], (function (workbox) { 'use strict';
     "url": "assets/inter-roman-vietnamese.14ce25a6.woff2",
     "revision": null
   }, {
-    "url": "assets/projects.md.102510f7.js",
+    "url": "assets/projects.md.54b03bfe.js",
     "revision": null
   }, {
-    "url": "assets/projects.md.102510f7.lean.js",
+    "url": "assets/projects.md.54b03bfe.lean.js",
     "revision": null
   }, {
-    "url": "assets/resume.md.dff530bf.js",
+    "url": "assets/resume.md.d2991439.js",
     "revision": null
   }, {
-    "url": "assets/resume.md.dff530bf.lean.js",
+    "url": "assets/resume.md.d2991439.lean.js",
     "revision": null
   }, {
-    "url": "assets/snippets_2023-02-14-extend-laravel-validator-morph-exists.md.8590eea4.js",
+    "url": "assets/snippets_2023-02-14-extend-laravel-validator-morph-exists.md.de7dda50.js",
     "revision": null
   }, {
-    "url": "assets/snippets_2023-02-14-extend-laravel-validator-morph-exists.md.8590eea4.lean.js",
+    "url": "assets/snippets_2023-02-14-extend-laravel-validator-morph-exists.md.de7dda50.lean.js",
     "revision": null
   }, {
-    "url": "assets/snippets_2023-03-01-git-update-last-commit-message.md.5c4b9c63.js",
+    "url": "assets/snippets_2023-03-01-git-update-last-commit-message.md.9299362c.js",
     "revision": null
   }, {
-    "url": "assets/snippets_2023-03-01-git-update-last-commit-message.md.5c4b9c63.lean.js",
+    "url": "assets/snippets_2023-03-01-git-update-last-commit-message.md.9299362c.lean.js",
     "revision": null
   }, {
-    "url": "assets/snippets_2023-03-19-array-destructuring-in-php.md.0fa51e95.js",
+    "url": "assets/snippets_2023-03-19-array-destructuring-in-php.md.4c47bc00.js",
     "revision": null
   }, {
-    "url": "assets/snippets_2023-03-19-array-destructuring-in-php.md.0fa51e95.lean.js",
+    "url": "assets/snippets_2023-03-19-array-destructuring-in-php.md.4c47bc00.lean.js",
     "revision": null
   }, {
-    "url": "assets/snippets_2023-03-19-git-developers-list.md.9d2b3bd4.js",
+    "url": "assets/snippets_2023-03-19-git-developers-list.md.3e9e1ddf.js",
     "revision": null
   }, {
-    "url": "assets/snippets_2023-03-19-git-developers-list.md.9d2b3bd4.lean.js",
+    "url": "assets/snippets_2023-03-19-git-developers-list.md.3e9e1ddf.lean.js",
     "revision": null
   }, {
-    "url": "assets/snippets_2023-03-19-import-db-using-command-line.md.c4a89c41.js",
+    "url": "assets/snippets_2023-03-19-import-db-using-command-line.md.b2c63512.js",
     "revision": null
   }, {
-    "url": "assets/snippets_2023-03-19-import-db-using-command-line.md.c4a89c41.lean.js",
+    "url": "assets/snippets_2023-03-19-import-db-using-command-line.md.b2c63512.lean.js",
     "revision": null
   }, {
-    "url": "assets/snippets_2023-04-15-laravel-model-truncate.md.077e1300.js",
+    "url": "assets/snippets_2023-04-15-laravel-model-truncate.md.d7e4da6d.js",
     "revision": null
   }, {
-    "url": "assets/snippets_2023-04-15-laravel-model-truncate.md.077e1300.lean.js",
+    "url": "assets/snippets_2023-04-15-laravel-model-truncate.md.d7e4da6d.lean.js",
     "revision": null
   }, {
-    "url": "assets/snippets_2023-04-17-export-vscode-extensions-list.md.d5a3bbc4.js",
+    "url": "assets/snippets_2023-04-17-export-vscode-extensions-list.md.7730ed16.js",
     "revision": null
   }, {
-    "url": "assets/snippets_2023-04-17-export-vscode-extensions-list.md.d5a3bbc4.lean.js",
+    "url": "assets/snippets_2023-04-17-export-vscode-extensions-list.md.7730ed16.lean.js",
     "revision": null
   }, {
-    "url": "assets/snippets_2023-05-16-retrieve-related-tables-of-a-specific-table-in-mysql.md.9e1990e2.js",
+    "url": "assets/snippets_2023-05-16-retrieve-related-tables-of-a-specific-table-in-mysql.md.96367603.js",
     "revision": null
   }, {
-    "url": "assets/snippets_2023-05-16-retrieve-related-tables-of-a-specific-table-in-mysql.md.9e1990e2.lean.js",
+    "url": "assets/snippets_2023-05-16-retrieve-related-tables-of-a-specific-table-in-mysql.md.96367603.lean.js",
     "revision": null
   }, {
-    "url": "assets/snippets_2023-05-21-convert-png-and-jpg-to-webp.md.9a859ace.js",
+    "url": "assets/snippets_2023-05-21-convert-png-and-jpg-to-webp.md.f645c806.js",
     "revision": null
   }, {
-    "url": "assets/snippets_2023-05-21-convert-png-and-jpg-to-webp.md.9a859ace.lean.js",
+    "url": "assets/snippets_2023-05-21-convert-png-and-jpg-to-webp.md.f645c806.lean.js",
     "revision": null
   }, {
-    "url": "assets/snippets_2023-05-23-how-to-zip-or-unzip-files-from-the-linux-terminal.md.5b194f17.js",
+    "url": "assets/snippets_2023-05-23-how-to-zip-or-unzip-files-from-the-linux-terminal.md.07eaa2f3.js",
     "revision": null
   }, {
-    "url": "assets/snippets_2023-05-23-how-to-zip-or-unzip-files-from-the-linux-terminal.md.5b194f17.lean.js",
+    "url": "assets/snippets_2023-05-23-how-to-zip-or-unzip-files-from-the-linux-terminal.md.07eaa2f3.lean.js",
     "revision": null
   }, {
-    "url": "assets/snippets_2023-05-25-drop-all-constraints-from-all-tables-of-a-database.md.091e6684.js",
+    "url": "assets/snippets_2023-05-25-drop-all-constraints-from-all-tables-of-a-database.md.f4c47b2e.js",
     "revision": null
   }, {
-    "url": "assets/snippets_2023-05-25-drop-all-constraints-from-all-tables-of-a-database.md.091e6684.lean.js",
+    "url": "assets/snippets_2023-05-25-drop-all-constraints-from-all-tables-of-a-database.md.f4c47b2e.lean.js",
     "revision": null
   }, {
-    "url": "assets/snippets_2023-05-25-drop-all-tables-of-a-database.md.24b97cae.js",
+    "url": "assets/snippets_2023-05-25-drop-all-tables-of-a-database.md.8767b308.js",
     "revision": null
   }, {
-    "url": "assets/snippets_2023-05-25-drop-all-tables-of-a-database.md.24b97cae.lean.js",
+    "url": "assets/snippets_2023-05-25-drop-all-tables-of-a-database.md.8767b308.lean.js",
     "revision": null
   }, {
-    "url": "assets/snippets_2023-08-03-disable-composer-https-on-project.md.86de45f3.js",
+    "url": "assets/snippets_2023-08-03-disable-composer-https-on-project.md.295a5aae.js",
     "revision": null
   }, {
-    "url": "assets/snippets_2023-08-03-disable-composer-https-on-project.md.86de45f3.lean.js",
+    "url": "assets/snippets_2023-08-03-disable-composer-https-on-project.md.295a5aae.lean.js",
     "revision": null
   }, {
-    "url": "assets/snippets.md.acc36b95.js",
+    "url": "assets/snippets.md.f209375c.js",
     "revision": null
   }, {
-    "url": "assets/snippets.md.acc36b95.lean.js",
+    "url": "assets/snippets.md.f209375c.lean.js",
     "revision": null
   }, {
     "url": "assets/style.a25a1e82.css",
     "revision": null
   }, {
     "url": "en/index.html",
-    "revision": "11d55c038ee6988cfbad460b5781908c"
+    "revision": "74743925b356b1b5a33619f28e934069"
   }, {
     "url": "favicon-16x16.png",
     "revision": "d4de349fd29d46f50aeac6cb294ae991"
@@ -463,7 +475,7 @@ define(['./workbox-3d51fe70'], (function (workbox) { 'use strict';
     "revision": "81d17cd619d70863a1b5745105efe45c"
   }, {
     "url": "index.html",
-    "revision": "22dfc930e7b2b28e63d92317ddb784bf"
+    "revision": "956528d1592fc07b590db10f921a731a"
   }, {
     "url": "masked-icon.svg",
     "revision": "8b8e61771570c80c5470b1adaf2c44ee"
@@ -472,7 +484,7 @@ define(['./workbox-3d51fe70'], (function (workbox) { 'use strict';
     "revision": "f020256b2109323117574ed955e15b13"
   }, {
     "url": "projects.html",
-    "revision": "9b1b8870dab53c0ec71bbcd4f26d412d"
+    "revision": "2c8423523ccf49c3697c7f56bc1150a1"
   }, {
     "url": "projects/eazycare.app/new-logo.svg",
     "revision": "8bcc0aef753052adae872ffae4e45ac4"
@@ -499,7 +511,7 @@ define(['./workbox-3d51fe70'], (function (workbox) { 'use strict';
     "revision": "1872c500de691dce40960bb85481de07"
   }, {
     "url": "resume.html",
-    "revision": "0bd1d63b7f694892d8839a5af02a3c1a"
+    "revision": "fb0978c2779951f31eb0f771d88f6d9a"
   }, {
     "url": "robots.txt",
     "revision": "5e0bd1c281a62a380d7a948085bfe2d1"
@@ -508,28 +520,28 @@ define(['./workbox-3d51fe70'], (function (workbox) { 'use strict';
     "revision": "896ff3300aa31eae3864243b6f116f66"
   }, {
     "url": "snippets.html",
-    "revision": "9fbc0b74a5efbc1275125369c180a619"
+    "revision": "a27c1f36a6d08b258c0ec20c28e1d568"
   }, {
     "url": "snippets/2023-02-14-extend-laravel-validator-morph-exists.html",
-    "revision": "4e6a011f2d989ac98b39897d6000ea2f"
+    "revision": "1b2756309c02dfefa66e6edb2279b4a8"
   }, {
     "url": "snippets/2023-02-14/extend-laravel-validator-morph-exists.png",
     "revision": "939cac5b2999fa54ead181c8895af485"
   }, {
     "url": "snippets/2023-03-01-git-update-last-commit-message.html",
-    "revision": "28d8b15bdaa92e320e22ee7f5883f217"
+    "revision": "9b652af8bf530bb28e2a130459705b2d"
   }, {
     "url": "snippets/2023-03-01/git-update-last-commit-message.png",
     "revision": "d0fd23ca23359fe078f2706e35f683fa"
   }, {
     "url": "snippets/2023-03-19-array-destructuring-in-php.html",
-    "revision": "d9cf4215c0674f7c3e3d1dc1c4c841b1"
+    "revision": "dcd6c475c0afcfbd068f2908b0d45fa5"
   }, {
     "url": "snippets/2023-03-19-git-developers-list.html",
-    "revision": "946d52b268b0cd692b65ec07a8dfbdf7"
+    "revision": "f0ba4d847511a5b409a69b25a2708f2a"
   }, {
     "url": "snippets/2023-03-19-import-db-using-command-line.html",
-    "revision": "e922dc878b5cc5a2a38d968fffdd7cc3"
+    "revision": "021863d6659c4dc16eae236461a735c4"
   }, {
     "url": "snippets/2023-03-19/array-destructuring-in-php.png",
     "revision": "0f54243abc003e410c54bb2d33f95ce6"
@@ -541,43 +553,43 @@ define(['./workbox-3d51fe70'], (function (workbox) { 'use strict';
     "revision": "4b06dbffd38f7118d3a87063b5a2d657"
   }, {
     "url": "snippets/2023-04-15-laravel-model-truncate.html",
-    "revision": "195828f7b57a0046b8783ecdc6bf849e"
+    "revision": "d5016d250190d8f3a4697233506a14c4"
   }, {
     "url": "snippets/2023-04-15/laravel-model-truncate.png",
     "revision": "03fb50de2aed2566cd6c9891d4fcd55c"
   }, {
     "url": "snippets/2023-04-17-export-vscode-extensions-list.html",
-    "revision": "2613a1639cd3c83910fba2ef50863034"
+    "revision": "7455f65bd8e367f6e8b15b8081f8b8e6"
   }, {
     "url": "snippets/2023-04-17/export-vscode-extensions-list.png",
     "revision": "091bcdd30203b678f62c45f34c5a34a3"
   }, {
     "url": "snippets/2023-05-16-retrieve-related-tables-of-a-specific-table-in-mysql.html",
-    "revision": "da403503f6d2c761f208139937f95cf6"
+    "revision": "d4234833f71f6f61cc8739bb97da936f"
   }, {
     "url": "snippets/2023-05-16/retrieve-related-tables-of-a-specific-table-in-mysql.png",
     "revision": "ba013ed07b09fbf3c05eb1aa158c5a3f"
   }, {
     "url": "snippets/2023-05-21-convert-png-and-jpg-to-webp.html",
-    "revision": "050e432aa365582c2f565ca4fedecdf8"
+    "revision": "5d3968e62a9921d3b3b85bf2fa6171fb"
   }, {
     "url": "snippets/2023-05-21/convert-png-and-jpg-to-webp.png",
     "revision": "9667e96bae19de5d23ef82768548f6c4"
   }, {
     "url": "snippets/2023-05-23-how-to-zip-or-unzip-files-from-the-linux-terminal.html",
-    "revision": "648c64567c9064f3dff9ac88519aa046"
+    "revision": "3e072915d64413f3bec17f8c10b157c7"
   }, {
     "url": "snippets/2023-05-23/how-to-zip-or-unzip-files-from-the-linux-terminal.png",
     "revision": "ded43dc04062ed2d54fe342abaab9a72"
   }, {
     "url": "snippets/2023-05-25-drop-all-constraints-from-all-tables-of-a-database.html",
-    "revision": "ad9ce20f00498edf77462233403b3802"
+    "revision": "9a393eeb00d6a6e7eb7c8e7476a76093"
   }, {
     "url": "snippets/2023-05-25-drop-all-tables-of-a-database.html",
-    "revision": "ebf65abfe1bdbd8bfa938f5817856117"
+    "revision": "91386c556d42a8c9c9ce2cc5e4a1a5fe"
   }, {
     "url": "snippets/2023-08-03-disable-composer-https-on-project.html",
-    "revision": "b6314a6dcee4ae9894ac652446c7cac6"
+    "revision": "7a909f9dd43cbcb2381a79ae93bd3998"
   }, {
     "url": "snippets/2023-08-03/disable-composer-https-on-project.png",
     "revision": "8947df78d8895937f77cf7e8a331da69"
