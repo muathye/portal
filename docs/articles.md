@@ -75,6 +75,11 @@ layout: doc
 <h1 class="title">Articles</h1>
 
 <div class="article-list text-center">
+  <span>25 Aug 2023</span>
+  <a href="/articles/2023-08-25-exploring-mysql-command-to-retrieve-all-columns-of-all-tables-with-available-options">Exploring MySQL Command to Retrieve All Columns of All Tables with Available Options</a>
+</div>
+
+<div class="article-list text-center">
   <span>30 May 2023</span>
   <a href="/articles/2023-05-30-chatgpt-prompt-engineering-for-developers-part-7">ChatGPT Prompt Engineering for Developers [Part 7/7]</a>
 </div>
