@@ -1,9 +1,9 @@
-
 :root {
     --vp-home-hero-name-color: transparent;
     --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #ffc83c 30%, #00a464);
     --vp-home-hero-image-background-image: linear-gradient(-45deg, #ffc83c 30%, #00a464 70%);
-    --vp-home-hero-image-filter: blur(200px)
+    --vp-home-hero-image-filter: blur(200px);
+    --vp-font-family-base: 'Space Grotesk';
 }
 
 @font-face {
@@ -36,16 +36,12 @@
     font-weight: SemiBold;
 }
 
-*:not(pre code):not(.language-blade) {
-    font-family: 'Space Grotesk';
-}
-
 /* overriding */
 .logo {
     height: 48px !important;
 }
 
-.VPMenu{
+.VPMenu {
     min-width: 85px !important;
 }
 
@@ -76,14 +72,14 @@ body {
       rgba(255, 100, 100, 0.5), 
       transparent 400px
     ); */
-    
+
     /* background: radial-gradient(circle at 1.99% 34.98%, #C9FFBF, transparent 100%),radial-gradient(circle at 98.01% 43.03%, #ffefba, transparent 100%),radial-gradient(circle at 50% 50%, #9af3db, #9af3db 100%); */
-    
+
     /* background: radial-gradient(circle at 25% 25%, rgba(0, 164, 100, 0.2), transparent),
                 radial-gradient(circle at 75% 75%, rgba(244, 69, 56, 0.1), transparent),
                 radial-gradient(circle at 50% 50%, rgba(255, 200, 60, 0.1), transparent),
                 radial-gradient(circle at 10% 90%, rgba(77, 133, 193, 0.2), transparent); */
-    
+
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -112,19 +108,24 @@ body {
 /** ./footer */
 
 /** header */
-.container > .title,
-.container > .content,
+.container>.title,
+.container>.content,
 .VPNavBar:not(.top) .content-body {
     background: transparent !important;
 }
+
 .VPNavScreen,
-.VPNavBar:not(.has-sidebar) /*:not(.top)*/
-{
+.VPNavBar:not(.has-sidebar)
+
+/*:not(.top)*/
+    {
     backdrop-filter: blur(7px) !important;
 }
 
-.VPNavBar:not(.has-sidebar) /*:not(.top)*/
-{
+.VPNavBar:not(.has-sidebar)
+
+/*:not(.top)*/
+    {
     border: 0px solid rgba(255, 255, 255, 0.2) !important;
     border-radius: 50px;
     margin-top: 11px;
@@ -132,22 +133,22 @@ body {
 }
 
 .VPNavScreen,
-.VPNavBar:not(.has-sidebar):not(.top)
-{
+.VPNavBar:not(.has-sidebar):not(.top) {
     background: rgba(255, 255, 255, 0.2) !important;
 }
 
 .VPNavScreen,
-.dark .VPNavBar:not(.has-sidebar):not(.top)
-{
+.dark .VPNavBar:not(.has-sidebar):not(.top) {
     background: rgba(36, 36, 36, 0.2) !important;
 }
+
 /** ./header */
 
 /** aside */
 .aside-curtain {
     background: transparent !important;
 }
+
 /** ./aside */
 
 /*************************************USE THE WORK*********************************************/
@@ -156,7 +157,7 @@ body {
    * Colors Theme
    * -------------------------------------------------------------------------- */
 
-   :root {
+:root {
     --vp-c-bg: var(--vp-c-white);
     --vp-c-bg-soft: var(--vp-c-white-soft);
     --vp-c-bg-mute: var(--vp-c-white-mute);
@@ -212,4 +213,11 @@ body {
     --vp-c-text-inverse-4: var(--vp-c-text-light-4);
 
     --vp-c-text-code: var(--vp-c-indigo-lighter);
+}
+
+.title {
+    background: var(--vp-home-hero-name-background);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: var(--vp-home-hero-name-color);
 }

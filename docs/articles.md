@@ -11,7 +11,7 @@ lastUpdated: false
   border: 1px var(--vp-c-text-2);
 }
 
-div.title p {
+div.title.articles p {
   font-size: 2.25rem;
   line-height: normal;
   font-weight: bold;
@@ -21,11 +21,12 @@ div.title p {
   -webkit-text-fill-color: var(--vp-home-hero-name-color);
 }
 
-div.title span {
+div.title.articles span {
   line-height: normal;
   font-weight: light;
   padding: 3px 10px;
-  color: var(--vp-c-text-2);
+  color: var(--vp-c-text-2) !important;
+  font-size: 0.75rem;
 }
 
 .article-list.text-center,
@@ -59,17 +60,17 @@ a.article-heading:hover {
 }
 </style>
 
-<div class="title">
+<div class="title articles">
   <p>Writing on PHP, TypeScript, Inertia, and web development in general.</p>
   <span>Whenever I feel like writing down something I've learnt, I do it here.</span>
 </div>
 
-  <div class="article-list text-center">
-    <span>25 Aug 2023</span>
-    <a class="article-heading" href="/articles/2023-08-25-exploring-mysql-command-to-retrieve-all-columns-of-all-tables-with-available-options">
-        Exploring MySQL Command to Retrieve All Columns of All Tables with Available Options
-    </a>
-  </div>
+<div class="article-list text-center">
+  <span>25 Aug 2023</span>
+  <a class="article-heading" href="/articles/2023-08-25-exploring-mysql-command-to-retrieve-all-columns-of-all-tables-with-available-options">
+      Exploring MySQL Command to Retrieve All Columns of All Tables with Available Options
+  </a>
+</div>
 
 <div class="article-list text-center">
   <span>30 May 2023</span>
