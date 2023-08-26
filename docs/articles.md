@@ -11,7 +11,7 @@ lastUpdated: false
   border: 1px var(--vp-c-text-2);
 }
 
-div.title.articles p {
+div.title-articles p {
   font-size: 2.25rem;
   line-height: normal;
   font-weight: bold;
@@ -21,7 +21,7 @@ div.title.articles p {
   -webkit-text-fill-color: var(--vp-home-hero-name-color);
 }
 
-div.title.articles span {
+div.title-articles span {
   line-height: normal;
   font-weight: light;
   padding: 3px 10px;
@@ -60,7 +60,7 @@ a.article-heading:hover {
 }
 </style>
 
-<div class="title articles">
+<div class="title-articles">
   <p>Writing on PHP, TypeScript, Inertia, and web development in general.</p>
   <span>Whenever I feel like writing down something I've learnt, I do it here.</span>
 </div>
