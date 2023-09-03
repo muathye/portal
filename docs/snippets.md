@@ -66,6 +66,11 @@ a.article-heading:hover {
 </div>
 
 <div class="article-list text-center">
+  <span>03 Sep 2023</span>
+  <a class="article-heading" href="/snippets/2023-09-03-git-sync-local-branches-with-remote">Git Sync Local Branches With Remote</a>
+</div>
+
+<div class="article-list text-center">
   <span>03 Aug 2023</span>
   <a class="article-heading" href="/snippets/2023-08-03-disable-composer-https-on-project">Disable composer https on a project</a>
 </div>
