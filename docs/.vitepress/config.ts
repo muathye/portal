@@ -171,8 +171,8 @@ export default withPwa(defineConfig({
 
         articles.sort(
             (a, b) =>
-                +new Date(b.frontmatter.date as string) -
-                +new Date(a.frontmatter.date as string)
+                +new Date(a.frontmatter.date as string) -
+                +new Date(b.frontmatter.date as string) 
         )
 
         for (const { url, excerpt, frontmatter, html } of articles) {
@@ -200,8 +200,8 @@ export default withPwa(defineConfig({
 
         snippets.sort(
             (a, b) =>
-                +new Date(b.frontmatter.date as string) -
-                +new Date(a.frontmatter.date as string)
+                +new Date(a.frontmatter.date as string) -
+                +new Date(b.frontmatter.date as string)
         )
 
         for (const { url, excerpt, frontmatter, html } of snippets) {
