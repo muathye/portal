@@ -221,3 +221,7 @@ body {
     background-clip: text;
     -webkit-text-fill-color: var(--vp-home-hero-name-color);
 }
+
+img, svg, video, canvas, audio, iframe, embed, object {
+    border-radius: 9px;
+}
