@@ -3,9 +3,7 @@ import { writeFileSync } from 'fs'
 import { Feed } from 'feed'
 import { defineConfig, createContentLoader, type SiteConfig } from 'vitepress'
 import { withPwa } from '@vite-pwa/vitepress'
-
-// TODO: use .env file for APP_URL
-const hostname: string = 'https://muathye.ye'
+import { genFeed } from './genFeed.js'
 
 export default withPwa(defineConfig({
     vite: {
@@ -149,105 +147,6 @@ export default withPwa(defineConfig({
     },
 
     // RSS
-    buildEnd: async (config: SiteConfig) => {
-        const feed = new Feed({
-            title: 'Muath Alsowadi - Web designer and developer',
-            description: 'Founder of @open-sale. Co-founder of @YemenOpenSource. Passionate and highly skilled senior full-stack web developer proficient in HTML, CSS, JavaScript, Vue.js, PHP, SQL, Laravel, and API development, with a strong commitment to leveraging technology to create innovative solutions and positively impact the world.',
-            id: hostname,
-            link: hostname,
-            language: 'en',
-            image: 'https://muathye.com/images/muathye.png',
-            favicon: `${hostname}/favicon.ico`,
-            copyright:
-                'Copyright (c) 2022-present, Muath Alsowadi'
-        })
-
-        // You might need to adjust this if your Markdown files 
-        // are located in a subfolder
-        const articles = await createContentLoader('articles/*.md', {
-            excerpt: true,
-            render: true
-        }).load()
-
-        const snippets = await createContentLoader('snippets/*.md', {
-            excerpt: true,
-            render: true
-        }).load()
-
-        const feeds = [...snippets, ...articles]
-
-        feeds.sort(
-            (a, b) =>
-                +new Date(b.frontmatter.date as string) -
-                +new Date(a.frontmatter.date as string)
-        )
-
-        // articles.sort(
-        //     (a, b) =>
-        //         +new Date(b.frontmatter.date as string) -
-        //         +new Date(a.frontmatter.date as string)
-        // )
-
-        // snippets.sort(
-        //     (a, b) =>
-        //         +new Date(b.frontmatter.date as string) -
-        //         +new Date(a.frontmatter.date as string)
-        // )
-
-        for (const { url, excerpt, frontmatter, html } of feeds) {
-            feed.addItem({
-                title: frontmatter.title,
-                id: `${hostname}${url}`,
-                link: `${hostname}${url}`,
-                description: excerpt,
-                content: html,
-                author: [
-                    {
-                        name: 'Muath Alsowadi',
-                        email: 'muath.ye@gmail.com',
-                        link: 'https://muathye.com'
-                    }
-                ],
-                date: frontmatter.date
-            })
-        }
-
-        // for (const { url, excerpt, frontmatter, html } of articles) {
-        //     feed.addItem({
-        //         title: frontmatter.title,
-        //         id: `${hostname}${url}`,
-        //         link: `${hostname}${url}`,
-        //         description: excerpt,
-        //         content: html,
-        //         author: [
-        //             {
-        //                 name: 'Muath Alsowadi',
-        //                 email: 'muath.ye@gmail.com',
-        //                 link: 'https://muathye.com'
-        //             }
-        //         ],
-        //         date: frontmatter.date
-        //     })
-        // }
-        // for (const { url, excerpt, frontmatter, html } of articles) {
-        //     feed.addItem({
-        //         title: frontmatter.title,
-        //         id: `${hostname}${url}`,
-        //         link: `${hostname}${url}`,
-        //         description: excerpt,
-        //         content: html,
-        //         author: [
-        //             {
-        //                 name: 'Muath Alsowadi',
-        //                 email: 'muath.ye@gmail.com',
-        //                 link: 'https://muathye.com'
-        //             }
-        //         ],
-        //         date: frontmatter.date
-        //     })
-        // }
-
-        writeFileSync(path.join(config.outDir, 'feed.rss'), feed.rss2())
-    },
+    buildEnd: genFeed,
     // ./RSS
     }))
