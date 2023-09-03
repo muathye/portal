@@ -169,24 +169,32 @@ export default withPwa(defineConfig({
             render: true
         }).load()
 
-        articles.sort(
-            (a, b) =>
-                +new Date(b.frontmatter.date as string) -
-                +new Date(a.frontmatter.date as string)
-        )
-
         const snippets = await createContentLoader('snippets/*.md', {
             excerpt: true,
             render: true
         }).load()
 
-        snippets.sort(
+        const feeds = [...snippets, ...articles]
+
+        feeds.sort(
             (a, b) =>
                 +new Date(b.frontmatter.date as string) -
                 +new Date(a.frontmatter.date as string)
         )
 
-        for (const { url, excerpt, frontmatter, html } of snippets) {
+        // articles.sort(
+        //     (a, b) =>
+        //         +new Date(b.frontmatter.date as string) -
+        //         +new Date(a.frontmatter.date as string)
+        // )
+
+        // snippets.sort(
+        //     (a, b) =>
+        //         +new Date(b.frontmatter.date as string) -
+        //         +new Date(a.frontmatter.date as string)
+        // )
+
+        for (const { url, excerpt, frontmatter, html } of feeds) {
             feed.addItem({
                 title: frontmatter.title,
                 id: `${hostname}${url}`,
@@ -204,23 +212,40 @@ export default withPwa(defineConfig({
             })
         }
 
-        for (const { url, excerpt, frontmatter, html } of articles) {
-            feed.addItem({
-                title: frontmatter.title,
-                id: `${hostname}${url}`,
-                link: `${hostname}${url}`,
-                description: excerpt,
-                content: html,
-                author: [
-                    {
-                        name: 'Muath Alsowadi',
-                        email: 'muath.ye@gmail.com',
-                        link: 'https://muathye.com'
-                    }
-                ],
-                date: frontmatter.date
-            })
-        }
+        // for (const { url, excerpt, frontmatter, html } of articles) {
+        //     feed.addItem({
+        //         title: frontmatter.title,
+        //         id: `${hostname}${url}`,
+        //         link: `${hostname}${url}`,
+        //         description: excerpt,
+        //         content: html,
+        //         author: [
+        //             {
+        //                 name: 'Muath Alsowadi',
+        //                 email: 'muath.ye@gmail.com',
+        //                 link: 'https://muathye.com'
+        //             }
+        //         ],
+        //         date: frontmatter.date
+        //     })
+        // }
+        // for (const { url, excerpt, frontmatter, html } of articles) {
+        //     feed.addItem({
+        //         title: frontmatter.title,
+        //         id: `${hostname}${url}`,
+        //         link: `${hostname}${url}`,
+        //         description: excerpt,
+        //         content: html,
+        //         author: [
+        //             {
+        //                 name: 'Muath Alsowadi',
+        //                 email: 'muath.ye@gmail.com',
+        //                 link: 'https://muathye.com'
+        //             }
+        //         ],
+        //         date: frontmatter.date
+        //     })
+        // }
 
         writeFileSync(path.join(config.outDir, 'feed.rss'), feed.rss2())
     },
