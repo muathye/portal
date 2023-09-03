@@ -222,6 +222,6 @@ body {
     -webkit-text-fill-color: var(--vp-home-hero-name-color);
 }
 
-img, svg, video, canvas, audio, iframe, embed, object {
+img, video, iframe, embed {
     border-radius: 9px;
 }
