@@ -163,18 +163,47 @@ export default withPwa(defineConfig({
 
         // You might need to adjust this if your Markdown files 
         // are located in a subfolder
-        const posts = await createContentLoader('articles/*.md', {
+        const articles = await createContentLoader('articles/*.md', {
             excerpt: true,
             render: true
         }).load()
 
-        posts.sort(
+        articles.sort(
             (a, b) =>
                 +new Date(b.frontmatter.date as string) -
                 +new Date(a.frontmatter.date as string)
         )
 
-        for (const { url, excerpt, frontmatter, html } of posts) {
+        for (const { url, excerpt, frontmatter, html } of articles) {
+            feed.addItem({
+                title: frontmatter.title,
+                id: `${hostname}${url}`,
+                link: `${hostname}${url}`,
+                description: excerpt,
+                content: html,
+                author: [
+                    {
+                        name: 'Muath Alsowadi',
+                        email: 'muath.ye@gmail.com',
+                        link: 'https://muathye.com'
+                    }
+                ],
+                date: frontmatter.date
+            })
+        }
+
+        const snippets = await createContentLoader('snippets/*.md', {
+            excerpt: true,
+            render: true
+        }).load()
+
+        snippets.sort(
+            (a, b) =>
+                +new Date(b.frontmatter.date as string) -
+                +new Date(a.frontmatter.date as string)
+        )
+
+        for (const { url, excerpt, frontmatter, html } of snippets) {
             feed.addItem({
                 title: frontmatter.title,
                 id: `${hostname}${url}`,
