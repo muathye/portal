@@ -1,6 +1,10 @@
 ---
 layout: doc
 title: Git Update Last Commit Message
+date: 2023-03-01
+author: Muath Alsowadi
+gravatar: 19684bc9c928dffa64f9c23efb31ba86
+twitter: '@muathye'
 description: A command to update the message of your last commit, because either it didn't look conventional or meaningful.
 head:
   - - meta

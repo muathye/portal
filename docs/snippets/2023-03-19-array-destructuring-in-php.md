@@ -1,6 +1,10 @@
 ---
 layout: doc
 title: Array destructuring in PHP
+date: 2023-03-19
+author: Muath Alsowadi
+gravatar: 19684bc9c928dffa64f9c23efb31ba86
+twitter: '@muathye'
 description: On PHP you can destructure the array into separate variables.
 head:
   - - meta

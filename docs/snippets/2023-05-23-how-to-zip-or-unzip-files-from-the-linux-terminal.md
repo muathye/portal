@@ -1,6 +1,10 @@
 ---
 layout: doc
 title: How to Zip or Unzip Files From the Linux Terminal
+date: 2023-05-23
+author: Muath Alsowadi
+gravatar: 19684bc9c928dffa64f9c23efb31ba86
+twitter: '@muathye'
 description: From linux terminal you can zip and unzip files.
 head:
   - - meta

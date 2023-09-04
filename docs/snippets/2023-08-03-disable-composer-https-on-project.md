@@ -1,6 +1,10 @@
 ---
 layout: doc
 title: Disable composer https on a project.
+date: 2023-08-03
+author: Muath Alsowadi
+gravatar: 19684bc9c928dffa64f9c23efb31ba86
+twitter: '@muathye'
 description: This is helpfull when you got blocked on https of composer.
 head:
   - - meta

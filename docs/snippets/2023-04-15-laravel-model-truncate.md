@@ -1,6 +1,10 @@
 ---
 layout: doc
 title: Laravel Model Truncate
+date: 2023-04-15
+author: Muath Alsowadi
+gravatar: 19684bc9c928dffa64f9c23efb31ba86
+twitter: '@muathye'
 description: Remove all records and reset id identity.
 head:
   - - meta

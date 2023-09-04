@@ -1,6 +1,10 @@
 ---
 layout: doc
 title: Retrieve Related Tables Of A Specific Table In Mysql
+date: 2023-05-16
+author: Muath Alsowadi
+gravatar: 19684bc9c928dffa64f9c23efb31ba86
+twitter: '@muathye'
 description: You can retrieve related tables of a specific table in your mysql.
 head:
   - - meta

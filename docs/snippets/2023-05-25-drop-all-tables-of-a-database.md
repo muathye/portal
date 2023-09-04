@@ -1,6 +1,10 @@
 ---
 layout: doc
 title: Drop All Tables Of A Database
+date: 2023-05-25
+author: Muath Alsowadi
+gravatar: 19684bc9c928dffa64f9c23efb31ba86
+twitter: '@muathye'
 description: The code block drops all base tables in the current database using dynamic SQL.
 head:
   - - meta

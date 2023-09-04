@@ -1,6 +1,10 @@
 ---
 layout: doc
 title: Git Sync Local Branches With Remote.
+date: 2023-09-03
+author: Muath Alsowadi
+gravatar: 19684bc9c928dffa64f9c23efb31ba86
+twitter: '@muathye'
 description: Keep your local Git repository up-to-date and clutter-free by using 'git fetch --prune' to synchronize with remote changes while removing deleted branches.
 head:
   - - meta

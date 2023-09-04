@@ -1,6 +1,10 @@
 ---
 layout: doc
 title: Drop All Constraints From All Tables Of A Database
+date: 2023-05-25
+author: Muath Alsowadi
+gravatar: 19684bc9c928dffa64f9c23efb31ba86
+twitter: '@muathye'
 description: This SQL script drops certain types of constraints from all tables in the database.
 head:
   - - meta

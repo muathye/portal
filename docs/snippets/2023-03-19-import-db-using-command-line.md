@@ -1,6 +1,10 @@
 ---
 layout: doc
 title: Import DB Using Command Line
+date: 2023-03-19
+author: Muath Alsowadi
+gravatar: 19684bc9c928dffa64f9c23efb31ba86
+twitter: '@muathye'
 description: A command line for mysql to import db from any sql file.
 head:
   - - meta

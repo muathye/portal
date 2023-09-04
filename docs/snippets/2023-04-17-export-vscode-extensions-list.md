@@ -1,6 +1,10 @@
 ---
 layout: doc
 title: Export VSCode Extensions List
+date: 2023-04-17
+author: Muath Alsowadi
+gravatar: 19684bc9c928dffa64f9c23efb31ba86
+twitter: '@muathye'
 description: A command line to export the list of vscode extensions name.
 head:
   - - meta
