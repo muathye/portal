@@ -1,7 +1,30 @@
 ---
 layout: doc
 title: From JavaScript to Deployment A Step-by-Step Tips to Mastering Node.js and Building Powerful Web Applications
+date: 2023-03-09
+author: Muath Alsowadi
+gravatar: 19684bc9c928dffa64f9c23efb31ba86
+twitter: '@muathye'
 description: Node.js is a popular and powerful platform for building scalable and efficient web applications. If you're interested in learning Node.js, you need to have a structured learning path or roadmap to guide you through the process. In this article, we'll provide a detailed step-by-step guide to help you get started with Node.js.
+head:
+  - - meta
+    - name: keywords
+      content: nodejs javascript mastering
+  - - meta
+    - name: og:type
+      content: article
+  - - meta
+    - name: og:url
+      content: https://muathye.com/articles/2023-03-09-from-javascript-to-mastring-nodejs
+  - - meta
+    - name: og:title
+      content: From JavaScript to Deployment A Step-by-Step Tips to Mastering Node.js and Building Powerful Web Applications
+  - - meta
+    - name: og:description
+      content: Node.js is a popular and powerful platform for building scalable and efficient web applications. If you're interested in learning Node.js, you need to have a structured learning path or roadmap to guide you through the process. In this article, we'll provide a detailed step-by-step guide to help you get started with Node.js.
+  - - meta
+    - name: og:image
+      content: https://muathye.com/articles/2023-03-09/from-javascript-to-mastring-nodejs.png
 ---
 
 # From JavaScript to Deployment: A Step-by-Step Tips to Mastering Node.js and Building Powerful Web Applications

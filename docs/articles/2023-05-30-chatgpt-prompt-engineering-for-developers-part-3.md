@@ -1,6 +1,10 @@
 ---
 layout: doc
-title: ChatGPT Prompt Engineering for Developers [Part 3/7]
+title: ChatGPT Prompt Engineering for Developers [Part 3/7] Summarizing
+date: 2023-05-30
+author: Muath Alsowadi
+gravatar: 19684bc9c928dffa64f9c23efb31ba86
+twitter: '@muathye'
 description: You'll practice two prompting principles and their related tactics in order to write effective prompts for large language models.
 head:
   - - meta

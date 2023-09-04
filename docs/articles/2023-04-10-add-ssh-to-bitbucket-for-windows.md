@@ -1,7 +1,30 @@
 ---
 layout: doc
 title: Add SSH to Bitbucket for Windows
-description: Add SSH to Bitbucket for Windows
+date: 2023-04-10
+author: Muath Alsowadi
+gravatar: 19684bc9c928dffa64f9c23efb31ba86
+twitter: '@muathye'
+description: Add SSH to Bitbucket for Windows.
+head:
+  - - meta
+    - name: keywords
+      content: ssh bitbucket windows
+  - - meta
+    - name: og:type
+      content: article
+  - - meta
+    - name: og:url
+      content: https://muathye.com/articles/2023-04-10-export-vscode-extensions-list
+  - - meta
+    - name: og:title
+      content: Add SSH to Bitbucket for Windows
+  - - meta
+    - name: og:description
+      content: How to Add SSH to Bitbucket for Windows.
+  - - meta
+    - name: og:image
+      content: https://muathye.com/articles/2023-04-10/export-vscode-extensions-list.jpg
 ---
 
 # Add SSH to Bitbucket for Windows

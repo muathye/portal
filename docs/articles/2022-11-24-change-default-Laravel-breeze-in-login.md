@@ -1,8 +1,34 @@
 ---
 layout: doc
 title: How to Change Default Laravel Breeze "email" to "id" in login
+date: 2022-11-24
+author: Muath Alsowadi
+gravatar: 19684bc9c928dffa64f9c23efb31ba86
+twitter: '@muathye'
 description: How to Change Default Laravel Breeze "email" to "id" in login page and request.
+head:
+  - - meta
+    - name: keywords
+      content: laravel breeze auth-scaffolding
+  - - meta
+    - name: og:type
+      content: article
+  - - meta
+    - name: og:url
+      content: https://muathye.com/articles/2022-11-24-change-default-Laravel-breeze-in-login
+  - - meta
+    - name: og:title
+      content: How to Change Default Laravel Breeze "email" to "id" in login
+  - - meta
+    - name: og:description
+      content: How to Change Default Laravel Breeze "email" to "id" in login page and request.
+  - - meta
+    - name: og:image
+      content: https://muathye.com/articles/2022-11-24/change-default-Laravel-breeze-in-login.png
 ---
+
+![An image](/articles/2022-11-24/change-default-Laravel-breeze-in-login.png)
+
 # How to Change Default Laravel Breeze "email" to "id" in login
 
 In my case I want to change `email` to `id` 

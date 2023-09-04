@@ -1,8 +1,33 @@
 ---
 layout: doc
 title: Laravel Nested Eager Loading on Polymorphic Relationships
+date: 2022-12-23
+author: Muath Alsowadi
+gravatar: 19684bc9c928dffa64f9c23efb31ba86
+twitter: '@muathye'
 description: Sometimes you need to eager load different relationships depending on the type of model on a polymorphic relationship.
+head:
+  - - meta
+    - name: keywords
+      content: bootstrap modal datepicker
+  - - meta
+    - name: og:type
+      content: article
+  - - meta
+    - name: og:url
+      content: https://muathye.com/articles/2022-12-23-laravel-nested-eager-loading-on-polymorphic-relationships
+  - - meta
+    - name: og:title
+      content: Laravel Nested Eager Loading on Polymorphic Relationships
+  - - meta
+    - name: og:description
+      content: Sometimes you need to eager load different relationships depending on the type of model on a polymorphic relationship.
+  - - meta
+    - name: og:image
+      content: https://muathye.com/articles/2022-12-23/laravel-nested-eager-loading-on-polymorphic-relationships.png
 ---
+
+![An image](/articles/2022-12-23/laravel-nested-eager-loading-on-polymorphic-relationships.png)
 
 # Laravel Nested Eager Loading on Polymorphic Relationships
 

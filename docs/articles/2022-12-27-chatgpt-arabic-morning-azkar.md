@@ -1,7 +1,30 @@
 ---
 layout: doc
 title: I Created Morning Azkar Website In Arabic With ChatGPT
+date: 2022-12-27
+author: Muath Alsowadi
+gravatar: 19684bc9c928dffa64f9c23efb31ba86
+twitter: '@muathye'
 description: Azkar is the plural of Zikr and refers to remembrances. The morning and evening Zikr are a collection of duʿās and remembrances prescribed by the Messenger ﷺ which a Muslim should read on a daily basis in the morning and evening.
+head:
+  - - meta
+    - name: keywords
+      content: chatgpt website arabic
+  - - meta
+    - name: og:type
+      content: article
+  - - meta
+    - name: og:url
+      content: https://muathye.com/articles/2022-12-27-chatgpt-arabic-morning-azkar
+  - - meta
+    - name: og:title
+      content: I Created Morning Azkar Website In Arabic With ChatGPT
+  - - meta
+    - name: og:description
+      content: Azkar is the plural of Zikr and refers to remembrances. The morning and evening Zikr are a collection of duʿās and remembrances prescribed by the Messenger ﷺ which a Muslim should read on a daily basis in the morning and evening.
+  - - meta
+    - name: og:image
+      content: https://muathye.com/articles/2022-12-27/morning-azkar.png
 ---
 
 # I Created Morning Azkar Website In Arabic With ChatGPT

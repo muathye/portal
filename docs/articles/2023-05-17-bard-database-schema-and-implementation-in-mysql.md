@@ -1,7 +1,30 @@
 ---
 layout: doc
 title: Bard Database Schema and Implementation in MySQL
+date: 2023-05-17
+author: Muath Alsowadi
+gravatar: 19684bc9c928dffa64f9c23efb31ba86
+twitter: '@muathye'
 description: Bard is a large language model from Google AI, trained on a massive dataset of text and code. Bard can generate text, translate languages, write different kinds of creative content, and answer your questions in an informative way.
+head:
+  - - meta
+    - name: keywords
+      content: bard database-schema mysql
+  - - meta
+    - name: og:type
+      content: article
+  - - meta
+    - name: og:url
+      content: https://muathye.com/articles/2023-05-17-bard-database-schema-and-implementation-in-mysql
+  - - meta
+    - name: og:title
+      content: Bard Database Schema and Implementation in MySQL
+  - - meta
+    - name: og:description
+      content: Bard is a large language model from Google AI, trained on a massive dataset of text and code. Bard can generate text, translate languages, write different kinds of creative content, and answer your questions in an informative way.
+  - - meta
+    - name: og:image
+      content: https://muathye.com/articles/2023-05-17/bard-database-schema-and-implementation-in-mysql.png
 ---
 
 # Bard Database Schema and Implementation in MySQL

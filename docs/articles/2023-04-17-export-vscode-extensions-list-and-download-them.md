@@ -1,7 +1,30 @@
 ---
 layout: doc
 title: A Way to Export Visual Studio Code Extensions List and Pulk Install Them
-description: how to export the list of installed extensions and install them on a new machine.
+date: 2023-04-17
+author: Muath Alsowadi
+gravatar: 19684bc9c928dffa64f9c23efb31ba86
+twitter: '@muathye'
+description: How to export the list of installed extensions and install them on a new machine.
+head:
+  - - meta
+    - name: keywords
+      content: google-maps api location
+  - - meta
+    - name: og:type
+      content: article
+  - - meta
+    - name: og:url
+      content: https://muathye.com/articles/2023-04-17-export-vscode-extensions-list
+  - - meta
+    - name: og:title
+      content: A Way to Export Visual Studio Code Extensions List and Pulk Install Them
+  - - meta
+    - name: og:description
+      content: How to export the list of installed extensions and install them on a new machine.
+  - - meta
+    - name: og:image
+      content: https://muathye.com/articles/2023-04-17/export-vscode-extensions-list.png
 ---
 
 ![An image](/articles/2023-04-17/export-vscode-extensions-list.png)

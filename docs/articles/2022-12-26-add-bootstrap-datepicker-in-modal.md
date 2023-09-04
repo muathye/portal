@@ -1,7 +1,30 @@
 ---
 layout: doc
 title: How to solve bootstrap datepicker in modal
+date: 2022-12-26
+author: Muath Alsowadi
+gravatar: 19684bc9c928dffa64f9c23efb31ba86
+twitter: '@muathye'
 description: Solve bootstrap datepicker in modal simply wrap your datepicker code in bootstrap's modal shown event.
+head:
+  - - meta
+    - name: keywords
+      content: bootstrap modal datepicker
+  - - meta
+    - name: og:type
+      content: article
+  - - meta
+    - name: og:url
+      content: https://muathye.com/articles/2022-12-26-add-bootstrap-datepicker-in-modal
+  - - meta
+    - name: og:title
+      content: How to solve bootstrap datepicker in modal
+  - - meta
+    - name: og:description
+      content: Solve bootstrap datepicker in modal simply wrap your datepicker code in bootstrap's modal shown event.
+  - - meta
+    - name: og:image
+      content: https://muathye.com/articles/2022-12-26/modal-datetime-picker.png
 ---
 
 ![An image](/articles/2022-12-26/modal-datetime-picker.png)

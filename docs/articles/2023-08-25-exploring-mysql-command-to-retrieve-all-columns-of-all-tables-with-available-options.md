@@ -1,6 +1,10 @@
 ---
 layout: doc
 title: Exploring MySQL Command to Retrieve All Columns of All Tables with Available Options
+date: 2023-08-25
+author: Muath Alsowadi
+gravatar: 19684bc9c928dffa64f9c23efb31ba86
+twitter: '@muathye'
 description: Explore the versatile MySQL command to retrieve comprehensive column information from all tables in your database, with options to sort, filter by data type, and exclude system tables.
 head:
   - - meta

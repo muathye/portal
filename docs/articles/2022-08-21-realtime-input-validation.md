@@ -1,8 +1,33 @@
 ---
 layout: doc
 title: Realtime input validation
+date: 2022-08-21
+author: Muath Alsowadi
+gravatar: 19684bc9c928dffa64f9c23efb31ba86
+twitter: '@muathye'
 description: Sometimes we need to make a powerful validation like Laravel validation but it works in the backend and we want it to be in font-end specially on the `input` itself.
+head:
+  - - meta
+    - name: keywords
+      content: laravel realtime input-validation
+  - - meta
+    - name: og:type
+      content: article
+  - - meta
+    - name: og:url
+      content: https://muathye.com/articles/2022-08-21-realtime-input-validation
+  - - meta
+    - name: og:title
+      content: Realtime input validation
+  - - meta
+    - name: og:description
+      content: Sometimes we need to make a powerful validation like Laravel validation but it works in the backend and we want it to be in font-end specially on the `input` itself.
+  - - meta
+    - name: og:image
+      content: https://muathye.com/articles/2022-08-21/realtime-input-validation.jpg
 ---
+
+![An image](/articles/2022-08-21/realtime-input-validation.jpg)
 
 # Realtime input validation
 

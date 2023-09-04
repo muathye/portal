@@ -1,7 +1,30 @@
 ---
 layout: blog
 title: How to create a mini self hosted version of ChatGPT
+date: 2023-03-08
+author: Muath Alsowadi
+gravatar: 19684bc9c928dffa64f9c23efb31ba86
+twitter: '@muathye'
 description: Creating a language model like ChatGPT (Chat Generative Pre-trained Transformer) requires significant knowledge of deep learning and natural language processing (NLP) techniques. The process involves collecting and preprocessing large datasets, building and training a deep learning model, and hosting an API to handle user requests and generate responses.
+head:
+  - - meta
+    - name: keywords
+      content: chatgpt selfhosted llm
+  - - meta
+    - name: og:type
+      content: article
+  - - meta
+    - name: og:url
+      content: https://muathye.com/articles/2023-03-08-mini-self-hosted-verison-chatgpt
+  - - meta
+    - name: og:title
+      content: How to create a mini self hosted version of ChatGPT
+  - - meta
+    - name: og:description
+      content: Creating a language model like ChatGPT (Chat Generative Pre-trained Transformer) requires significant knowledge of deep learning and natural language processing (NLP) techniques. The process involves collecting and preprocessing large datasets, building and training a deep learning model, and hosting an API to handle user requests and generate responses.
+  - - meta
+    - name: og:image
+      content: https://muathye.com/articles/2023-03-08/mini-self-hosted-verison-chatgpt.png
 ---
 <style>
     .img {

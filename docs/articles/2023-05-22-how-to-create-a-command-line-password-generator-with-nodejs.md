@@ -1,6 +1,10 @@
 ---
 layout: doc
 title: How to Create a Command-Line Password Generator with Node.js And Deploy it to npmjs
+date: 2023-05-22
+author: Muath Alsowadi
+gravatar: 19684bc9c928dffa64f9c23efb31ba86
+twitter: '@muathye'
 description: In this tutorial, we'll show you how to create a command-line password generator that allows users to generate strong passwords of any length and including any combination of symbols, numbers, and capital letters.
 head:
   - - meta
