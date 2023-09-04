@@ -4,7 +4,7 @@
         <title>Muath Alsowadi - Web designer and developer</title>
         <link>https://muathye.com</link>
         <description>Founder of @open-sale. Co-founder of @YemenOpenSource. Passionate and highly skilled senior full-stack web developer proficient in HTML, CSS, JavaScript, Vue.js, PHP, SQL, Laravel, and API development, with a strong commitment to leveraging technology to create innovative solutions and positively impact the world.</description>
-        <lastBuildDate>Mon, 04 Sep 2023 06:10:09 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 04 Sep 2023 06:18:20 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -3362,173 +3362,54 @@ modify the exported  <code>App\Http\Requests\Auth\LoginRequest</code> from <code
 ]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Extend Laravel Validator Morph Exists]]></title>
-            <link>https://muathye.com/snippets/2023-02-14-extend-laravel-validator-morph-exists</link>
-            <guid>https://muathye.com/snippets/2023-02-14-extend-laravel-validator-morph-exists</guid>
-            <content:encoded><![CDATA[<p><img src="/snippets/2023-02-14/extend-laravel-validator-morph-exists.png" alt="An image"></p>
-<p><a href="https://ray.so/#code=PD9waHAKLyogdXNlZnVsIHZhbGlkYXRvciBleHRlbmQgYG1vcnBoX2V4aXN0c2AgKi8KVmFsaWRhdG9yOjpleHRlbmQoJ21vcnBoX2V4aXN0cycsIGZ1bmN0aW9uICgkYXR0cmlidXRlLCAkdmFsdWUsICRwYXJhbWV0ZXJzLCAkdmFsaWRhdG9yKQp7CglpZiAoIW9iamVjdFR5cGUgPSBBcnI6OmdldCgkdmFsaWRhdG9yLT5nZXREYXRhKCksICRwYXJhbWV0ZXJzWzBdLCBmYWxzZSkpIHsKCQlyZXR1cm4gZmFsc2U7Cgl9CgkvLyBUaGUgbW9kZWxzIG5hbWVzcGFjZS4KCXJldHVybiAhZW1wdHkocmVzb2x2ZSgnQXBwXFxNb2RlbHNcXCcuJG9iamVjdFR5cGUpLT5maW5kKCR2YWx1ZSkpOwp9KTsKCi8qIFVzYWdlIG9uIGFueSB2YWxpZGF0b3IgcnVsZXMgb3IgRm9ybVJlcXVlc3QgKi8KcHVibGljIGZ1bmN0aW9uIHJ1bGVzKCkKewoJcmV0dXJuIFsKCQknY29tbWVudGFibGVfaWQnID0-IFsncmVxdWlyZWQnLCAnbW9ycGhfZXhpc3RzOmNvbW1lbnRhYmxlX3R5cGUnXSwKCQknY29tbWVudGFibGVfdHlwZScgPT4gWydyZXF1aXJlZCcsICdzdHJpbmcnXSwKCV07Cn0KCi8qKiBnaXRodWIuY29tL211YXRoLXllICov&amp;darkMode=true&amp;background=true&amp;title=extend-laravel-validator-morph-exists.php&amp;language=php&amp;padding=64&amp;width=920" target="_blank" rel="noreferrer">ray.so</a></p>
-<h1 id="extend-laravel-validator-morph-exists" tabindex="-1">Extend Laravel Validator Morph Exists <a class="header-anchor" href="#extend-laravel-validator-morph-exists" aria-label="Permalink to &quot;Extend Laravel Validator Morph Exists&quot;">&ZeroWidthSpace;</a></h1>
-<p>A laravel validator extends validator with morph_exists.</p>
-<p>Useful validator extend <code>morph_exists</code>.</p>
-<p>Put the following on <code>app/Http/Providers/AppServiceProvider.php</code> at <code>boot</code> method.</p>
-<div class="language-php"><button title="Copy Code" class="copy"></button><span class="lang">php</span><pre v-pre class="shiki material-theme-palenight" ><code><span class="line"><span style="color: #FFCB6B">Validator</span><span style="color: #89DDFF">::</span><span style="color: #82AAFF">extend</span><span style="color: #89DDFF">(</span><span style="color: #89DDFF">&#39;</span><span style="color: #C3E88D">morph_exists</span><span style="color: #89DDFF">&#39;</span><span style="color: #89DDFF">,</span><span style="color: #A6ACCD"> </span><span style="color: #C792EA">function</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">($</span><span style="color: #A6ACCD">attribute</span><span style="color: #89DDFF">,</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">$</span><span style="color: #A6ACCD">value</span><span style="color: #89DDFF">,</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">$</span><span style="color: #A6ACCD">parameters</span><span style="color: #89DDFF">,</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">$</span><span style="color: #A6ACCD">validator</span><span style="color: #89DDFF">)</span></span>
-<span class="line"><span style="color: #89DDFF">{</span></span>
-<span class="line"><span style="color: #A6ACCD">  </span><span style="color: #89DDFF; font-style: italic">if</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">(!</span><span style="color: #A6ACCD">objectType </span><span style="color: #89DDFF">=</span><span style="color: #A6ACCD"> </span><span style="color: #FFCB6B">Arr</span><span style="color: #89DDFF">::</span><span style="color: #82AAFF">get</span><span style="color: #89DDFF">($</span><span style="color: #A6ACCD">validator</span><span style="color: #89DDFF">-&gt;</span><span style="color: #82AAFF">getData</span><span style="color: #89DDFF">(),</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">$</span><span style="color: #A6ACCD">parameters</span><span style="color: #89DDFF">[</span><span style="color: #F78C6C">0</span><span style="color: #89DDFF">],</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">false))</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">{</span></span>
-<span class="line"><span style="color: #A6ACCD">    </span><span style="color: #89DDFF; font-style: italic">return</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">false;</span></span>
-<span class="line"><span style="color: #A6ACCD">  </span><span style="color: #89DDFF">}</span></span>
-<span class="line"><span style="color: #89DDFF">  </span><span style="color: #676E95; font-style: italic">// The models namespace.</span></span>
-<span class="line"><span style="color: #A6ACCD">  </span><span style="color: #89DDFF; font-style: italic">return</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">!</span><span style="color: #82AAFF">empty</span><span style="color: #89DDFF">(</span><span style="color: #82AAFF">resolve</span><span style="color: #89DDFF">(</span><span style="color: #89DDFF">&#39;</span><span style="color: #C3E88D">App</span><span style="color: #A6ACCD">\\</span><span style="color: #C3E88D">Models</span><span style="color: #A6ACCD">\\</span><span style="color: #89DDFF">&#39;.</span><span style="color: #89DDFF">$</span><span style="color: #A6ACCD">objectType</span><span style="color: #89DDFF">)-&gt;</span><span style="color: #82AAFF">find</span><span style="color: #89DDFF">($</span><span style="color: #A6ACCD">value</span><span style="color: #89DDFF">));</span></span>
-<span class="line"><span style="color: #89DDFF">});</span></span></code></pre>
-</div><p>Usage on any validator rules or FormRequest.</p>
-<div class="language-php"><button title="Copy Code" class="copy"></button><span class="lang">php</span><pre v-pre class="shiki material-theme-palenight" ><code><span class="line"><span style="color: #C792EA">public</span><span style="color: #A6ACCD"> </span><span style="color: #C792EA">function</span><span style="color: #A6ACCD"> </span><span style="color: #82AAFF">rules</span><span style="color: #89DDFF">()</span></span>
-<span class="line"><span style="color: #89DDFF">{</span></span>
-<span class="line"><span style="color: #A6ACCD">  </span><span style="color: #89DDFF; font-style: italic">return</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">[</span></span>
-<span class="line"><span style="color: #A6ACCD">    </span><span style="color: #89DDFF">&#39;</span><span style="color: #C3E88D">commentable_id</span><span style="color: #89DDFF">&#39;</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">=&gt;</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">[</span><span style="color: #89DDFF">&#39;</span><span style="color: #C3E88D">required</span><span style="color: #89DDFF">&#39;</span><span style="color: #89DDFF">,</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">&#39;</span><span style="color: #C3E88D">morph_exists:commentable_type</span><span style="color: #89DDFF">&#39;</span><span style="color: #89DDFF">],</span></span>
-<span class="line"><span style="color: #A6ACCD">    </span><span style="color: #89DDFF">&#39;</span><span style="color: #C3E88D">commentable_type</span><span style="color: #89DDFF">&#39;</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">=&gt;</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">[</span><span style="color: #89DDFF">&#39;</span><span style="color: #C3E88D">required</span><span style="color: #89DDFF">&#39;</span><span style="color: #89DDFF">,</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">&#39;</span><span style="color: #C3E88D">string</span><span style="color: #89DDFF">&#39;</span><span style="color: #89DDFF">],</span></span>
-<span class="line"><span style="color: #A6ACCD">  </span><span style="color: #89DDFF">];</span></span>
-<span class="line"><span style="color: #89DDFF">}</span></span></code></pre>
-</div>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Git Update Last Commit Message]]></title>
-            <link>https://muathye.com/snippets/2023-03-01-git-update-last-commit-message</link>
-            <guid>https://muathye.com/snippets/2023-03-01-git-update-last-commit-message</guid>
-            <content:encoded><![CDATA[<p><img src="/snippets/2023-03-01/git-update-last-commit-message.png" alt="An image"></p>
-<p><a href="https://ray.so/#code=Z2l0IGNvbW1pdCAtLWFtZW5kIC1tICJVcGRhdGVkIG1lc3NhZ2Ui&amp;darkMode=true&amp;background=true&amp;title=git-update-last-commit-message.bat&amp;language=shell&amp;padding=64" target="_blank" rel="noreferrer">ray.so</a></p>
-<h1 id="git-update-last-commit-message" tabindex="-1">Git Update Last Commit Message <a class="header-anchor" href="#git-update-last-commit-message" aria-label="Permalink to &quot;Git Update Last Commit Message&quot;">&ZeroWidthSpace;</a></h1>
-<p>If you want to update the message of your last commit, because either it didn't look conventional or meaningful, use this command to edit it:</p>
-<div class="language-sh"><button title="Copy Code" class="copy"></button><span class="lang">sh</span><pre v-pre class="shiki material-theme-palenight" ><code><span class="line"><span style="color: #FFCB6B">git</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">commit</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">--amend</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">-m</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">&quot;</span><span style="color: #C3E88D">Updated message</span><span style="color: #89DDFF">&quot;</span></span></code></pre>
-</div>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Array destructuring in PHP]]></title>
-            <link>https://muathye.com/snippets/2023-03-19-array-destructuring-in-php</link>
-            <guid>https://muathye.com/snippets/2023-03-19-array-destructuring-in-php</guid>
-            <content:encoded><![CDATA[<p><img src="/snippets/2023-03-19/array-destructuring-in-php.png" alt="An image"></p>
-<p><a href="https://ray.so/#code=PD9waHAKLyoqIGdpdGh1Yi5jb20vbXVhdGgteWUgKi8KClskaGksICRuYW1lXSA9IFsnSGVsbG8nLCAnTXVhdGgnXTsKCmVjaG8gJGhpIC4gJyAnIC4gJG5hbWU7IC8vIEhlbGxvIE11YXRo&amp;darkMode=true&amp;background=true&amp;title=array-destructuring-in-php.php&amp;language=php&amp;padding=64" target="_blank" rel="noreferrer">ray.so</a></p>
-<h1 id="array-destructuring-in-php" tabindex="-1">Array destructuring in PHP <a class="header-anchor" href="#array-destructuring-in-php" aria-label="Permalink to &quot;Array destructuring in PHP&quot;">&ZeroWidthSpace;</a></h1>
-<p>On PHP you can destructure the array into separate variables.</p>
-<p>Note that the word is &quot;destructure&quot;, not &quot;destruction&quot; — that's something different</p>
-<div class="language-php"><button title="Copy Code" class="copy"></button><span class="lang">php</span><pre v-pre class="shiki material-theme-palenight" ><code><span class="line"><span style="color: #89DDFF">&lt;?</span><span style="color: #A6ACCD">php</span></span>
-<span class="line"><span style="color: #676E95; font-style: italic">/** github.com/muath-ye */</span></span>
-<span class="line"></span>
-<span class="line"><span style="color: #89DDFF">[$</span><span style="color: #A6ACCD">hi</span><span style="color: #89DDFF">,</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">$</span><span style="color: #A6ACCD">name</span><span style="color: #89DDFF">]</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">=</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">[</span><span style="color: #89DDFF">&#39;</span><span style="color: #C3E88D">Hello</span><span style="color: #89DDFF">&#39;</span><span style="color: #89DDFF">,</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">&#39;</span><span style="color: #C3E88D">Muath</span><span style="color: #89DDFF">&#39;</span><span style="color: #89DDFF">];</span></span>
-<span class="line"></span>
-<span class="line"><span style="color: #82AAFF">echo</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">$</span><span style="color: #A6ACCD">hi </span><span style="color: #89DDFF">.</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">&#39;</span><span style="color: #C3E88D"> </span><span style="color: #89DDFF">&#39;</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">.</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">$</span><span style="color: #A6ACCD">name</span><span style="color: #89DDFF">;</span><span style="color: #A6ACCD"> </span><span style="color: #676E95; font-style: italic">// Hello Muath</span></span></code></pre>
-</div>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[List all developers on a project in Git]]></title>
-            <link>https://muathye.com/snippets/2023-03-19-git-developers-list</link>
-            <guid>https://muathye.com/snippets/2023-03-19-git-developers-list</guid>
-            <content:encoded><![CDATA[<p><img src="/snippets/2023-03-19/git-developers-list.png" alt="An image"></p>
-<p><a href="https://ray.so/#code=IyBMaXN0IGFsbCBkZXZlbG9wZXJzIG9uIGEgcHJvamVjdCBpbiBHaXQKCmdpdCBsb2cgLS1wcmV0dHk9IiVhbiAlYWUlbiVjbiAlY2UiIHwgc29ydCAtdQ&amp;darkMode=true&amp;background=true&amp;title=git-developers-list.bat&amp;language=powershell&amp;padding=64" target="_blank" rel="noreferrer">ray.so</a></p>
-<h1 id="list-all-developers-on-a-project-in-git" tabindex="-1">List all developers on a project in Git <a class="header-anchor" href="#list-all-developers-on-a-project-in-git" aria-label="Permalink to &quot;List all developers on a project in Git&quot;">&ZeroWidthSpace;</a></h1>
-<p>A command line for git to list all developers of a project.</p>
-<div class="language-sh"><button title="Copy Code" class="copy"></button><span class="lang">sh</span><pre v-pre class="shiki material-theme-palenight" ><code><span class="line"><span style="color: #FFCB6B">git</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">log</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">--pretty=</span><span style="color: #89DDFF">&quot;</span><span style="color: #C3E88D">%an %ae%n%cn %ce</span><span style="color: #89DDFF">&quot;</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">|</span><span style="color: #A6ACCD"> </span><span style="color: #FFCB6B">sort</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">-u</span></span></code></pre>
-</div>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Import DB Using Command Line]]></title>
-            <link>https://muathye.com/snippets/2023-03-19-import-db-using-command-line</link>
-            <guid>https://muathye.com/snippets/2023-03-19-import-db-using-command-line</guid>
-            <content:encoded><![CDATA[<p><img src="/snippets/2023-03-19/import-db-using-command-line.png" alt="An image"></p>
-<p><a href="https://ray.so/#code=IyBpbXBvcnQgZGIgdXNpbmcgY29tbWFuZCBsaW5lCm15c3FsIC11IHVzZXJuYW1lIC1wIGRhdGFiYXNlX25hbWUgPCBmaWxlLnNxbA&amp;darkMode=true&amp;background=true&amp;title=import-db-using-command-line.bat&amp;language=powershell&amp;padding=64" target="_blank" rel="noreferrer">ray.so</a></p>
-<h1 id="import-db-using-command-line" tabindex="-1">Import DB Using Command Line <a class="header-anchor" href="#import-db-using-command-line" aria-label="Permalink to &quot;Import DB Using Command Line&quot;">&ZeroWidthSpace;</a></h1>
-<p>A command line for mysql to import db from any sql file.</p>
-<div class="language-sh"><button title="Copy Code" class="copy"></button><span class="lang">sh</span><pre v-pre class="shiki material-theme-palenight" ><code><span class="line"><span style="color: #676E95; font-style: italic"># import db using command line</span></span>
-<span class="line"><span style="color: #FFCB6B">mysql</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">-u</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">username</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">-p</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">database_name</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">&lt;</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">file.sql</span></span></code></pre>
-</div>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Laravel Model Truncate]]></title>
-            <link>https://muathye.com/snippets/2023-04-15-laravel-model-truncate</link>
-            <guid>https://muathye.com/snippets/2023-04-15-laravel-model-truncate</guid>
-            <content:encoded><![CDATA[<p><img src="/snippets/2023-04-15/laravel-model-truncate.png" alt="An image"></p>
-<p><a href="https://ray.so/#code=Ly8gVG8gdHJhbmNhdGUgKGVtcHR5KSB1c2VycyB0YWJsZQoKVXNlcjo6dHJ1bmNhdGUoKTs&amp;darkMode=true&amp;background=true&amp;title=laravel-model-truncate.php&amp;language=php&amp;padding=64" target="_blank" rel="noreferrer">ray.so</a></p>
-<h1 id="laravel-model-truncate" tabindex="-1">Laravel Model Truncate <a class="header-anchor" href="#laravel-model-truncate" aria-label="Permalink to &quot;Laravel Model Truncate&quot;">&ZeroWidthSpace;</a></h1>
-<p>Remove all records and reset id incremental column identity.</p>
-<div class="language-sh"><button title="Copy Code" class="copy"></button><span class="lang">sh</span><pre v-pre class="shiki material-theme-palenight" ><code><span class="line"><span style="color: #FFCB6B">//</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">To</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">truncate</span><span style="color: #A6ACCD"> (empty) users table</span></span>
-<span class="line"></span>
-<span class="line"><span style="color: #82AAFF">User::truncate</span><span style="color: #89DDFF">();</span></span></code></pre>
-</div>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Export VSCode Extensions List]]></title>
-            <link>https://muathye.com/snippets/2023-04-17-export-vscode-extensions-list</link>
-            <guid>https://muathye.com/snippets/2023-04-17-export-vscode-extensions-list</guid>
-            <content:encoded><![CDATA[<p><img src="/snippets/2023-04-17/export-vscode-extensions-list.png" alt="An image"></p>
-<p><a href="https://ray.so/#code=IyBJbiB2c29kZSB5b3UgY2FuIGV4cG9ydCB0aGUgZXh0ZW5zaW9uIGxpc3QgdG8gZmlsZQoKIyBmb3IgdGhlIGJsdWUgdnNjb2RlCmNvZGUgLS1saXN0LWV4dGVuc2lvbnMgPiBleHRlbnNpb25zLnR4dAoKIyBmb3IgdGhlIGdyZWVuIHZzY29kZQpjb2RlLWluc2lkZXJzIC0tbGlzdC1leHRlbnNpb25zID4gZXh0ZW5zaW9ucy50eHQ&amp;darkMode=true&amp;background=true&amp;title=export-vscode-extensions-list.bat&amp;language=powershell&amp;padding=64" target="_blank" rel="noreferrer">ray.so</a></p>
-<h1 id="export-vscode-extensions-list" tabindex="-1">Export VSCode Extensions List <a class="header-anchor" href="#export-vscode-extensions-list" aria-label="Permalink to &quot;Export VSCode Extensions List&quot;">&ZeroWidthSpace;</a></h1>
-<p>A command line to export the list of vscode extensions name.</p>
-<div class="language-sh"><button title="Copy Code" class="copy"></button><span class="lang">sh</span><pre v-pre class="shiki material-theme-palenight" ><code><span class="line"><span style="color: #676E95; font-style: italic"># In vsode you can export the extension list to file</span></span>
-<span class="line"></span>
-<span class="line"><span style="color: #676E95; font-style: italic"># for the blue vscode</span></span>
-<span class="line"><span style="color: #FFCB6B">code</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">--list-extensions</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">&gt;</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">extensions.txt</span></span>
-<span class="line"></span>
-<span class="line"><span style="color: #676E95; font-style: italic"># for the green vscode</span></span>
-<span class="line"><span style="color: #FFCB6B">code-insiders</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">--list-extensions</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">&gt;</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">extensions.txt</span></span></code></pre>
-</div>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Retrieve Related Tables Of A Specific Table In Mysql]]></title>
-            <link>https://muathye.com/snippets/2023-05-16-retrieve-related-tables-of-a-specific-table-in-mysql</link>
-            <guid>https://muathye.com/snippets/2023-05-16-retrieve-related-tables-of-a-specific-table-in-mysql</guid>
-            <content:encoded><![CDATA[<p><img src="/snippets/2023-05-16/retrieve-related-tables-of-a-specific-table-in-mysql.png" alt="An image"></p>
-<p><a href="https://chalk.ist" target="_blank" rel="noreferrer">chalk.ist</a></p>
-<h1 id="retrieve-related-tables-of-a-specific-table-in-mysql" tabindex="-1">Retrieve Related Tables Of A Specific Table In Mysql <a class="header-anchor" href="#retrieve-related-tables-of-a-specific-table-in-mysql" aria-label="Permalink to &quot;Retrieve Related Tables Of A Specific Table In Mysql&quot;">&ZeroWidthSpace;</a></h1>
-<p>You can retrieve related tables of a specific table in your mysql.</p>
-<div class="language-sql"><button title="Copy Code" class="copy"></button><span class="lang">sql</span><pre v-pre class="shiki material-theme-palenight" ><code><span class="line"><span style="color: #F78C6C">SELECT DISTINCT</span><span style="color: #A6ACCD"> TABLE_NAME</span></span>
-<span class="line"><span style="color: #F78C6C">FROM</span><span style="color: #A6ACCD"> INFORMATION_SCHEMA.KEY_COLUMN_USAGE</span></span>
-<span class="line"><span style="color: #F78C6C">WHERE</span><span style="color: #A6ACCD"> REFERENCED_TABLE_NAME </span><span style="color: #89DDFF">=</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">&#39;</span><span style="color: #C3E88D">your_table_name</span><span style="color: #89DDFF">&#39;</span></span>
-<span class="line"><span style="color: #F78C6C">AND</span><span style="color: #A6ACCD"> TABLE_SCHEMA </span><span style="color: #89DDFF">=</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">&#39;</span><span style="color: #C3E88D">your_database_name</span><span style="color: #89DDFF">&#39;</span><span style="color: #A6ACCD">;</span></span></code></pre>
-</div>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[Convert png and jpg to webp]]></title>
-            <link>https://muathye.com/snippets/2023-05-21-convert-png-and-jpg-to-webp</link>
-            <guid>https://muathye.com/snippets/2023-05-21-convert-png-and-jpg-to-webp</guid>
-            <content:encoded><![CDATA[<p><img src="/snippets/2023-05-21/convert-png-and-jpg-to-webp.png" alt="An image"></p>
-<p><a href="https://chalk.ist" target="_blank" rel="noreferrer">chalk.ist</a></p>
-<h1 id="convert-png-and-jpg-to-webp" tabindex="-1">Convert png and jpg to webp <a class="header-anchor" href="#convert-png-and-jpg-to-webp" aria-label="Permalink to &quot;Convert png and jpg to webp&quot;">&ZeroWidthSpace;</a></h1>
-<p>This is a command written in a batch file or command prompt for Windows operating system.</p>
-<p>The command starts with a &quot;for&quot; loop that loops through all files in the current directory that have a &quot;.png&quot;, &quot;.jpg&quot; or &quot;.jpeg&quot; extension.</p>
-<p>For each file that matches this criteria, the command uses the &quot;cwebp&quot; tool to convert the file to the WebP image format with a quality level of 80.</p>
-<p>The output file is named using the original file name (without the &quot;.png&quot;, &quot;.jpg&quot; or &quot;.jpeg&quot; extension) and with a &quot;.webp&quot; extension.</p>
-<p>So essentially, this command is converting all PNG , JPG or JPEG image files in the current directory to WebP format with a quality level of 80.</p>
-<div class="tip custom-block"><p class="custom-block-title">Download link</p>
-<p>Use this link to download the <a href="https://developers.google.com/speed/webp/docs/precompiled" target="_blank" rel="noreferrer">cwebp</a> tool.</p>
-</div>
-<p>Convert png to webp</p>
-<div class="language-bat"><button title="Copy Code" class="copy"></button><span class="lang">bat</span><pre v-pre class="shiki material-theme-palenight" ><code><span class="line"><span style="color: #89DDFF; font-style: italic">for</span><span style="color: #F07178"> </span><span style="color: #89DDFF; font-style: italic">%%</span><span style="color: #A6ACCD; font-style: italic">i</span><span style="color: #F07178"> </span><span style="color: #89DDFF; font-style: italic">in</span><span style="color: #F07178"> </span><span style="color: #89DDFF">(</span><span style="color: #F07178">*.png</span><span style="color: #89DDFF">)</span><span style="color: #F07178"> </span><span style="color: #89DDFF; font-style: italic">do</span><span style="color: #F07178"> cwebp -q </span><span style="color: #F78C6C">80</span><span style="color: #F07178"> </span><span style="color: #89DDFF">&quot;</span><span style="color: #89DDFF; font-style: italic">%%</span><span style="color: #A6ACCD; font-style: italic">i</span><span style="color: #89DDFF">&quot;</span><span style="color: #F07178"> -o </span><span style="color: #89DDFF">&quot;</span><span style="color: #89DDFF; font-style: italic">%%</span><span style="color: #A6ACCD; font-style: italic">~ni</span><span style="color: #C3E88D">.webp</span><span style="color: #89DDFF">&quot;</span></span></code></pre>
-</div><p>Convert jpg to webp</p>
-<div class="language-bat"><button title="Copy Code" class="copy"></button><span class="lang">bat</span><pre v-pre class="shiki material-theme-palenight" ><code><span class="line"><span style="color: #89DDFF; font-style: italic">for</span><span style="color: #F07178"> </span><span style="color: #89DDFF; font-style: italic">%%</span><span style="color: #A6ACCD; font-style: italic">i</span><span style="color: #F07178"> </span><span style="color: #89DDFF; font-style: italic">in</span><span style="color: #F07178"> </span><span style="color: #89DDFF">(</span><span style="color: #F07178">*.jpg</span><span style="color: #89DDFF">)</span><span style="color: #F07178"> </span><span style="color: #89DDFF; font-style: italic">do</span><span style="color: #F07178"> cwebp -q </span><span style="color: #F78C6C">80</span><span style="color: #F07178"> </span><span style="color: #89DDFF">&quot;</span><span style="color: #89DDFF; font-style: italic">%%</span><span style="color: #A6ACCD; font-style: italic">i</span><span style="color: #89DDFF">&quot;</span><span style="color: #F07178"> -o </span><span style="color: #89DDFF">&quot;</span><span style="color: #89DDFF; font-style: italic">%%</span><span style="color: #A6ACCD; font-style: italic">~ni</span><span style="color: #C3E88D">.webp</span><span style="color: #89DDFF">&quot;</span></span></code></pre>
-</div><p>Convert jpeg to webp</p>
-<div class="language-bat"><button title="Copy Code" class="copy"></button><span class="lang">bat</span><pre v-pre class="shiki material-theme-palenight" ><code><span class="line"><span style="color: #89DDFF; font-style: italic">for</span><span style="color: #F07178"> </span><span style="color: #89DDFF; font-style: italic">%%</span><span style="color: #A6ACCD; font-style: italic">i</span><span style="color: #F07178"> </span><span style="color: #89DDFF; font-style: italic">in</span><span style="color: #F07178"> </span><span style="color: #89DDFF">(</span><span style="color: #F07178">*.jpeg</span><span style="color: #89DDFF">)</span><span style="color: #F07178"> </span><span style="color: #89DDFF; font-style: italic">do</span><span style="color: #F07178"> cwebp -q </span><span style="color: #F78C6C">80</span><span style="color: #F07178"> </span><span style="color: #89DDFF">&quot;</span><span style="color: #89DDFF; font-style: italic">%%</span><span style="color: #A6ACCD; font-style: italic">i</span><span style="color: #89DDFF">&quot;</span><span style="color: #F07178"> -o </span><span style="color: #89DDFF">&quot;</span><span style="color: #89DDFF; font-style: italic">%%</span><span style="color: #A6ACCD; font-style: italic">~ni</span><span style="color: #C3E88D">.webp</span><span style="color: #89DDFF">&quot;</span></span></code></pre>
-</div><p>Convert png , jpg and jpeg to webp</p>
-<div class="language-bat"><button title="Copy Code" class="copy"></button><span class="lang">bat</span><pre v-pre class="shiki material-theme-palenight" ><code><span class="line"><span style="color: #89DDFF; font-style: italic">for</span><span style="color: #F07178"> </span><span style="color: #89DDFF; font-style: italic">%%</span><span style="color: #A6ACCD; font-style: italic">i</span><span style="color: #F07178"> </span><span style="color: #89DDFF; font-style: italic">in</span><span style="color: #F07178"> </span><span style="color: #89DDFF">(</span><span style="color: #F07178">*.png</span><span style="color: #89DDFF">)</span><span style="color: #F07178"> </span><span style="color: #89DDFF; font-style: italic">do</span><span style="color: #F07178"> cwebp -q </span><span style="color: #F78C6C">80</span><span style="color: #F07178"> </span><span style="color: #89DDFF">&quot;</span><span style="color: #89DDFF; font-style: italic">%%</span><span style="color: #A6ACCD; font-style: italic">i</span><span style="color: #89DDFF">&quot;</span><span style="color: #F07178"> -o </span><span style="color: #89DDFF">&quot;</span><span style="color: #89DDFF; font-style: italic">%%</span><span style="color: #A6ACCD; font-style: italic">~ni</span><span style="color: #C3E88D">.webp</span><span style="color: #89DDFF">&quot;</span></span>
-<span class="line"><span style="color: #89DDFF; font-style: italic">for</span><span style="color: #F07178"> </span><span style="color: #89DDFF; font-style: italic">%%</span><span style="color: #A6ACCD; font-style: italic">i</span><span style="color: #F07178"> </span><span style="color: #89DDFF; font-style: italic">in</span><span style="color: #F07178"> </span><span style="color: #89DDFF">(</span><span style="color: #F07178">*.jpg</span><span style="color: #89DDFF">)</span><span style="color: #F07178"> </span><span style="color: #89DDFF; font-style: italic">do</span><span style="color: #F07178"> cwebp -q </span><span style="color: #F78C6C">80</span><span style="color: #F07178"> </span><span style="color: #89DDFF">&quot;</span><span style="color: #89DDFF; font-style: italic">%%</span><span style="color: #A6ACCD; font-style: italic">i</span><span style="color: #89DDFF">&quot;</span><span style="color: #F07178"> -o </span><span style="color: #89DDFF">&quot;</span><span style="color: #89DDFF; font-style: italic">%%</span><span style="color: #A6ACCD; font-style: italic">~ni</span><span style="color: #C3E88D">.webp</span><span style="color: #89DDFF">&quot;</span></span>
-<span class="line"><span style="color: #89DDFF; font-style: italic">for</span><span style="color: #F07178"> </span><span style="color: #89DDFF; font-style: italic">%%</span><span style="color: #A6ACCD; font-style: italic">i</span><span style="color: #F07178"> </span><span style="color: #89DDFF; font-style: italic">in</span><span style="color: #F07178"> </span><span style="color: #89DDFF">(</span><span style="color: #F07178">*.jpeg</span><span style="color: #89DDFF">)</span><span style="color: #F07178"> </span><span style="color: #89DDFF; font-style: italic">do</span><span style="color: #F07178"> cwebp -q </span><span style="color: #F78C6C">80</span><span style="color: #F07178"> </span><span style="color: #89DDFF">&quot;</span><span style="color: #89DDFF; font-style: italic">%%</span><span style="color: #A6ACCD; font-style: italic">i</span><span style="color: #89DDFF">&quot;</span><span style="color: #F07178"> -o </span><span style="color: #89DDFF">&quot;</span><span style="color: #89DDFF; font-style: italic">%%</span><span style="color: #A6ACCD; font-style: italic">~ni</span><span style="color: #C3E88D">.webp</span><span style="color: #89DDFF">&quot;</span></span></code></pre>
-</div>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[How to Zip or Unzip Files From the Linux Terminal]]></title>
-            <link>https://muathye.com/snippets/2023-05-23-how-to-zip-or-unzip-files-from-the-linux-terminal</link>
-            <guid>https://muathye.com/snippets/2023-05-23-how-to-zip-or-unzip-files-from-the-linux-terminal</guid>
-            <content:encoded><![CDATA[<p><img src="/snippets/2023-05-23/how-to-zip-or-unzip-files-from-the-linux-terminal.png" alt="An image"></p>
-<p><a href="https://chalk.ist" target="_blank" rel="noreferrer">chalk.ist</a></p>
-<h1 id="how-to-zip-or-unzip-files-from-the-linux-terminal" tabindex="-1">How to Zip or Unzip Files From the Linux Terminal <a class="header-anchor" href="#how-to-zip-or-unzip-files-from-the-linux-terminal" aria-label="Permalink to &quot;How to Zip or Unzip Files From the Linux Terminal&quot;">&ZeroWidthSpace;</a></h1>
-<p>Compress all files of blog directory</p>
-<div class="language-bat"><button title="Copy Code" class="copy"></button><span class="lang">bat</span><pre v-pre class="shiki material-theme-palenight" ><code><span class="line"><span style="color: #A6ACCD">zip -r blog.zip blog</span></span></code></pre>
-</div><p>Uncompress blog.zip to a directory to blog directory</p>
-<div class="language-bat"><button title="Copy Code" class="copy"></button><span class="lang">bat</span><pre v-pre class="shiki material-theme-palenight" ><code><span class="line"><span style="color: #A6ACCD">unzip -q blog.zip -d ./blog</span></span></code></pre>
-</div><div class="info custom-block"><p class="custom-block-title">INFO</p>
-<p>for more see: <a href="https://www.howtogeek.com/414082/how-to-zip-or-unzip-files-from-the-linux-terminal/" target="_blank" rel="noreferrer">How to Zip or Unzip Files From the Linux Terminal</a></p>
-</div>
+            <title><![CDATA[Git Sync Local Branches With Remote.]]></title>
+            <link>https://muathye.com/snippets/2023-09-03-git-sync-local-branches-with-remote</link>
+            <guid>https://muathye.com/snippets/2023-09-03-git-sync-local-branches-with-remote</guid>
+            <pubDate>Sun, 03 Sep 2023 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p><img src="/snippets/2023-09-03/git-sync-local-branches-with-remote.png" alt="An image"></p>
+<p><a href="https://ray.so/#code=Z2l0IGZldGNoIC0tcHJ1bmU&amp;title=Git+fetch&amp;theme=sunset&amp;language=powershell" target="_blank" rel="noreferrer">ray.so</a></p>
+<h1 id="git-sync-local-branches-with-remote" tabindex="-1">Git Sync Local Branches With Remote <a class="header-anchor" href="#git-sync-local-branches-with-remote" aria-label="Permalink to &quot;Git Sync Local Branches With Remote&quot;">&ZeroWidthSpace;</a></h1>
+<p>The git fetch --prune command is used in the Git version control system to update your local repository with changes from a remote repository while also removing any references to remote branches that have been deleted on the remote.</p>
+<div class="language-sh"><button title="Copy Code" class="copy"></button><span class="lang">sh</span><pre v-pre class="shiki material-theme-palenight" ><code><span class="line"><span style="color: #FFCB6B">git</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">fetch</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">--prune</span></span></code></pre>
+</div><p>I have the following local branches:</p>
+<p><img src="/snippets/2023-09-03/local-branches-before-git-fetch-prune.png" alt="An image"></p>
+<p>While remote branches are:</p>
+<p><img src="/snippets/2023-09-03/remote-branches.png" alt="An image"></p>
+<p>Now, the magic moment: When you use git fetch --prune:</p>
+<p><img src="/snippets/2023-09-03/when-git-fetch-prune.png" alt="An image"></p>
+<p>Observe how local branches are now synchronized with the remote:</p>
+<p><img src="/snippets/2023-09-03/local-branches-after-git-fetch-prune.png" alt="An image"></p>
+<p>That's the secret recipe—keeping things neat and tidy in your local repo 😉.</p>
 <div style="display: flex;justify-content: end;">
-<a href="https://twitter.com/intent/tweet?url=https://muathye.com/snippets/2023-05-23-how-to-zip-or-unzip-files-from-the-linux-terminal&text=How to Zip or Unzip Files From the Linux Terminal" target="_blank"><img style="height: 32px; padding: 0 5px;" title="Share on twitter" src="/images/social/twitter.svg" /></a>
-<a href="https://api.whatsapp.com/send?text=https://muathye.com/snippets/2023-05-23-how-to-zip-or-unzip-files-from-the-linux-terminal" target="_blank"><img style="height: 32px; padding: 0 5px;" title="Share on whatsapp" src="/images/social/whatsapp.svg"/></a>
-<a href="https://www.facebook.com/sharer/sharer.php?u=https://muathye.com/snippets/2023-05-23-how-to-zip-or-unzip-files-from-the-linux-terminal" target="_blank"><img style="height: 32px; padding: 0 5px;" title="Share on facebook" src="/images/social/facebook.svg" /></a>
+<a href="https://twitter.com/intent/tweet?url=https://muathye.com/snippets/2023-09-03-git-sync-local-branches-with-remote&text=Drop All Tables Of A Database" target="_blank"><img style="height: 32px; padding: 0 5px;" title="Share on twitter" src="/images/social/twitter.svg" /></a>
+<a href="https://api.whatsapp.com/send?text=https://muathye.com/snippets/2023-09-03-git-sync-local-branches-with-remote" target="_blank"><img style="height: 32px; padding: 0 5px;" title="Share on whatsapp" src="/images/social/whatsapp.svg"/></a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://muathye.com/snippets/2023-09-03-git-sync-local-branches-with-remote" target="_blank"><img style="height: 32px; padding: 0 5px;" title="Share on facebook" src="/images/social/facebook.svg" /></a>
+</div>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Disable composer https on a project.]]></title>
+            <link>https://muathye.com/snippets/2023-08-03-disable-composer-https-on-project</link>
+            <guid>https://muathye.com/snippets/2023-08-03-disable-composer-https-on-project</guid>
+            <pubDate>Thu, 03 Aug 2023 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p><img src="/snippets/2023-08-03/disable-composer-https-on-project.png" alt="An image"></p>
+<p><a href="https://ray.so/#code=ewogICAgIm5hbWUiOiAibGFyYXZlbC9sYXJhdmVsIiwKICAgIC8vIC4uLgogICAgImNvbmZpZyI6IHsKICAgICAgICAvLyAuLi4KICAgICAgICAiZGlzYWJsZS10bHMiOiB0cnVlLAogICAgICAgICJzZWN1cmUtaHR0cCI6IGZhbHNlCiAgICB9LAogICAgLy8gLi4uCn0K&amp;title=composer.json&amp;theme=breeze" target="_blank" rel="noreferrer">ray.so</a></p>
+<h1 id="disable-composer-https-on-a-project" tabindex="-1">Disable composer https on a project <a class="header-anchor" href="#disable-composer-https-on-a-project" aria-label="Permalink to &quot;Disable composer https on a project&quot;">&ZeroWidthSpace;</a></h1>
+<p>If your network does not work well with https, you can use following snippet:</p>
+<div class="language-json"><button title="Copy Code" class="copy"></button><span class="lang">json</span><pre v-pre class="shiki material-theme-palenight" ><code><span class="line"><span style="color: #89DDFF">{</span></span>
+<span class="line"><span style="color: #A6ACCD">    </span><span style="color: #89DDFF">&quot;</span><span style="color: #C792EA">name</span><span style="color: #89DDFF">&quot;</span><span style="color: #89DDFF">:</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">&quot;</span><span style="color: #C3E88D">laravel/laravel</span><span style="color: #89DDFF">&quot;</span><span style="color: #89DDFF">,</span></span>
+<span class="line"><span style="color: #A6ACCD">    </span><span style="color: #676E95; font-style: italic">// ...</span></span>
+<span class="line"><span style="color: #A6ACCD">    </span><span style="color: #89DDFF">&quot;</span><span style="color: #C792EA">config</span><span style="color: #89DDFF">&quot;</span><span style="color: #89DDFF">:</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">{</span></span>
+<span class="line"><span style="color: #A6ACCD">        </span><span style="color: #676E95; font-style: italic">// ...</span></span>
+<span class="line"><span style="color: #A6ACCD">        </span><span style="color: #89DDFF">&quot;</span><span style="color: #FFCB6B">disable-tls</span><span style="color: #89DDFF">&quot;</span><span style="color: #89DDFF">:</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">true,</span></span>
+<span class="line"><span style="color: #A6ACCD">        </span><span style="color: #89DDFF">&quot;</span><span style="color: #FFCB6B">secure-http</span><span style="color: #89DDFF">&quot;</span><span style="color: #89DDFF">:</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">false</span></span>
+<span class="line"><span style="color: #A6ACCD">    </span><span style="color: #89DDFF">},</span></span>
+<span class="line"><span style="color: #A6ACCD">    </span><span style="color: #676E95; font-style: italic">// ...</span></span>
+<span class="line"><span style="color: #89DDFF">}</span></span></code></pre>
+</div><div style="display: flex;justify-content: end;">
+<a href="https://twitter.com/intent/tweet?url=https://muathye.com/snippets/2023-08-03-disable-composer-https-on-project&text=Drop All Tables Of A Database" target="_blank"><img style="height: 32px; padding: 0 5px;" title="Share on twitter" src="/images/social/twitter.svg" /></a>
+<a href="https://api.whatsapp.com/send?text=https://muathye.com/snippets/2023-08-03-disable-composer-https-on-project" target="_blank"><img style="height: 32px; padding: 0 5px;" title="Share on whatsapp" src="/images/social/whatsapp.svg"/></a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://muathye.com/snippets/2023-08-03-disable-composer-https-on-project" target="_blank"><img style="height: 32px; padding: 0 5px;" title="Share on facebook" src="/images/social/facebook.svg" /></a>
 </div>
 ]]></content:encoded>
         </item>
@@ -3536,6 +3417,7 @@ modify the exported  <code>App\Http\Requests\Auth\LoginRequest</code> from <code
             <title><![CDATA[Drop All Constraints From All Tables Of A Database]]></title>
             <link>https://muathye.com/snippets/2023-05-25-drop-all-constraints-from-all-tables-of-a-database</link>
             <guid>https://muathye.com/snippets/2023-05-25-drop-all-constraints-from-all-tables-of-a-database</guid>
+            <pubDate>Thu, 25 May 2023 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p><img src="/snippets/2023-05-25/drop-all-constraints-from-all-tables-of-a-database.svg" alt="An image"></p>
 <p><a href="https://ray.so/#code=REVDTEFSRSBAc3FsIE5WQVJDSEFSKE1BWCk7ClNFVCBAc3FsID0gTicnOwoKU0VMRUNUIEBzcWwgPSBAc3FsICsgTicKICBBTFRFUiBUQUJMRSAnICsgUVVPVEVOQU1FKHMubmFtZSkgKyBOJy4nCiAgKyBRVU9URU5BTUUodC5uYW1lKSArIE4nIERST1AgQ09OU1RSQUlOVCAnCiAgKyBRVU9URU5BTUUoYy5uYW1lKSArICc7JwpGUk9NIHN5cy5vYmplY3RzIEFTIGMKSU5ORVIgSk9JTiBzeXMudGFibGVzIEFTIHQKT04gYy5wYXJlbnRfb2JqZWN0X2lkID0gdC5bb2JqZWN0X2lkXQpJTk5FUiBKT0lOIHN5cy5zY2hlbWFzIEFTIHMgCk9OIHQuW3NjaGVtYV9pZF0gPSBzLltzY2hlbWFfaWRdCldIRVJFIGMuW3R5cGVdIElOICgnRCcsJ0MnLCdGJywnUEsnLCdVUScpCk9SREVSIEJZIGMuW3R5cGVdOwoKUFJJTlQgQHNxbDsKRVhFQyBzeXMuc3BfZXhlY3V0ZXNxbCBAc3FsOw&amp;width=708&amp;theme=sunset&amp;title=Drop+all+constraints+from+all+tables+of+a+database" target="_blank" rel="noreferrer">ray.so</a></p>
 <h1 id="drop-all-constraints-from-all-tables-of-a-database" tabindex="-1">Drop All Constraints From All Tables Of A Database <a class="header-anchor" href="#drop-all-constraints-from-all-tables-of-a-database" aria-label="Permalink to &quot;Drop All Constraints From All Tables Of A Database&quot;">&ZeroWidthSpace;</a></h1>
@@ -3570,6 +3452,7 @@ modify the exported  <code>App\Http\Requests\Auth\LoginRequest</code> from <code
             <title><![CDATA[Drop All Tables Of A Database]]></title>
             <link>https://muathye.com/snippets/2023-05-25-drop-all-tables-of-a-database</link>
             <guid>https://muathye.com/snippets/2023-05-25-drop-all-tables-of-a-database</guid>
+            <pubDate>Thu, 25 May 2023 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p><img src="/snippets/2023-05-25/drop-all-tables-of-a-database.svg" alt="An image"></p>
 <p><a href="https://ray.so/#code=REVDTEFSRSBAc3FsIE5WQVJDSEFSKG1heCk9JycKClNFTEVDVCBAc3FsICs9ICcgRHJvcCB0YWJsZSAnICsgUVVPVEVOQU1FKFRBQkxFX1NDSEVNQSkgKyAnLicrIFFVT1RFTkFNRShUQUJMRV9OQU1FKSArICc7ICcKRlJPTSAgIElORk9STUFUSU9OX1NDSEVNQS5UQUJMRVMKV0hFUkUgIFRBQkxFX1RZUEUgPSAnQkFTRSBUQUJMRScKCkV4ZWMgU3BfZXhlY3V0ZXNxbCBAc3Fs&amp;width=708&amp;theme=sunset&amp;title=Drop+all+tables+of+a+database" target="_blank" rel="noreferrer">ray.so</a></p>
 <h1 id="drop-all-tables-of-a-database" tabindex="-1">Drop All Tables Of A Database <a class="header-anchor" href="#drop-all-tables-of-a-database" aria-label="Permalink to &quot;Drop All Tables Of A Database&quot;">&ZeroWidthSpace;</a></h1>
@@ -3592,54 +3475,185 @@ modify the exported  <code>App\Http\Requests\Auth\LoginRequest</code> from <code
 ]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Disable composer https on a project.]]></title>
-            <link>https://muathye.com/snippets/2023-08-03-disable-composer-https-on-project</link>
-            <guid>https://muathye.com/snippets/2023-08-03-disable-composer-https-on-project</guid>
-            <content:encoded><![CDATA[<p><img src="/snippets/2023-08-03/disable-composer-https-on-project.png" alt="An image"></p>
-<p><a href="https://ray.so/#code=ewogICAgIm5hbWUiOiAibGFyYXZlbC9sYXJhdmVsIiwKICAgIC8vIC4uLgogICAgImNvbmZpZyI6IHsKICAgICAgICAvLyAuLi4KICAgICAgICAiZGlzYWJsZS10bHMiOiB0cnVlLAogICAgICAgICJzZWN1cmUtaHR0cCI6IGZhbHNlCiAgICB9LAogICAgLy8gLi4uCn0K&amp;title=composer.json&amp;theme=breeze" target="_blank" rel="noreferrer">ray.so</a></p>
-<h1 id="disable-composer-https-on-a-project" tabindex="-1">Disable composer https on a project <a class="header-anchor" href="#disable-composer-https-on-a-project" aria-label="Permalink to &quot;Disable composer https on a project&quot;">&ZeroWidthSpace;</a></h1>
-<p>If your network does not work well with https, you can use following snippet:</p>
-<div class="language-json"><button title="Copy Code" class="copy"></button><span class="lang">json</span><pre v-pre class="shiki material-theme-palenight" ><code><span class="line"><span style="color: #89DDFF">{</span></span>
-<span class="line"><span style="color: #A6ACCD">    </span><span style="color: #89DDFF">&quot;</span><span style="color: #C792EA">name</span><span style="color: #89DDFF">&quot;</span><span style="color: #89DDFF">:</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">&quot;</span><span style="color: #C3E88D">laravel/laravel</span><span style="color: #89DDFF">&quot;</span><span style="color: #89DDFF">,</span></span>
-<span class="line"><span style="color: #A6ACCD">    </span><span style="color: #676E95; font-style: italic">// ...</span></span>
-<span class="line"><span style="color: #A6ACCD">    </span><span style="color: #89DDFF">&quot;</span><span style="color: #C792EA">config</span><span style="color: #89DDFF">&quot;</span><span style="color: #89DDFF">:</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">{</span></span>
-<span class="line"><span style="color: #A6ACCD">        </span><span style="color: #676E95; font-style: italic">// ...</span></span>
-<span class="line"><span style="color: #A6ACCD">        </span><span style="color: #89DDFF">&quot;</span><span style="color: #FFCB6B">disable-tls</span><span style="color: #89DDFF">&quot;</span><span style="color: #89DDFF">:</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">true,</span></span>
-<span class="line"><span style="color: #A6ACCD">        </span><span style="color: #89DDFF">&quot;</span><span style="color: #FFCB6B">secure-http</span><span style="color: #89DDFF">&quot;</span><span style="color: #89DDFF">:</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">false</span></span>
-<span class="line"><span style="color: #A6ACCD">    </span><span style="color: #89DDFF">},</span></span>
-<span class="line"><span style="color: #A6ACCD">    </span><span style="color: #676E95; font-style: italic">// ...</span></span>
-<span class="line"><span style="color: #89DDFF">}</span></span></code></pre>
-</div><div style="display: flex;justify-content: end;">
-<a href="https://twitter.com/intent/tweet?url=https://muathye.com/snippets/2023-08-03-disable-composer-https-on-project&text=Drop All Tables Of A Database" target="_blank"><img style="height: 32px; padding: 0 5px;" title="Share on twitter" src="/images/social/twitter.svg" /></a>
-<a href="https://api.whatsapp.com/send?text=https://muathye.com/snippets/2023-08-03-disable-composer-https-on-project" target="_blank"><img style="height: 32px; padding: 0 5px;" title="Share on whatsapp" src="/images/social/whatsapp.svg"/></a>
-<a href="https://www.facebook.com/sharer/sharer.php?u=https://muathye.com/snippets/2023-08-03-disable-composer-https-on-project" target="_blank"><img style="height: 32px; padding: 0 5px;" title="Share on facebook" src="/images/social/facebook.svg" /></a>
+            <title><![CDATA[How to Zip or Unzip Files From the Linux Terminal]]></title>
+            <link>https://muathye.com/snippets/2023-05-23-how-to-zip-or-unzip-files-from-the-linux-terminal</link>
+            <guid>https://muathye.com/snippets/2023-05-23-how-to-zip-or-unzip-files-from-the-linux-terminal</guid>
+            <pubDate>Tue, 23 May 2023 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p><img src="/snippets/2023-05-23/how-to-zip-or-unzip-files-from-the-linux-terminal.png" alt="An image"></p>
+<p><a href="https://chalk.ist" target="_blank" rel="noreferrer">chalk.ist</a></p>
+<h1 id="how-to-zip-or-unzip-files-from-the-linux-terminal" tabindex="-1">How to Zip or Unzip Files From the Linux Terminal <a class="header-anchor" href="#how-to-zip-or-unzip-files-from-the-linux-terminal" aria-label="Permalink to &quot;How to Zip or Unzip Files From the Linux Terminal&quot;">&ZeroWidthSpace;</a></h1>
+<p>Compress all files of blog directory</p>
+<div class="language-bat"><button title="Copy Code" class="copy"></button><span class="lang">bat</span><pre v-pre class="shiki material-theme-palenight" ><code><span class="line"><span style="color: #A6ACCD">zip -r blog.zip blog</span></span></code></pre>
+</div><p>Uncompress blog.zip to a directory to blog directory</p>
+<div class="language-bat"><button title="Copy Code" class="copy"></button><span class="lang">bat</span><pre v-pre class="shiki material-theme-palenight" ><code><span class="line"><span style="color: #A6ACCD">unzip -q blog.zip -d ./blog</span></span></code></pre>
+</div><div class="info custom-block"><p class="custom-block-title">INFO</p>
+<p>for more see: <a href="https://www.howtogeek.com/414082/how-to-zip-or-unzip-files-from-the-linux-terminal/" target="_blank" rel="noreferrer">How to Zip or Unzip Files From the Linux Terminal</a></p>
+</div>
+<div style="display: flex;justify-content: end;">
+<a href="https://twitter.com/intent/tweet?url=https://muathye.com/snippets/2023-05-23-how-to-zip-or-unzip-files-from-the-linux-terminal&text=How to Zip or Unzip Files From the Linux Terminal" target="_blank"><img style="height: 32px; padding: 0 5px;" title="Share on twitter" src="/images/social/twitter.svg" /></a>
+<a href="https://api.whatsapp.com/send?text=https://muathye.com/snippets/2023-05-23-how-to-zip-or-unzip-files-from-the-linux-terminal" target="_blank"><img style="height: 32px; padding: 0 5px;" title="Share on whatsapp" src="/images/social/whatsapp.svg"/></a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://muathye.com/snippets/2023-05-23-how-to-zip-or-unzip-files-from-the-linux-terminal" target="_blank"><img style="height: 32px; padding: 0 5px;" title="Share on facebook" src="/images/social/facebook.svg" /></a>
 </div>
 ]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Git Sync Local Branches With Remote.]]></title>
-            <link>https://muathye.com/snippets/2023-09-03-git-sync-local-branches-with-remote</link>
-            <guid>https://muathye.com/snippets/2023-09-03-git-sync-local-branches-with-remote</guid>
-            <content:encoded><![CDATA[<p><img src="/snippets/2023-09-03/git-sync-local-branches-with-remote.png" alt="An image"></p>
-<p><a href="https://ray.so/#code=Z2l0IGZldGNoIC0tcHJ1bmU&amp;title=Git+fetch&amp;theme=sunset&amp;language=powershell" target="_blank" rel="noreferrer">ray.so</a></p>
-<h1 id="git-sync-local-branches-with-remote" tabindex="-1">Git Sync Local Branches With Remote <a class="header-anchor" href="#git-sync-local-branches-with-remote" aria-label="Permalink to &quot;Git Sync Local Branches With Remote&quot;">&ZeroWidthSpace;</a></h1>
-<p>The git fetch --prune command is used in the Git version control system to update your local repository with changes from a remote repository while also removing any references to remote branches that have been deleted on the remote.</p>
-<div class="language-sh"><button title="Copy Code" class="copy"></button><span class="lang">sh</span><pre v-pre class="shiki material-theme-palenight" ><code><span class="line"><span style="color: #FFCB6B">git</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">fetch</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">--prune</span></span></code></pre>
-</div><p>I have the following local branches:</p>
-<p><img src="/snippets/2023-09-03/local-branches-before-git-fetch-prune.png" alt="An image"></p>
-<p>While remote branches are:</p>
-<p><img src="/snippets/2023-09-03/remote-branches.png" alt="An image"></p>
-<p>Now, the magic moment: When you use git fetch --prune:</p>
-<p><img src="/snippets/2023-09-03/when-git-fetch-prune.png" alt="An image"></p>
-<p>Observe how local branches are now synchronized with the remote:</p>
-<p><img src="/snippets/2023-09-03/local-branches-after-git-fetch-prune.png" alt="An image"></p>
-<p>That's the secret recipe—keeping things neat and tidy in your local repo 😉.</p>
-<div style="display: flex;justify-content: end;">
-<a href="https://twitter.com/intent/tweet?url=https://muathye.com/snippets/2023-09-03-git-sync-local-branches-with-remote&text=Drop All Tables Of A Database" target="_blank"><img style="height: 32px; padding: 0 5px;" title="Share on twitter" src="/images/social/twitter.svg" /></a>
-<a href="https://api.whatsapp.com/send?text=https://muathye.com/snippets/2023-09-03-git-sync-local-branches-with-remote" target="_blank"><img style="height: 32px; padding: 0 5px;" title="Share on whatsapp" src="/images/social/whatsapp.svg"/></a>
-<a href="https://www.facebook.com/sharer/sharer.php?u=https://muathye.com/snippets/2023-09-03-git-sync-local-branches-with-remote" target="_blank"><img style="height: 32px; padding: 0 5px;" title="Share on facebook" src="/images/social/facebook.svg" /></a>
+            <title><![CDATA[Convert png and jpg to webp]]></title>
+            <link>https://muathye.com/snippets/2023-05-21-convert-png-and-jpg-to-webp</link>
+            <guid>https://muathye.com/snippets/2023-05-21-convert-png-and-jpg-to-webp</guid>
+            <pubDate>Sun, 21 May 2023 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p><img src="/snippets/2023-05-21/convert-png-and-jpg-to-webp.png" alt="An image"></p>
+<p><a href="https://chalk.ist" target="_blank" rel="noreferrer">chalk.ist</a></p>
+<h1 id="convert-png-and-jpg-to-webp" tabindex="-1">Convert png and jpg to webp <a class="header-anchor" href="#convert-png-and-jpg-to-webp" aria-label="Permalink to &quot;Convert png and jpg to webp&quot;">&ZeroWidthSpace;</a></h1>
+<p>This is a command written in a batch file or command prompt for Windows operating system.</p>
+<p>The command starts with a &quot;for&quot; loop that loops through all files in the current directory that have a &quot;.png&quot;, &quot;.jpg&quot; or &quot;.jpeg&quot; extension.</p>
+<p>For each file that matches this criteria, the command uses the &quot;cwebp&quot; tool to convert the file to the WebP image format with a quality level of 80.</p>
+<p>The output file is named using the original file name (without the &quot;.png&quot;, &quot;.jpg&quot; or &quot;.jpeg&quot; extension) and with a &quot;.webp&quot; extension.</p>
+<p>So essentially, this command is converting all PNG , JPG or JPEG image files in the current directory to WebP format with a quality level of 80.</p>
+<div class="tip custom-block"><p class="custom-block-title">Download link</p>
+<p>Use this link to download the <a href="https://developers.google.com/speed/webp/docs/precompiled" target="_blank" rel="noreferrer">cwebp</a> tool.</p>
 </div>
-]]></content:encoded>
+<p>Convert png to webp</p>
+<div class="language-bat"><button title="Copy Code" class="copy"></button><span class="lang">bat</span><pre v-pre class="shiki material-theme-palenight" ><code><span class="line"><span style="color: #89DDFF; font-style: italic">for</span><span style="color: #F07178"> </span><span style="color: #89DDFF; font-style: italic">%%</span><span style="color: #A6ACCD; font-style: italic">i</span><span style="color: #F07178"> </span><span style="color: #89DDFF; font-style: italic">in</span><span style="color: #F07178"> </span><span style="color: #89DDFF">(</span><span style="color: #F07178">*.png</span><span style="color: #89DDFF">)</span><span style="color: #F07178"> </span><span style="color: #89DDFF; font-style: italic">do</span><span style="color: #F07178"> cwebp -q </span><span style="color: #F78C6C">80</span><span style="color: #F07178"> </span><span style="color: #89DDFF">&quot;</span><span style="color: #89DDFF; font-style: italic">%%</span><span style="color: #A6ACCD; font-style: italic">i</span><span style="color: #89DDFF">&quot;</span><span style="color: #F07178"> -o </span><span style="color: #89DDFF">&quot;</span><span style="color: #89DDFF; font-style: italic">%%</span><span style="color: #A6ACCD; font-style: italic">~ni</span><span style="color: #C3E88D">.webp</span><span style="color: #89DDFF">&quot;</span></span></code></pre>
+</div><p>Convert jpg to webp</p>
+<div class="language-bat"><button title="Copy Code" class="copy"></button><span class="lang">bat</span><pre v-pre class="shiki material-theme-palenight" ><code><span class="line"><span style="color: #89DDFF; font-style: italic">for</span><span style="color: #F07178"> </span><span style="color: #89DDFF; font-style: italic">%%</span><span style="color: #A6ACCD; font-style: italic">i</span><span style="color: #F07178"> </span><span style="color: #89DDFF; font-style: italic">in</span><span style="color: #F07178"> </span><span style="color: #89DDFF">(</span><span style="color: #F07178">*.jpg</span><span style="color: #89DDFF">)</span><span style="color: #F07178"> </span><span style="color: #89DDFF; font-style: italic">do</span><span style="color: #F07178"> cwebp -q </span><span style="color: #F78C6C">80</span><span style="color: #F07178"> </span><span style="color: #89DDFF">&quot;</span><span style="color: #89DDFF; font-style: italic">%%</span><span style="color: #A6ACCD; font-style: italic">i</span><span style="color: #89DDFF">&quot;</span><span style="color: #F07178"> -o </span><span style="color: #89DDFF">&quot;</span><span style="color: #89DDFF; font-style: italic">%%</span><span style="color: #A6ACCD; font-style: italic">~ni</span><span style="color: #C3E88D">.webp</span><span style="color: #89DDFF">&quot;</span></span></code></pre>
+</div><p>Convert jpeg to webp</p>
+<div class="language-bat"><button title="Copy Code" class="copy"></button><span class="lang">bat</span><pre v-pre class="shiki material-theme-palenight" ><code><span class="line"><span style="color: #89DDFF; font-style: italic">for</span><span style="color: #F07178"> </span><span style="color: #89DDFF; font-style: italic">%%</span><span style="color: #A6ACCD; font-style: italic">i</span><span style="color: #F07178"> </span><span style="color: #89DDFF; font-style: italic">in</span><span style="color: #F07178"> </span><span style="color: #89DDFF">(</span><span style="color: #F07178">*.jpeg</span><span style="color: #89DDFF">)</span><span style="color: #F07178"> </span><span style="color: #89DDFF; font-style: italic">do</span><span style="color: #F07178"> cwebp -q </span><span style="color: #F78C6C">80</span><span style="color: #F07178"> </span><span style="color: #89DDFF">&quot;</span><span style="color: #89DDFF; font-style: italic">%%</span><span style="color: #A6ACCD; font-style: italic">i</span><span style="color: #89DDFF">&quot;</span><span style="color: #F07178"> -o </span><span style="color: #89DDFF">&quot;</span><span style="color: #89DDFF; font-style: italic">%%</span><span style="color: #A6ACCD; font-style: italic">~ni</span><span style="color: #C3E88D">.webp</span><span style="color: #89DDFF">&quot;</span></span></code></pre>
+</div><p>Convert png , jpg and jpeg to webp</p>
+<div class="language-bat"><button title="Copy Code" class="copy"></button><span class="lang">bat</span><pre v-pre class="shiki material-theme-palenight" ><code><span class="line"><span style="color: #89DDFF; font-style: italic">for</span><span style="color: #F07178"> </span><span style="color: #89DDFF; font-style: italic">%%</span><span style="color: #A6ACCD; font-style: italic">i</span><span style="color: #F07178"> </span><span style="color: #89DDFF; font-style: italic">in</span><span style="color: #F07178"> </span><span style="color: #89DDFF">(</span><span style="color: #F07178">*.png</span><span style="color: #89DDFF">)</span><span style="color: #F07178"> </span><span style="color: #89DDFF; font-style: italic">do</span><span style="color: #F07178"> cwebp -q </span><span style="color: #F78C6C">80</span><span style="color: #F07178"> </span><span style="color: #89DDFF">&quot;</span><span style="color: #89DDFF; font-style: italic">%%</span><span style="color: #A6ACCD; font-style: italic">i</span><span style="color: #89DDFF">&quot;</span><span style="color: #F07178"> -o </span><span style="color: #89DDFF">&quot;</span><span style="color: #89DDFF; font-style: italic">%%</span><span style="color: #A6ACCD; font-style: italic">~ni</span><span style="color: #C3E88D">.webp</span><span style="color: #89DDFF">&quot;</span></span>
+<span class="line"><span style="color: #89DDFF; font-style: italic">for</span><span style="color: #F07178"> </span><span style="color: #89DDFF; font-style: italic">%%</span><span style="color: #A6ACCD; font-style: italic">i</span><span style="color: #F07178"> </span><span style="color: #89DDFF; font-style: italic">in</span><span style="color: #F07178"> </span><span style="color: #89DDFF">(</span><span style="color: #F07178">*.jpg</span><span style="color: #89DDFF">)</span><span style="color: #F07178"> </span><span style="color: #89DDFF; font-style: italic">do</span><span style="color: #F07178"> cwebp -q </span><span style="color: #F78C6C">80</span><span style="color: #F07178"> </span><span style="color: #89DDFF">&quot;</span><span style="color: #89DDFF; font-style: italic">%%</span><span style="color: #A6ACCD; font-style: italic">i</span><span style="color: #89DDFF">&quot;</span><span style="color: #F07178"> -o </span><span style="color: #89DDFF">&quot;</span><span style="color: #89DDFF; font-style: italic">%%</span><span style="color: #A6ACCD; font-style: italic">~ni</span><span style="color: #C3E88D">.webp</span><span style="color: #89DDFF">&quot;</span></span>
+<span class="line"><span style="color: #89DDFF; font-style: italic">for</span><span style="color: #F07178"> </span><span style="color: #89DDFF; font-style: italic">%%</span><span style="color: #A6ACCD; font-style: italic">i</span><span style="color: #F07178"> </span><span style="color: #89DDFF; font-style: italic">in</span><span style="color: #F07178"> </span><span style="color: #89DDFF">(</span><span style="color: #F07178">*.jpeg</span><span style="color: #89DDFF">)</span><span style="color: #F07178"> </span><span style="color: #89DDFF; font-style: italic">do</span><span style="color: #F07178"> cwebp -q </span><span style="color: #F78C6C">80</span><span style="color: #F07178"> </span><span style="color: #89DDFF">&quot;</span><span style="color: #89DDFF; font-style: italic">%%</span><span style="color: #A6ACCD; font-style: italic">i</span><span style="color: #89DDFF">&quot;</span><span style="color: #F07178"> -o </span><span style="color: #89DDFF">&quot;</span><span style="color: #89DDFF; font-style: italic">%%</span><span style="color: #A6ACCD; font-style: italic">~ni</span><span style="color: #C3E88D">.webp</span><span style="color: #89DDFF">&quot;</span></span></code></pre>
+</div>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Retrieve Related Tables Of A Specific Table In Mysql]]></title>
+            <link>https://muathye.com/snippets/2023-05-16-retrieve-related-tables-of-a-specific-table-in-mysql</link>
+            <guid>https://muathye.com/snippets/2023-05-16-retrieve-related-tables-of-a-specific-table-in-mysql</guid>
+            <pubDate>Tue, 16 May 2023 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p><img src="/snippets/2023-05-16/retrieve-related-tables-of-a-specific-table-in-mysql.png" alt="An image"></p>
+<p><a href="https://chalk.ist" target="_blank" rel="noreferrer">chalk.ist</a></p>
+<h1 id="retrieve-related-tables-of-a-specific-table-in-mysql" tabindex="-1">Retrieve Related Tables Of A Specific Table In Mysql <a class="header-anchor" href="#retrieve-related-tables-of-a-specific-table-in-mysql" aria-label="Permalink to &quot;Retrieve Related Tables Of A Specific Table In Mysql&quot;">&ZeroWidthSpace;</a></h1>
+<p>You can retrieve related tables of a specific table in your mysql.</p>
+<div class="language-sql"><button title="Copy Code" class="copy"></button><span class="lang">sql</span><pre v-pre class="shiki material-theme-palenight" ><code><span class="line"><span style="color: #F78C6C">SELECT DISTINCT</span><span style="color: #A6ACCD"> TABLE_NAME</span></span>
+<span class="line"><span style="color: #F78C6C">FROM</span><span style="color: #A6ACCD"> INFORMATION_SCHEMA.KEY_COLUMN_USAGE</span></span>
+<span class="line"><span style="color: #F78C6C">WHERE</span><span style="color: #A6ACCD"> REFERENCED_TABLE_NAME </span><span style="color: #89DDFF">=</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">&#39;</span><span style="color: #C3E88D">your_table_name</span><span style="color: #89DDFF">&#39;</span></span>
+<span class="line"><span style="color: #F78C6C">AND</span><span style="color: #A6ACCD"> TABLE_SCHEMA </span><span style="color: #89DDFF">=</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">&#39;</span><span style="color: #C3E88D">your_database_name</span><span style="color: #89DDFF">&#39;</span><span style="color: #A6ACCD">;</span></span></code></pre>
+</div>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Export VSCode Extensions List]]></title>
+            <link>https://muathye.com/snippets/2023-04-17-export-vscode-extensions-list</link>
+            <guid>https://muathye.com/snippets/2023-04-17-export-vscode-extensions-list</guid>
+            <pubDate>Mon, 17 Apr 2023 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p><img src="/snippets/2023-04-17/export-vscode-extensions-list.png" alt="An image"></p>
+<p><a href="https://ray.so/#code=IyBJbiB2c29kZSB5b3UgY2FuIGV4cG9ydCB0aGUgZXh0ZW5zaW9uIGxpc3QgdG8gZmlsZQoKIyBmb3IgdGhlIGJsdWUgdnNjb2RlCmNvZGUgLS1saXN0LWV4dGVuc2lvbnMgPiBleHRlbnNpb25zLnR4dAoKIyBmb3IgdGhlIGdyZWVuIHZzY29kZQpjb2RlLWluc2lkZXJzIC0tbGlzdC1leHRlbnNpb25zID4gZXh0ZW5zaW9ucy50eHQ&amp;darkMode=true&amp;background=true&amp;title=export-vscode-extensions-list.bat&amp;language=powershell&amp;padding=64" target="_blank" rel="noreferrer">ray.so</a></p>
+<h1 id="export-vscode-extensions-list" tabindex="-1">Export VSCode Extensions List <a class="header-anchor" href="#export-vscode-extensions-list" aria-label="Permalink to &quot;Export VSCode Extensions List&quot;">&ZeroWidthSpace;</a></h1>
+<p>A command line to export the list of vscode extensions name.</p>
+<div class="language-sh"><button title="Copy Code" class="copy"></button><span class="lang">sh</span><pre v-pre class="shiki material-theme-palenight" ><code><span class="line"><span style="color: #676E95; font-style: italic"># In vsode you can export the extension list to file</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #676E95; font-style: italic"># for the blue vscode</span></span>
+<span class="line"><span style="color: #FFCB6B">code</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">--list-extensions</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">&gt;</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">extensions.txt</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #676E95; font-style: italic"># for the green vscode</span></span>
+<span class="line"><span style="color: #FFCB6B">code-insiders</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">--list-extensions</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">&gt;</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">extensions.txt</span></span></code></pre>
+</div>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Laravel Model Truncate]]></title>
+            <link>https://muathye.com/snippets/2023-04-15-laravel-model-truncate</link>
+            <guid>https://muathye.com/snippets/2023-04-15-laravel-model-truncate</guid>
+            <pubDate>Sat, 15 Apr 2023 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p><img src="/snippets/2023-04-15/laravel-model-truncate.png" alt="An image"></p>
+<p><a href="https://ray.so/#code=Ly8gVG8gdHJhbmNhdGUgKGVtcHR5KSB1c2VycyB0YWJsZQoKVXNlcjo6dHJ1bmNhdGUoKTs&amp;darkMode=true&amp;background=true&amp;title=laravel-model-truncate.php&amp;language=php&amp;padding=64" target="_blank" rel="noreferrer">ray.so</a></p>
+<h1 id="laravel-model-truncate" tabindex="-1">Laravel Model Truncate <a class="header-anchor" href="#laravel-model-truncate" aria-label="Permalink to &quot;Laravel Model Truncate&quot;">&ZeroWidthSpace;</a></h1>
+<p>Remove all records and reset id incremental column identity.</p>
+<div class="language-sh"><button title="Copy Code" class="copy"></button><span class="lang">sh</span><pre v-pre class="shiki material-theme-palenight" ><code><span class="line"><span style="color: #FFCB6B">//</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">To</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">truncate</span><span style="color: #A6ACCD"> (empty) users table</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #82AAFF">User::truncate</span><span style="color: #89DDFF">();</span></span></code></pre>
+</div>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Array destructuring in PHP]]></title>
+            <link>https://muathye.com/snippets/2023-03-19-array-destructuring-in-php</link>
+            <guid>https://muathye.com/snippets/2023-03-19-array-destructuring-in-php</guid>
+            <pubDate>Sun, 19 Mar 2023 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p><img src="/snippets/2023-03-19/array-destructuring-in-php.png" alt="An image"></p>
+<p><a href="https://ray.so/#code=PD9waHAKLyoqIGdpdGh1Yi5jb20vbXVhdGgteWUgKi8KClskaGksICRuYW1lXSA9IFsnSGVsbG8nLCAnTXVhdGgnXTsKCmVjaG8gJGhpIC4gJyAnIC4gJG5hbWU7IC8vIEhlbGxvIE11YXRo&amp;darkMode=true&amp;background=true&amp;title=array-destructuring-in-php.php&amp;language=php&amp;padding=64" target="_blank" rel="noreferrer">ray.so</a></p>
+<h1 id="array-destructuring-in-php" tabindex="-1">Array destructuring in PHP <a class="header-anchor" href="#array-destructuring-in-php" aria-label="Permalink to &quot;Array destructuring in PHP&quot;">&ZeroWidthSpace;</a></h1>
+<p>On PHP you can destructure the array into separate variables.</p>
+<p>Note that the word is &quot;destructure&quot;, not &quot;destruction&quot; — that's something different</p>
+<div class="language-php"><button title="Copy Code" class="copy"></button><span class="lang">php</span><pre v-pre class="shiki material-theme-palenight" ><code><span class="line"><span style="color: #89DDFF">&lt;?</span><span style="color: #A6ACCD">php</span></span>
+<span class="line"><span style="color: #676E95; font-style: italic">/** github.com/muath-ye */</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #89DDFF">[$</span><span style="color: #A6ACCD">hi</span><span style="color: #89DDFF">,</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">$</span><span style="color: #A6ACCD">name</span><span style="color: #89DDFF">]</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">=</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">[</span><span style="color: #89DDFF">&#39;</span><span style="color: #C3E88D">Hello</span><span style="color: #89DDFF">&#39;</span><span style="color: #89DDFF">,</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">&#39;</span><span style="color: #C3E88D">Muath</span><span style="color: #89DDFF">&#39;</span><span style="color: #89DDFF">];</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #82AAFF">echo</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">$</span><span style="color: #A6ACCD">hi </span><span style="color: #89DDFF">.</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">&#39;</span><span style="color: #C3E88D"> </span><span style="color: #89DDFF">&#39;</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">.</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">$</span><span style="color: #A6ACCD">name</span><span style="color: #89DDFF">;</span><span style="color: #A6ACCD"> </span><span style="color: #676E95; font-style: italic">// Hello Muath</span></span></code></pre>
+</div>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[List all developers on a project in Git]]></title>
+            <link>https://muathye.com/snippets/2023-03-19-git-developers-list</link>
+            <guid>https://muathye.com/snippets/2023-03-19-git-developers-list</guid>
+            <pubDate>Sun, 19 Mar 2023 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p><img src="/snippets/2023-03-19/git-developers-list.png" alt="An image"></p>
+<p><a href="https://ray.so/#code=IyBMaXN0IGFsbCBkZXZlbG9wZXJzIG9uIGEgcHJvamVjdCBpbiBHaXQKCmdpdCBsb2cgLS1wcmV0dHk9IiVhbiAlYWUlbiVjbiAlY2UiIHwgc29ydCAtdQ&amp;darkMode=true&amp;background=true&amp;title=git-developers-list.bat&amp;language=powershell&amp;padding=64" target="_blank" rel="noreferrer">ray.so</a></p>
+<h1 id="list-all-developers-on-a-project-in-git" tabindex="-1">List all developers on a project in Git <a class="header-anchor" href="#list-all-developers-on-a-project-in-git" aria-label="Permalink to &quot;List all developers on a project in Git&quot;">&ZeroWidthSpace;</a></h1>
+<p>A command line for git to list all developers of a project.</p>
+<div class="language-sh"><button title="Copy Code" class="copy"></button><span class="lang">sh</span><pre v-pre class="shiki material-theme-palenight" ><code><span class="line"><span style="color: #FFCB6B">git</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">log</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">--pretty=</span><span style="color: #89DDFF">&quot;</span><span style="color: #C3E88D">%an %ae%n%cn %ce</span><span style="color: #89DDFF">&quot;</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">|</span><span style="color: #A6ACCD"> </span><span style="color: #FFCB6B">sort</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">-u</span></span></code></pre>
+</div>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Import DB Using Command Line]]></title>
+            <link>https://muathye.com/snippets/2023-03-19-import-db-using-command-line</link>
+            <guid>https://muathye.com/snippets/2023-03-19-import-db-using-command-line</guid>
+            <pubDate>Sun, 19 Mar 2023 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p><img src="/snippets/2023-03-19/import-db-using-command-line.png" alt="An image"></p>
+<p><a href="https://ray.so/#code=IyBpbXBvcnQgZGIgdXNpbmcgY29tbWFuZCBsaW5lCm15c3FsIC11IHVzZXJuYW1lIC1wIGRhdGFiYXNlX25hbWUgPCBmaWxlLnNxbA&amp;darkMode=true&amp;background=true&amp;title=import-db-using-command-line.bat&amp;language=powershell&amp;padding=64" target="_blank" rel="noreferrer">ray.so</a></p>
+<h1 id="import-db-using-command-line" tabindex="-1">Import DB Using Command Line <a class="header-anchor" href="#import-db-using-command-line" aria-label="Permalink to &quot;Import DB Using Command Line&quot;">&ZeroWidthSpace;</a></h1>
+<p>A command line for mysql to import db from any sql file.</p>
+<div class="language-sh"><button title="Copy Code" class="copy"></button><span class="lang">sh</span><pre v-pre class="shiki material-theme-palenight" ><code><span class="line"><span style="color: #676E95; font-style: italic"># import db using command line</span></span>
+<span class="line"><span style="color: #FFCB6B">mysql</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">-u</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">username</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">-p</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">database_name</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">&lt;</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">file.sql</span></span></code></pre>
+</div>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Git Update Last Commit Message]]></title>
+            <link>https://muathye.com/snippets/2023-03-01-git-update-last-commit-message</link>
+            <guid>https://muathye.com/snippets/2023-03-01-git-update-last-commit-message</guid>
+            <pubDate>Wed, 01 Mar 2023 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p><img src="/snippets/2023-03-01/git-update-last-commit-message.png" alt="An image"></p>
+<p><a href="https://ray.so/#code=Z2l0IGNvbW1pdCAtLWFtZW5kIC1tICJVcGRhdGVkIG1lc3NhZ2Ui&amp;darkMode=true&amp;background=true&amp;title=git-update-last-commit-message.bat&amp;language=shell&amp;padding=64" target="_blank" rel="noreferrer">ray.so</a></p>
+<h1 id="git-update-last-commit-message" tabindex="-1">Git Update Last Commit Message <a class="header-anchor" href="#git-update-last-commit-message" aria-label="Permalink to &quot;Git Update Last Commit Message&quot;">&ZeroWidthSpace;</a></h1>
+<p>If you want to update the message of your last commit, because either it didn't look conventional or meaningful, use this command to edit it:</p>
+<div class="language-sh"><button title="Copy Code" class="copy"></button><span class="lang">sh</span><pre v-pre class="shiki material-theme-palenight" ><code><span class="line"><span style="color: #FFCB6B">git</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">commit</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">--amend</span><span style="color: #A6ACCD"> </span><span style="color: #C3E88D">-m</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">&quot;</span><span style="color: #C3E88D">Updated message</span><span style="color: #89DDFF">&quot;</span></span></code></pre>
+</div>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Extend Laravel Validator Morph Exists]]></title>
+            <link>https://muathye.com/snippets/2023-02-14-extend-laravel-validator-morph-exists</link>
+            <guid>https://muathye.com/snippets/2023-02-14-extend-laravel-validator-morph-exists</guid>
+            <pubDate>Tue, 14 Feb 2023 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<p><img src="/snippets/2023-02-14/extend-laravel-validator-morph-exists.png" alt="An image"></p>
+<p><a href="https://ray.so/#code=PD9waHAKLyogdXNlZnVsIHZhbGlkYXRvciBleHRlbmQgYG1vcnBoX2V4aXN0c2AgKi8KVmFsaWRhdG9yOjpleHRlbmQoJ21vcnBoX2V4aXN0cycsIGZ1bmN0aW9uICgkYXR0cmlidXRlLCAkdmFsdWUsICRwYXJhbWV0ZXJzLCAkdmFsaWRhdG9yKQp7CglpZiAoIW9iamVjdFR5cGUgPSBBcnI6OmdldCgkdmFsaWRhdG9yLT5nZXREYXRhKCksICRwYXJhbWV0ZXJzWzBdLCBmYWxzZSkpIHsKCQlyZXR1cm4gZmFsc2U7Cgl9CgkvLyBUaGUgbW9kZWxzIG5hbWVzcGFjZS4KCXJldHVybiAhZW1wdHkocmVzb2x2ZSgnQXBwXFxNb2RlbHNcXCcuJG9iamVjdFR5cGUpLT5maW5kKCR2YWx1ZSkpOwp9KTsKCi8qIFVzYWdlIG9uIGFueSB2YWxpZGF0b3IgcnVsZXMgb3IgRm9ybVJlcXVlc3QgKi8KcHVibGljIGZ1bmN0aW9uIHJ1bGVzKCkKewoJcmV0dXJuIFsKCQknY29tbWVudGFibGVfaWQnID0-IFsncmVxdWlyZWQnLCAnbW9ycGhfZXhpc3RzOmNvbW1lbnRhYmxlX3R5cGUnXSwKCQknY29tbWVudGFibGVfdHlwZScgPT4gWydyZXF1aXJlZCcsICdzdHJpbmcnXSwKCV07Cn0KCi8qKiBnaXRodWIuY29tL211YXRoLXllICov&amp;darkMode=true&amp;background=true&amp;title=extend-laravel-validator-morph-exists.php&amp;language=php&amp;padding=64&amp;width=920" target="_blank" rel="noreferrer">ray.so</a></p>
+<h1 id="extend-laravel-validator-morph-exists" tabindex="-1">Extend Laravel Validator Morph Exists <a class="header-anchor" href="#extend-laravel-validator-morph-exists" aria-label="Permalink to &quot;Extend Laravel Validator Morph Exists&quot;">&ZeroWidthSpace;</a></h1>
+<p>A laravel validator extends validator with morph_exists.</p>
+<p>Useful validator extend <code>morph_exists</code>.</p>
+<p>Put the following on <code>app/Http/Providers/AppServiceProvider.php</code> at <code>boot</code> method.</p>
+<div class="language-php"><button title="Copy Code" class="copy"></button><span class="lang">php</span><pre v-pre class="shiki material-theme-palenight" ><code><span class="line"><span style="color: #FFCB6B">Validator</span><span style="color: #89DDFF">::</span><span style="color: #82AAFF">extend</span><span style="color: #89DDFF">(</span><span style="color: #89DDFF">&#39;</span><span style="color: #C3E88D">morph_exists</span><span style="color: #89DDFF">&#39;</span><span style="color: #89DDFF">,</span><span style="color: #A6ACCD"> </span><span style="color: #C792EA">function</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">($</span><span style="color: #A6ACCD">attribute</span><span style="color: #89DDFF">,</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">$</span><span style="color: #A6ACCD">value</span><span style="color: #89DDFF">,</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">$</span><span style="color: #A6ACCD">parameters</span><span style="color: #89DDFF">,</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">$</span><span style="color: #A6ACCD">validator</span><span style="color: #89DDFF">)</span></span>
+<span class="line"><span style="color: #89DDFF">{</span></span>
+<span class="line"><span style="color: #A6ACCD">  </span><span style="color: #89DDFF; font-style: italic">if</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">(!</span><span style="color: #A6ACCD">objectType </span><span style="color: #89DDFF">=</span><span style="color: #A6ACCD"> </span><span style="color: #FFCB6B">Arr</span><span style="color: #89DDFF">::</span><span style="color: #82AAFF">get</span><span style="color: #89DDFF">($</span><span style="color: #A6ACCD">validator</span><span style="color: #89DDFF">-&gt;</span><span style="color: #82AAFF">getData</span><span style="color: #89DDFF">(),</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">$</span><span style="color: #A6ACCD">parameters</span><span style="color: #89DDFF">[</span><span style="color: #F78C6C">0</span><span style="color: #89DDFF">],</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">false))</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">{</span></span>
+<span class="line"><span style="color: #A6ACCD">    </span><span style="color: #89DDFF; font-style: italic">return</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">false;</span></span>
+<span class="line"><span style="color: #A6ACCD">  </span><span style="color: #89DDFF">}</span></span>
+<span class="line"><span style="color: #89DDFF">  </span><span style="color: #676E95; font-style: italic">// The models namespace.</span></span>
+<span class="line"><span style="color: #A6ACCD">  </span><span style="color: #89DDFF; font-style: italic">return</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">!</span><span style="color: #82AAFF">empty</span><span style="color: #89DDFF">(</span><span style="color: #82AAFF">resolve</span><span style="color: #89DDFF">(</span><span style="color: #89DDFF">&#39;</span><span style="color: #C3E88D">App</span><span style="color: #A6ACCD">\\</span><span style="color: #C3E88D">Models</span><span style="color: #A6ACCD">\\</span><span style="color: #89DDFF">&#39;.</span><span style="color: #89DDFF">$</span><span style="color: #A6ACCD">objectType</span><span style="color: #89DDFF">)-&gt;</span><span style="color: #82AAFF">find</span><span style="color: #89DDFF">($</span><span style="color: #A6ACCD">value</span><span style="color: #89DDFF">));</span></span>
+<span class="line"><span style="color: #89DDFF">});</span></span></code></pre>
+</div><p>Usage on any validator rules or FormRequest.</p>
+<div class="language-php"><button title="Copy Code" class="copy"></button><span class="lang">php</span><pre v-pre class="shiki material-theme-palenight" ><code><span class="line"><span style="color: #C792EA">public</span><span style="color: #A6ACCD"> </span><span style="color: #C792EA">function</span><span style="color: #A6ACCD"> </span><span style="color: #82AAFF">rules</span><span style="color: #89DDFF">()</span></span>
+<span class="line"><span style="color: #89DDFF">{</span></span>
+<span class="line"><span style="color: #A6ACCD">  </span><span style="color: #89DDFF; font-style: italic">return</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">[</span></span>
+<span class="line"><span style="color: #A6ACCD">    </span><span style="color: #89DDFF">&#39;</span><span style="color: #C3E88D">commentable_id</span><span style="color: #89DDFF">&#39;</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">=&gt;</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">[</span><span style="color: #89DDFF">&#39;</span><span style="color: #C3E88D">required</span><span style="color: #89DDFF">&#39;</span><span style="color: #89DDFF">,</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">&#39;</span><span style="color: #C3E88D">morph_exists:commentable_type</span><span style="color: #89DDFF">&#39;</span><span style="color: #89DDFF">],</span></span>
+<span class="line"><span style="color: #A6ACCD">    </span><span style="color: #89DDFF">&#39;</span><span style="color: #C3E88D">commentable_type</span><span style="color: #89DDFF">&#39;</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">=&gt;</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">[</span><span style="color: #89DDFF">&#39;</span><span style="color: #C3E88D">required</span><span style="color: #89DDFF">&#39;</span><span style="color: #89DDFF">,</span><span style="color: #A6ACCD"> </span><span style="color: #89DDFF">&#39;</span><span style="color: #C3E88D">string</span><span style="color: #89DDFF">&#39;</span><span style="color: #89DDFF">],</span></span>
+<span class="line"><span style="color: #A6ACCD">  </span><span style="color: #89DDFF">];</span></span>
+<span class="line"><span style="color: #89DDFF">}</span></span></code></pre>
+</div>]]></content:encoded>
         </item>
     </channel>
 </rss>
