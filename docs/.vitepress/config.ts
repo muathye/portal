@@ -3,7 +3,9 @@ import { writeFileSync } from 'fs'
 import { Feed } from 'feed'
 import { defineConfig, createContentLoader, type SiteConfig } from 'vitepress'
 import { withPwa } from '@vite-pwa/vitepress'
-import { genFeed } from './genFeed.js'
+import { GenerateRSS } from './GenerateRSS'
+// import dotenv from 'dotenv';
+// dotenv.config();
 
 export default withPwa(defineConfig({
     vite: {
@@ -145,8 +147,8 @@ export default withPwa(defineConfig({
             navigateFallback: '/',
         },
     },
-
-    // RSS
-    buildEnd: genFeed,
-    // ./RSS
+    buildEnd: GenerateRSS,
+    sitemap: {
+        hostname: process.env.APP_URL ?? ''
+    },
 }))

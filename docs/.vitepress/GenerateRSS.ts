@@ -4,9 +4,9 @@ import { Feed } from 'feed'
 import { createContentLoader, type SiteConfig } from 'vitepress'
 
 // TODO: use .env file for APP_URL
-const baseUrl = `https://muathye.com`
+const baseUrl = process.env.APP_URL ?? ''
 
-export async function genFeed(config: SiteConfig) {
+export async function GenerateRSS(config: SiteConfig) {
   const feed = new Feed({
     title: 'Muath Alsowadi - Web designer and developer',
     description: 'Founder of @open-sale. Co-founder of @YemenOpenSource. Passionate and highly skilled senior full-stack web developer proficient in HTML, CSS, JavaScript, Vue.js, PHP, SQL, Laravel, and API development, with a strong commitment to leveraging technology to create innovative solutions and positively impact the world.',
