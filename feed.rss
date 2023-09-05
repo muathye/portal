@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Muath Alsowadi - Web designer and developer</title>
-        <link></link>
+        <link>https://muathye.com</link>
         <description>Founder of @open-sale. Co-founder of @YemenOpenSource. Passionate and highly skilled senior full-stack web developer proficient in HTML, CSS, JavaScript, Vue.js, PHP, SQL, Laravel, and API development, with a strong commitment to leveraging technology to create innovative solutions and positively impact the world.</description>
-        <lastBuildDate>Tue, 05 Sep 2023 21:27:55 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 05 Sep 2023 21:38:54 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <image>
             <title>Muath Alsowadi - Web designer and developer</title>
             <url>https://muathye.com/images/muathye.png</url>
-            <link></link>
+            <link>https://muathye.com</link>
         </image>
         <copyright>Copyright (c) 2022-present, Muath Alsowadi</copyright>
         <item>
             <title><![CDATA[Exploring MySQL Command to Retrieve All Columns of All Tables with Available Options]]></title>
-            <link>/articles/2023-08-25-exploring-mysql-command-to-retrieve-all-columns-of-all-tables-with-available-options</link>
-            <guid>/articles/2023-08-25-exploring-mysql-command-to-retrieve-all-columns-of-all-tables-with-available-options</guid>
+            <link>https://muathye.com/articles/2023-08-25-exploring-mysql-command-to-retrieve-all-columns-of-all-tables-with-available-options</link>
+            <guid>https://muathye.com/articles/2023-08-25-exploring-mysql-command-to-retrieve-all-columns-of-all-tables-with-available-options</guid>
             <pubDate>Fri, 25 Aug 2023 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p><img src="/articles/2023-08-25/exploring-mysql-command-to-retrieve-all-columns-of-all-tables-with-available-options.webp" alt="An image"></p>
 <h1 id="exploring-mysql-command-to-retrieve-all-columns-of-all-tables-with-available-options" tabindex="-1">Exploring MySQL Command to Retrieve All Columns of All Tables with Available Options <a class="header-anchor" href="#exploring-mysql-command-to-retrieve-all-columns-of-all-tables-with-available-options" aria-label="Permalink to &quot;Exploring MySQL Command to Retrieve All Columns of All Tables with Available Options&quot;">&ZeroWidthSpace;</a></h1>
@@ -59,8 +59,8 @@
         </item>
         <item>
             <title><![CDATA[How to Create a Command-Line Password Generator with Node.js And Deploy it to npmjs]]></title>
-            <link>/articles/2023-08-13-hosting-nodejs-app-on-shared-hosting</link>
-            <guid>/articles/2023-08-13-hosting-nodejs-app-on-shared-hosting</guid>
+            <link>https://muathye.com/articles/2023-08-13-hosting-nodejs-app-on-shared-hosting</link>
+            <guid>https://muathye.com/articles/2023-08-13-hosting-nodejs-app-on-shared-hosting</guid>
             <pubDate>Sun, 13 Aug 2023 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p><img src="/articles/2023-05-22/muath-ye-password-generator.png" alt="An image"></p>
 <h1 id="how-to-create-a-command-line-password-generator-with-node-js-and-deploy-it-to-npmjs" tabindex="-1">How to Create a Command-Line Password Generator with Node.js And Deploy it to npmjs <a class="header-anchor" href="#how-to-create-a-command-line-password-generator-with-node-js-and-deploy-it-to-npmjs" aria-label="Permalink to &quot;How to Create a Command-Line Password Generator with Node.js And Deploy it to npmjs&quot;">&ZeroWidthSpace;</a></h1>
@@ -69,8 +69,8 @@
         </item>
         <item>
             <title><![CDATA[ChatGPT Prompt Engineering for Developers [Part 1/7] Introduction]]></title>
-            <link>/articles/2023-05-30-chatgpt-prompt-engineering-for-developers-part-1</link>
-            <guid>/articles/2023-05-30-chatgpt-prompt-engineering-for-developers-part-1</guid>
+            <link>https://muathye.com/articles/2023-05-30-chatgpt-prompt-engineering-for-developers-part-1</link>
+            <guid>https://muathye.com/articles/2023-05-30-chatgpt-prompt-engineering-for-developers-part-1</guid>
             <pubDate>Tue, 30 May 2023 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p><img src="/articles/2023-05-30/chatgpt-prompt-engineering-for-developers-part-1.webp" alt="An image"></p>
 <p>Photo by <a href="https://unsplash.com/@maria_shalabaieva?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noreferrer">Mariia Shalabaieva</a> on <a href="https://unsplash.com/s/photos/openai?license=free&amp;utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noreferrer">Unsplash</a></p>
@@ -482,8 +482,8 @@
         </item>
         <item>
             <title><![CDATA[ChatGPT Prompt Engineering for Developers [Part 2/7] Iterative Prompt Development]]></title>
-            <link>/articles/2023-05-30-chatgpt-prompt-engineering-for-developers-part-2</link>
-            <guid>/articles/2023-05-30-chatgpt-prompt-engineering-for-developers-part-2</guid>
+            <link>https://muathye.com/articles/2023-05-30-chatgpt-prompt-engineering-for-developers-part-2</link>
+            <guid>https://muathye.com/articles/2023-05-30-chatgpt-prompt-engineering-for-developers-part-2</guid>
             <pubDate>Tue, 30 May 2023 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p><img src="/articles/2023-05-30/chatgpt-prompt-engineering-for-developers-part-1.webp" alt="An image"></p>
 <p>Photo by <a href="https://unsplash.com/@maria_shalabaieva?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noreferrer">Mariia Shalabaieva</a> on <a href="https://unsplash.com/s/photos/openai?license=free&amp;utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noreferrer">Unsplash</a></p>
@@ -811,8 +811,8 @@
         </item>
         <item>
             <title><![CDATA[ChatGPT Prompt Engineering for Developers [Part 3/7] Summarizing]]></title>
-            <link>/articles/2023-05-30-chatgpt-prompt-engineering-for-developers-part-3</link>
-            <guid>/articles/2023-05-30-chatgpt-prompt-engineering-for-developers-part-3</guid>
+            <link>https://muathye.com/articles/2023-05-30-chatgpt-prompt-engineering-for-developers-part-3</link>
+            <guid>https://muathye.com/articles/2023-05-30-chatgpt-prompt-engineering-for-developers-part-3</guid>
             <pubDate>Tue, 30 May 2023 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p><img src="/articles/2023-05-30/chatgpt-prompt-engineering-for-developers-part-1.webp" alt="An image"></p>
 <p>Photo by <a href="https://unsplash.com/@maria_shalabaieva?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noreferrer">Mariia Shalabaieva</a> on <a href="https://unsplash.com/s/photos/openai?license=free&amp;utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noreferrer">Unsplash</a></p>
@@ -1027,8 +1027,8 @@
         </item>
         <item>
             <title><![CDATA[ChatGPT Prompt Engineering for Developers [Part 4/7] Inferring]]></title>
-            <link>/articles/2023-05-30-chatgpt-prompt-engineering-for-developers-part-4</link>
-            <guid>/articles/2023-05-30-chatgpt-prompt-engineering-for-developers-part-4</guid>
+            <link>https://muathye.com/articles/2023-05-30-chatgpt-prompt-engineering-for-developers-part-4</link>
+            <guid>https://muathye.com/articles/2023-05-30-chatgpt-prompt-engineering-for-developers-part-4</guid>
             <pubDate>Tue, 30 May 2023 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p><img src="/articles/2023-05-30/chatgpt-prompt-engineering-for-developers-part-1.webp" alt="An image"></p>
 <p>Photo by <a href="https://unsplash.com/@maria_shalabaieva?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noreferrer">Mariia Shalabaieva</a> on <a href="https://unsplash.com/s/photos/openai?license=free&amp;utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noreferrer">Unsplash</a></p>
@@ -1266,8 +1266,8 @@
         </item>
         <item>
             <title><![CDATA[ChatGPT Prompt Engineering for Developers [Part 5/7] Transforming]]></title>
-            <link>/articles/2023-05-30-chatgpt-prompt-engineering-for-developers-part-5</link>
-            <guid>/articles/2023-05-30-chatgpt-prompt-engineering-for-developers-part-5</guid>
+            <link>https://muathye.com/articles/2023-05-30-chatgpt-prompt-engineering-for-developers-part-5</link>
+            <guid>https://muathye.com/articles/2023-05-30-chatgpt-prompt-engineering-for-developers-part-5</guid>
             <pubDate>Tue, 30 May 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[<p><img src="/articles/2023-05-30/chatgpt-prompt-engineering-for-developers-part-1.webp" alt="An image"></p>
 <p>Photo by <a href="https://unsplash.com/@maria_shalabaieva?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noreferrer">Mariia Shalabaieva</a> on <a href="https://unsplash.com/s/photos/openai?license=free&amp;utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noreferrer">Unsplash</a></p>
@@ -1807,8 +1807,8 @@
         </item>
         <item>
             <title><![CDATA[ChatGPT Prompt Engineering for Developers [Part 6/7] Expanding]]></title>
-            <link>/articles/2023-05-30-chatgpt-prompt-engineering-for-developers-part-6</link>
-            <guid>/articles/2023-05-30-chatgpt-prompt-engineering-for-developers-part-6</guid>
+            <link>https://muathye.com/articles/2023-05-30-chatgpt-prompt-engineering-for-developers-part-6</link>
+            <guid>https://muathye.com/articles/2023-05-30-chatgpt-prompt-engineering-for-developers-part-6</guid>
             <pubDate>Tue, 30 May 2023 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p><img src="/articles/2023-05-30/chatgpt-prompt-engineering-for-developers-part-1.webp" alt="An image"></p>
 <p>Photo by <a href="https://unsplash.com/@maria_shalabaieva?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noreferrer">Mariia Shalabaieva</a> on <a href="https://unsplash.com/s/photos/openai?license=free&amp;utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noreferrer">Unsplash</a></p>
@@ -1946,8 +1946,8 @@
         </item>
         <item>
             <title><![CDATA[ChatGPT Prompt Engineering for Developers [Part 7/7] The Chat Format]]></title>
-            <link>/articles/2023-05-30-chatgpt-prompt-engineering-for-developers-part-7</link>
-            <guid>/articles/2023-05-30-chatgpt-prompt-engineering-for-developers-part-7</guid>
+            <link>https://muathye.com/articles/2023-05-30-chatgpt-prompt-engineering-for-developers-part-7</link>
+            <guid>https://muathye.com/articles/2023-05-30-chatgpt-prompt-engineering-for-developers-part-7</guid>
             <pubDate>Tue, 30 May 2023 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p><img src="/articles/2023-05-30/chatgpt-prompt-engineering-for-developers-part-1.webp" alt="An image"></p>
 <p>Photo by <a href="https://unsplash.com/@maria_shalabaieva?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noreferrer">Mariia Shalabaieva</a> on <a href="https://unsplash.com/s/photos/openai?license=free&amp;utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noreferrer">Unsplash</a></p>
@@ -2129,8 +2129,8 @@
         </item>
         <item>
             <title><![CDATA[How to Create a Command-Line Password Generator with Node.js And Deploy it to npmjs]]></title>
-            <link>/articles/2023-05-22-how-to-create-a-command-line-password-generator-with-nodejs</link>
-            <guid>/articles/2023-05-22-how-to-create-a-command-line-password-generator-with-nodejs</guid>
+            <link>https://muathye.com/articles/2023-05-22-how-to-create-a-command-line-password-generator-with-nodejs</link>
+            <guid>https://muathye.com/articles/2023-05-22-how-to-create-a-command-line-password-generator-with-nodejs</guid>
             <pubDate>Mon, 22 May 2023 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p><img src="/articles/2023-05-22/muath-ye-password-generator.png" alt="An image"></p>
 <h1 id="how-to-create-a-command-line-password-generator-with-node-js-and-deploy-it-to-npmjs" tabindex="-1">How to Create a Command-Line Password Generator with Node.js And Deploy it to npmjs <a class="header-anchor" href="#how-to-create-a-command-line-password-generator-with-node-js-and-deploy-it-to-npmjs" aria-label="Permalink to &quot;How to Create a Command-Line Password Generator with Node.js And Deploy it to npmjs&quot;">&ZeroWidthSpace;</a></h1>
@@ -2292,8 +2292,8 @@
         </item>
         <item>
             <title><![CDATA[Bard Database Schema and Implementation in MySQL]]></title>
-            <link>/articles/2023-05-17-bard-database-schema-and-implementation-in-mysql</link>
-            <guid>/articles/2023-05-17-bard-database-schema-and-implementation-in-mysql</guid>
+            <link>https://muathye.com/articles/2023-05-17-bard-database-schema-and-implementation-in-mysql</link>
+            <guid>https://muathye.com/articles/2023-05-17-bard-database-schema-and-implementation-in-mysql</guid>
             <pubDate>Wed, 17 May 2023 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h1 id="bard-database-schema-and-implementation-in-mysql" tabindex="-1">Bard Database Schema and Implementation in MySQL <a class="header-anchor" href="#bard-database-schema-and-implementation-in-mysql" aria-label="Permalink to &quot;Bard Database Schema and Implementation in MySQL&quot;">&ZeroWidthSpace;</a></h1>
 <p>Bard is a large language model from Google AI, trained on a massive dataset of text and code. Bard can generate text, translate languages, write different kinds of creative content, and answer your questions in an informative way.</p>
@@ -2431,8 +2431,8 @@
         </item>
         <item>
             <title><![CDATA[Step-by-Step Guide How to Use Google Maps API to Choose a Location on Your Website]]></title>
-            <link>/articles/2023-04-23-how-to-use-google-maps-api-to-choose-a-location-on-your-website</link>
-            <guid>/articles/2023-04-23-how-to-use-google-maps-api-to-choose-a-location-on-your-website</guid>
+            <link>https://muathye.com/articles/2023-04-23-how-to-use-google-maps-api-to-choose-a-location-on-your-website</link>
+            <guid>https://muathye.com/articles/2023-04-23-how-to-use-google-maps-api-to-choose-a-location-on-your-website</guid>
             <pubDate>Sun, 23 Apr 2023 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h1 id="step-by-step-guide-how-to-use-google-maps-api-to-choose-a-location-on-your-website" tabindex="-1">Step-by-Step Guide: How to Use Google Maps API to Choose a Location on Your Website <a class="header-anchor" href="#step-by-step-guide-how-to-use-google-maps-api-to-choose-a-location-on-your-website" aria-label="Permalink to &quot;Step-by-Step Guide: How to Use Google Maps API to Choose a Location on Your Website&quot;">&ZeroWidthSpace;</a></h1>
 <h2 id="introduction" tabindex="-1">Introduction <a class="header-anchor" href="#introduction" aria-label="Permalink to &quot;Introduction&quot;">&ZeroWidthSpace;</a></h2>
@@ -2514,8 +2514,8 @@
         </item>
         <item>
             <title><![CDATA[A Way to Export Visual Studio Code Extensions List and Pulk Install Them]]></title>
-            <link>/articles/2023-04-17-export-vscode-extensions-list-and-download-them</link>
-            <guid>/articles/2023-04-17-export-vscode-extensions-list-and-download-them</guid>
+            <link>https://muathye.com/articles/2023-04-17-export-vscode-extensions-list-and-download-them</link>
+            <guid>https://muathye.com/articles/2023-04-17-export-vscode-extensions-list-and-download-them</guid>
             <pubDate>Mon, 17 Apr 2023 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p><img src="/articles/2023-04-17/export-vscode-extensions-list.png" alt="An image"></p>
 <h1 id="a-way-to-export-visual-studio-code-extensions-list-and-pulk-install-them" tabindex="-1">A Way to Export Visual Studio Code Extensions List and Pulk Install Them <a class="header-anchor" href="#a-way-to-export-visual-studio-code-extensions-list-and-pulk-install-them" aria-label="Permalink to &quot;A Way to Export Visual Studio Code Extensions List and Pulk Install Them&quot;">&ZeroWidthSpace;</a></h1>
@@ -2547,8 +2547,8 @@ Note that some extensions may not be compatible with the version of Visual Studi
         </item>
         <item>
             <title><![CDATA[Add SSH to Bitbucket for Windows]]></title>
-            <link>/articles/2023-04-10-add-ssh-to-bitbucket-for-windows</link>
-            <guid>/articles/2023-04-10-add-ssh-to-bitbucket-for-windows</guid>
+            <link>https://muathye.com/articles/2023-04-10-add-ssh-to-bitbucket-for-windows</link>
+            <guid>https://muathye.com/articles/2023-04-10-add-ssh-to-bitbucket-for-windows</guid>
             <pubDate>Mon, 10 Apr 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[<h1 id="add-ssh-to-bitbucket-for-windows" tabindex="-1">Add SSH to Bitbucket for Windows <a class="header-anchor" href="#add-ssh-to-bitbucket-for-windows" aria-label="Permalink to &quot;Add SSH to Bitbucket for Windows&quot;">&ZeroWidthSpace;</a></h1>
 <p>If you have an account on <a href="https://bitbucket.org" target="_blank" rel="noreferrer">bitbucket.org</a>, this article may help you</p>
@@ -2635,8 +2635,8 @@ Note that some extensions may not be compatible with the version of Visual Studi
         </item>
         <item>
             <title><![CDATA[From JavaScript to Deployment A Step-by-Step Tips to Mastering Node.js and Building Powerful Web Applications]]></title>
-            <link>/articles/2023-03-09-from-javascript-to-mastring-nodejs</link>
-            <guid>/articles/2023-03-09-from-javascript-to-mastring-nodejs</guid>
+            <link>https://muathye.com/articles/2023-03-09-from-javascript-to-mastring-nodejs</link>
+            <guid>https://muathye.com/articles/2023-03-09-from-javascript-to-mastring-nodejs</guid>
             <pubDate>Thu, 09 Mar 2023 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h1 id="from-javascript-to-deployment-a-step-by-step-tips-to-mastering-node-js-and-building-powerful-web-applications" tabindex="-1">From JavaScript to Deployment: A Step-by-Step Tips to Mastering Node.js and Building Powerful Web Applications <a class="header-anchor" href="#from-javascript-to-deployment-a-step-by-step-tips-to-mastering-node-js-and-building-powerful-web-applications" aria-label="Permalink to &quot;From JavaScript to Deployment: A Step-by-Step Tips to Mastering Node.js and Building Powerful Web Applications&quot;">&ZeroWidthSpace;</a></h1>
 <p>Node.js is a popular and powerful platform for building scalable and efficient web applications. If you're interested in learning Node.js, you need to have a structured learning path or roadmap to guide you through the process. In this article, we'll provide a detailed step-by-step guide to help you get started with Node.js.</p>
@@ -2673,8 +2673,8 @@ As with any new skill, practice is essential for becoming proficient in Node.js.
         </item>
         <item>
             <title><![CDATA[How to create a mini self hosted version of ChatGPT]]></title>
-            <link>/articles/2023-03-08-mini-self-hosted-version-chatgpt</link>
-            <guid>/articles/2023-03-08-mini-self-hosted-version-chatgpt</guid>
+            <link>https://muathye.com/articles/2023-03-08-mini-self-hosted-version-chatgpt</link>
+            <guid>https://muathye.com/articles/2023-03-08-mini-self-hosted-version-chatgpt</guid>
             <pubDate>Wed, 08 Mar 2023 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<div class="img">
 </div>
@@ -2701,8 +2701,8 @@ You will need to configure the server to handle incoming requests, set up securi
         </item>
         <item>
             <title><![CDATA[I Created Morning Azkar Website In Arabic With ChatGPT]]></title>
-            <link>/articles/2022-12-27-chatgpt-arabic-morning-azkar</link>
-            <guid>/articles/2022-12-27-chatgpt-arabic-morning-azkar</guid>
+            <link>https://muathye.com/articles/2022-12-27-chatgpt-arabic-morning-azkar</link>
+            <guid>https://muathye.com/articles/2022-12-27-chatgpt-arabic-morning-azkar</guid>
             <pubDate>Tue, 27 Dec 2022 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h1 id="i-created-morning-azkar-website-in-arabic-with-chatgpt" tabindex="-1">I Created Morning Azkar Website In Arabic With ChatGPT <a class="header-anchor" href="#i-created-morning-azkar-website-in-arabic-with-chatgpt" aria-label="Permalink to &quot;I Created Morning Azkar Website In Arabic With ChatGPT&quot;">&ZeroWidthSpace;</a></h1>
 <div class="info custom-block"><p class="custom-block-title">INFO</p>
@@ -2718,8 +2718,8 @@ You will need to configure the server to handle incoming requests, set up securi
         </item>
         <item>
             <title><![CDATA[How to solve bootstrap datepicker in modal]]></title>
-            <link>/articles/2022-12-26-add-bootstrap-datepicker-in-modal</link>
-            <guid>/articles/2022-12-26-add-bootstrap-datepicker-in-modal</guid>
+            <link>https://muathye.com/articles/2022-12-26-add-bootstrap-datepicker-in-modal</link>
+            <guid>https://muathye.com/articles/2022-12-26-add-bootstrap-datepicker-in-modal</guid>
             <pubDate>Mon, 26 Dec 2022 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p><img src="/articles/2022-12-26/modal-datetime-picker.png" alt="An image"></p>
 <h1 id="how-to-solve-bootstrap-datepicker-in-modal" tabindex="-1">How to solve bootstrap datepicker in modal <a class="header-anchor" href="#how-to-solve-bootstrap-datepicker-in-modal" aria-label="Permalink to &quot;How to solve bootstrap datepicker in modal&quot;">&ZeroWidthSpace;</a></h1>
@@ -2781,8 +2781,8 @@ You will need to configure the server to handle incoming requests, set up securi
         </item>
         <item>
             <title><![CDATA[Laravel Nested Eager Loading on Polymorphic Relationships]]></title>
-            <link>/articles/2022-12-23-laravel-nested-eager-loading-on-polymorphic-relationships</link>
-            <guid>/articles/2022-12-23-laravel-nested-eager-loading-on-polymorphic-relationships</guid>
+            <link>https://muathye.com/articles/2022-12-23-laravel-nested-eager-loading-on-polymorphic-relationships</link>
+            <guid>https://muathye.com/articles/2022-12-23-laravel-nested-eager-loading-on-polymorphic-relationships</guid>
             <pubDate>Fri, 23 Dec 2022 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p><img src="/articles/2022-12-23/laravel-nested-eager-loading-on-polymorphic-relationships.png" alt="An image"></p>
 <h1 id="laravel-nested-eager-loading-on-polymorphic-relationships" tabindex="-1">Laravel Nested Eager Loading on Polymorphic Relationships <a class="header-anchor" href="#laravel-nested-eager-loading-on-polymorphic-relationships" aria-label="Permalink to &quot;Laravel Nested Eager Loading on Polymorphic Relationships&quot;">&ZeroWidthSpace;</a></h1>
@@ -2830,8 +2830,8 @@ You will need to configure the server to handle incoming requests, set up securi
         </item>
         <item>
             <title><![CDATA[How to Change Default Laravel Breeze "email" to "id" in login]]></title>
-            <link>/articles/2022-11-24-change-default-Laravel-breeze-in-login</link>
-            <guid>/articles/2022-11-24-change-default-Laravel-breeze-in-login</guid>
+            <link>https://muathye.com/articles/2022-11-24-change-default-Laravel-breeze-in-login</link>
+            <guid>https://muathye.com/articles/2022-11-24-change-default-Laravel-breeze-in-login</guid>
             <pubDate>Thu, 24 Nov 2022 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p><img src="/articles/2022-11-24/change-default-Laravel-breeze-in-login.png" alt="An image"></p>
 <h1 id="how-to-change-default-laravel-breeze-email-to-id-in-login" tabindex="-1">How to Change Default Laravel Breeze &quot;email&quot; to &quot;id&quot; in login <a class="header-anchor" href="#how-to-change-default-laravel-breeze-email-to-id-in-login" aria-label="Permalink to &quot;How to Change Default Laravel Breeze &quot;email&quot; to &quot;id&quot; in login&quot;">&ZeroWidthSpace;</a></h1>
@@ -2941,8 +2941,8 @@ modify the exported  <code>App\Http\Requests\Auth\LoginRequest</code> from <code
         </item>
         <item>
             <title><![CDATA[Realtime input validation]]></title>
-            <link>/articles/2022-08-21-realtime-input-validation</link>
-            <guid>/articles/2022-08-21-realtime-input-validation</guid>
+            <link>https://muathye.com/articles/2022-08-21-realtime-input-validation</link>
+            <guid>https://muathye.com/articles/2022-08-21-realtime-input-validation</guid>
             <pubDate>Sun, 21 Aug 2022 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p><img src="/articles/2022-08-21/realtime-input-validation.jpg" alt="An image"></p>
 <h1 id="realtime-input-validation" tabindex="-1">Realtime input validation <a class="header-anchor" href="#realtime-input-validation" aria-label="Permalink to &quot;Realtime input validation&quot;">&ZeroWidthSpace;</a></h1>
@@ -2976,8 +2976,8 @@ modify the exported  <code>App\Http\Requests\Auth\LoginRequest</code> from <code
         </item>
         <item>
             <title><![CDATA[Gitmoji]]></title>
-            <link>/articles/2022-08-20-gitmoji</link>
-            <guid>/articles/2022-08-20-gitmoji</guid>
+            <link>https://muathye.com/articles/2022-08-20-gitmoji</link>
+            <guid>https://muathye.com/articles/2022-08-20-gitmoji</guid>
             <pubDate>Sat, 20 Aug 2022 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p><img src="/articles/2022-08-20/gitmoji.png" alt="An image"></p>
 <h1 id="gitmoji" tabindex="-1">Gitmoji <a class="header-anchor" href="#gitmoji" aria-label="Permalink to &quot;Gitmoji&quot;">&ZeroWidthSpace;</a></h1>
@@ -3363,8 +3363,8 @@ modify the exported  <code>App\Http\Requests\Auth\LoginRequest</code> from <code
         </item>
         <item>
             <title><![CDATA[Git Sync Local Branches With Remote.]]></title>
-            <link>/snippets/2023-09-03-git-sync-local-branches-with-remote</link>
-            <guid>/snippets/2023-09-03-git-sync-local-branches-with-remote</guid>
+            <link>https://muathye.com/snippets/2023-09-03-git-sync-local-branches-with-remote</link>
+            <guid>https://muathye.com/snippets/2023-09-03-git-sync-local-branches-with-remote</guid>
             <pubDate>Sun, 03 Sep 2023 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p><img src="/snippets/2023-09-03/git-sync-local-branches-with-remote.png" alt="An image"></p>
 <p><a href="https://ray.so/#code=Z2l0IGZldGNoIC0tcHJ1bmU&amp;title=Git+fetch&amp;theme=sunset&amp;language=powershell" target="_blank" rel="noreferrer">ray.so</a></p>
@@ -3389,8 +3389,8 @@ modify the exported  <code>App\Http\Requests\Auth\LoginRequest</code> from <code
         </item>
         <item>
             <title><![CDATA[Disable composer https on a project.]]></title>
-            <link>/snippets/2023-08-03-disable-composer-https-on-project</link>
-            <guid>/snippets/2023-08-03-disable-composer-https-on-project</guid>
+            <link>https://muathye.com/snippets/2023-08-03-disable-composer-https-on-project</link>
+            <guid>https://muathye.com/snippets/2023-08-03-disable-composer-https-on-project</guid>
             <pubDate>Thu, 03 Aug 2023 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p><img src="/snippets/2023-08-03/disable-composer-https-on-project.png" alt="An image"></p>
 <p><a href="https://ray.so/#code=ewogICAgIm5hbWUiOiAibGFyYXZlbC9sYXJhdmVsIiwKICAgIC8vIC4uLgogICAgImNvbmZpZyI6IHsKICAgICAgICAvLyAuLi4KICAgICAgICAiZGlzYWJsZS10bHMiOiB0cnVlLAogICAgICAgICJzZWN1cmUtaHR0cCI6IGZhbHNlCiAgICB9LAogICAgLy8gLi4uCn0K&amp;title=composer.json&amp;theme=breeze" target="_blank" rel="noreferrer">ray.so</a></p>
@@ -3415,8 +3415,8 @@ modify the exported  <code>App\Http\Requests\Auth\LoginRequest</code> from <code
         </item>
         <item>
             <title><![CDATA[Drop All Constraints From All Tables Of A Database]]></title>
-            <link>/snippets/2023-05-25-drop-all-constraints-from-all-tables-of-a-database</link>
-            <guid>/snippets/2023-05-25-drop-all-constraints-from-all-tables-of-a-database</guid>
+            <link>https://muathye.com/snippets/2023-05-25-drop-all-constraints-from-all-tables-of-a-database</link>
+            <guid>https://muathye.com/snippets/2023-05-25-drop-all-constraints-from-all-tables-of-a-database</guid>
             <pubDate>Thu, 25 May 2023 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p><img src="/snippets/2023-05-25/drop-all-constraints-from-all-tables-of-a-database.svg" alt="An image"></p>
 <p><a href="https://ray.so/#code=REVDTEFSRSBAc3FsIE5WQVJDSEFSKE1BWCk7ClNFVCBAc3FsID0gTicnOwoKU0VMRUNUIEBzcWwgPSBAc3FsICsgTicKICBBTFRFUiBUQUJMRSAnICsgUVVPVEVOQU1FKHMubmFtZSkgKyBOJy4nCiAgKyBRVU9URU5BTUUodC5uYW1lKSArIE4nIERST1AgQ09OU1RSQUlOVCAnCiAgKyBRVU9URU5BTUUoYy5uYW1lKSArICc7JwpGUk9NIHN5cy5vYmplY3RzIEFTIGMKSU5ORVIgSk9JTiBzeXMudGFibGVzIEFTIHQKT04gYy5wYXJlbnRfb2JqZWN0X2lkID0gdC5bb2JqZWN0X2lkXQpJTk5FUiBKT0lOIHN5cy5zY2hlbWFzIEFTIHMgCk9OIHQuW3NjaGVtYV9pZF0gPSBzLltzY2hlbWFfaWRdCldIRVJFIGMuW3R5cGVdIElOICgnRCcsJ0MnLCdGJywnUEsnLCdVUScpCk9SREVSIEJZIGMuW3R5cGVdOwoKUFJJTlQgQHNxbDsKRVhFQyBzeXMuc3BfZXhlY3V0ZXNxbCBAc3FsOw&amp;width=708&amp;theme=sunset&amp;title=Drop+all+constraints+from+all+tables+of+a+database" target="_blank" rel="noreferrer">ray.so</a></p>
@@ -3450,8 +3450,8 @@ modify the exported  <code>App\Http\Requests\Auth\LoginRequest</code> from <code
         </item>
         <item>
             <title><![CDATA[Drop All Tables Of A Database]]></title>
-            <link>/snippets/2023-05-25-drop-all-tables-of-a-database</link>
-            <guid>/snippets/2023-05-25-drop-all-tables-of-a-database</guid>
+            <link>https://muathye.com/snippets/2023-05-25-drop-all-tables-of-a-database</link>
+            <guid>https://muathye.com/snippets/2023-05-25-drop-all-tables-of-a-database</guid>
             <pubDate>Thu, 25 May 2023 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p><img src="/snippets/2023-05-25/drop-all-tables-of-a-database.svg" alt="An image"></p>
 <p><a href="https://ray.so/#code=REVDTEFSRSBAc3FsIE5WQVJDSEFSKG1heCk9JycKClNFTEVDVCBAc3FsICs9ICcgRHJvcCB0YWJsZSAnICsgUVVPVEVOQU1FKFRBQkxFX1NDSEVNQSkgKyAnLicrIFFVT1RFTkFNRShUQUJMRV9OQU1FKSArICc7ICcKRlJPTSAgIElORk9STUFUSU9OX1NDSEVNQS5UQUJMRVMKV0hFUkUgIFRBQkxFX1RZUEUgPSAnQkFTRSBUQUJMRScKCkV4ZWMgU3BfZXhlY3V0ZXNxbCBAc3Fs&amp;width=708&amp;theme=sunset&amp;title=Drop+all+tables+of+a+database" target="_blank" rel="noreferrer">ray.so</a></p>
@@ -3476,8 +3476,8 @@ modify the exported  <code>App\Http\Requests\Auth\LoginRequest</code> from <code
         </item>
         <item>
             <title><![CDATA[How to Zip or Unzip Files From the Linux Terminal]]></title>
-            <link>/snippets/2023-05-23-how-to-zip-or-unzip-files-from-the-linux-terminal</link>
-            <guid>/snippets/2023-05-23-how-to-zip-or-unzip-files-from-the-linux-terminal</guid>
+            <link>https://muathye.com/snippets/2023-05-23-how-to-zip-or-unzip-files-from-the-linux-terminal</link>
+            <guid>https://muathye.com/snippets/2023-05-23-how-to-zip-or-unzip-files-from-the-linux-terminal</guid>
             <pubDate>Tue, 23 May 2023 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p><img src="/snippets/2023-05-23/how-to-zip-or-unzip-files-from-the-linux-terminal.png" alt="An image"></p>
 <p><a href="https://chalk.ist" target="_blank" rel="noreferrer">chalk.ist</a></p>
@@ -3498,8 +3498,8 @@ modify the exported  <code>App\Http\Requests\Auth\LoginRequest</code> from <code
         </item>
         <item>
             <title><![CDATA[Convert png and jpg to webp]]></title>
-            <link>/snippets/2023-05-21-convert-png-and-jpg-to-webp</link>
-            <guid>/snippets/2023-05-21-convert-png-and-jpg-to-webp</guid>
+            <link>https://muathye.com/snippets/2023-05-21-convert-png-and-jpg-to-webp</link>
+            <guid>https://muathye.com/snippets/2023-05-21-convert-png-and-jpg-to-webp</guid>
             <pubDate>Sun, 21 May 2023 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p><img src="/snippets/2023-05-21/convert-png-and-jpg-to-webp.png" alt="An image"></p>
 <p><a href="https://chalk.ist" target="_blank" rel="noreferrer">chalk.ist</a></p>
@@ -3526,8 +3526,8 @@ modify the exported  <code>App\Http\Requests\Auth\LoginRequest</code> from <code
         </item>
         <item>
             <title><![CDATA[Retrieve Related Tables Of A Specific Table In Mysql]]></title>
-            <link>/snippets/2023-05-16-retrieve-related-tables-of-a-specific-table-in-mysql</link>
-            <guid>/snippets/2023-05-16-retrieve-related-tables-of-a-specific-table-in-mysql</guid>
+            <link>https://muathye.com/snippets/2023-05-16-retrieve-related-tables-of-a-specific-table-in-mysql</link>
+            <guid>https://muathye.com/snippets/2023-05-16-retrieve-related-tables-of-a-specific-table-in-mysql</guid>
             <pubDate>Tue, 16 May 2023 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p><img src="/snippets/2023-05-16/retrieve-related-tables-of-a-specific-table-in-mysql.png" alt="An image"></p>
 <p><a href="https://chalk.ist" target="_blank" rel="noreferrer">chalk.ist</a></p>
@@ -3541,8 +3541,8 @@ modify the exported  <code>App\Http\Requests\Auth\LoginRequest</code> from <code
         </item>
         <item>
             <title><![CDATA[Export VSCode Extensions List]]></title>
-            <link>/snippets/2023-04-17-export-vscode-extensions-list</link>
-            <guid>/snippets/2023-04-17-export-vscode-extensions-list</guid>
+            <link>https://muathye.com/snippets/2023-04-17-export-vscode-extensions-list</link>
+            <guid>https://muathye.com/snippets/2023-04-17-export-vscode-extensions-list</guid>
             <pubDate>Mon, 17 Apr 2023 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p><img src="/snippets/2023-04-17/export-vscode-extensions-list.png" alt="An image"></p>
 <p><a href="https://ray.so/#code=IyBJbiB2c29kZSB5b3UgY2FuIGV4cG9ydCB0aGUgZXh0ZW5zaW9uIGxpc3QgdG8gZmlsZQoKIyBmb3IgdGhlIGJsdWUgdnNjb2RlCmNvZGUgLS1saXN0LWV4dGVuc2lvbnMgPiBleHRlbnNpb25zLnR4dAoKIyBmb3IgdGhlIGdyZWVuIHZzY29kZQpjb2RlLWluc2lkZXJzIC0tbGlzdC1leHRlbnNpb25zID4gZXh0ZW5zaW9ucy50eHQ&amp;darkMode=true&amp;background=true&amp;title=export-vscode-extensions-list.bat&amp;language=powershell&amp;padding=64" target="_blank" rel="noreferrer">ray.so</a></p>
@@ -3559,8 +3559,8 @@ modify the exported  <code>App\Http\Requests\Auth\LoginRequest</code> from <code
         </item>
         <item>
             <title><![CDATA[Laravel Model Truncate]]></title>
-            <link>/snippets/2023-04-15-laravel-model-truncate</link>
-            <guid>/snippets/2023-04-15-laravel-model-truncate</guid>
+            <link>https://muathye.com/snippets/2023-04-15-laravel-model-truncate</link>
+            <guid>https://muathye.com/snippets/2023-04-15-laravel-model-truncate</guid>
             <pubDate>Sat, 15 Apr 2023 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p><img src="/snippets/2023-04-15/laravel-model-truncate.png" alt="An image"></p>
 <p><a href="https://ray.so/#code=Ly8gVG8gdHJhbmNhdGUgKGVtcHR5KSB1c2VycyB0YWJsZQoKVXNlcjo6dHJ1bmNhdGUoKTs&amp;darkMode=true&amp;background=true&amp;title=laravel-model-truncate.php&amp;language=php&amp;padding=64" target="_blank" rel="noreferrer">ray.so</a></p>
@@ -3573,8 +3573,8 @@ modify the exported  <code>App\Http\Requests\Auth\LoginRequest</code> from <code
         </item>
         <item>
             <title><![CDATA[Array destructuring in PHP]]></title>
-            <link>/snippets/2023-03-19-array-destructuring-in-php</link>
-            <guid>/snippets/2023-03-19-array-destructuring-in-php</guid>
+            <link>https://muathye.com/snippets/2023-03-19-array-destructuring-in-php</link>
+            <guid>https://muathye.com/snippets/2023-03-19-array-destructuring-in-php</guid>
             <pubDate>Sun, 19 Mar 2023 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p><img src="/snippets/2023-03-19/array-destructuring-in-php.png" alt="An image"></p>
 <p><a href="https://ray.so/#code=PD9waHAKLyoqIGdpdGh1Yi5jb20vbXVhdGgteWUgKi8KClskaGksICRuYW1lXSA9IFsnSGVsbG8nLCAnTXVhdGgnXTsKCmVjaG8gJGhpIC4gJyAnIC4gJG5hbWU7IC8vIEhlbGxvIE11YXRo&amp;darkMode=true&amp;background=true&amp;title=array-destructuring-in-php.php&amp;language=php&amp;padding=64" target="_blank" rel="noreferrer">ray.so</a></p>
@@ -3591,8 +3591,8 @@ modify the exported  <code>App\Http\Requests\Auth\LoginRequest</code> from <code
         </item>
         <item>
             <title><![CDATA[List all developers on a project in Git]]></title>
-            <link>/snippets/2023-03-19-git-developers-list</link>
-            <guid>/snippets/2023-03-19-git-developers-list</guid>
+            <link>https://muathye.com/snippets/2023-03-19-git-developers-list</link>
+            <guid>https://muathye.com/snippets/2023-03-19-git-developers-list</guid>
             <pubDate>Sun, 19 Mar 2023 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p><img src="/snippets/2023-03-19/git-developers-list.png" alt="An image"></p>
 <p><a href="https://ray.so/#code=IyBMaXN0IGFsbCBkZXZlbG9wZXJzIG9uIGEgcHJvamVjdCBpbiBHaXQKCmdpdCBsb2cgLS1wcmV0dHk9IiVhbiAlYWUlbiVjbiAlY2UiIHwgc29ydCAtdQ&amp;darkMode=true&amp;background=true&amp;title=git-developers-list.bat&amp;language=powershell&amp;padding=64" target="_blank" rel="noreferrer">ray.so</a></p>
@@ -3603,8 +3603,8 @@ modify the exported  <code>App\Http\Requests\Auth\LoginRequest</code> from <code
         </item>
         <item>
             <title><![CDATA[Import DB Using Command Line]]></title>
-            <link>/snippets/2023-03-19-import-db-using-command-line</link>
-            <guid>/snippets/2023-03-19-import-db-using-command-line</guid>
+            <link>https://muathye.com/snippets/2023-03-19-import-db-using-command-line</link>
+            <guid>https://muathye.com/snippets/2023-03-19-import-db-using-command-line</guid>
             <pubDate>Sun, 19 Mar 2023 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p><img src="/snippets/2023-03-19/import-db-using-command-line.png" alt="An image"></p>
 <p><a href="https://ray.so/#code=IyBpbXBvcnQgZGIgdXNpbmcgY29tbWFuZCBsaW5lCm15c3FsIC11IHVzZXJuYW1lIC1wIGRhdGFiYXNlX25hbWUgPCBmaWxlLnNxbA&amp;darkMode=true&amp;background=true&amp;title=import-db-using-command-line.bat&amp;language=powershell&amp;padding=64" target="_blank" rel="noreferrer">ray.so</a></p>
@@ -3616,8 +3616,8 @@ modify the exported  <code>App\Http\Requests\Auth\LoginRequest</code> from <code
         </item>
         <item>
             <title><![CDATA[Git Update Last Commit Message]]></title>
-            <link>/snippets/2023-03-01-git-update-last-commit-message</link>
-            <guid>/snippets/2023-03-01-git-update-last-commit-message</guid>
+            <link>https://muathye.com/snippets/2023-03-01-git-update-last-commit-message</link>
+            <guid>https://muathye.com/snippets/2023-03-01-git-update-last-commit-message</guid>
             <pubDate>Wed, 01 Mar 2023 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p><img src="/snippets/2023-03-01/git-update-last-commit-message.png" alt="An image"></p>
 <p><a href="https://ray.so/#code=Z2l0IGNvbW1pdCAtLWFtZW5kIC1tICJVcGRhdGVkIG1lc3NhZ2Ui&amp;darkMode=true&amp;background=true&amp;title=git-update-last-commit-message.bat&amp;language=shell&amp;padding=64" target="_blank" rel="noreferrer">ray.so</a></p>
@@ -3628,8 +3628,8 @@ modify the exported  <code>App\Http\Requests\Auth\LoginRequest</code> from <code
         </item>
         <item>
             <title><![CDATA[Extend Laravel Validator Morph Exists]]></title>
-            <link>/snippets/2023-02-14-extend-laravel-validator-morph-exists</link>
-            <guid>/snippets/2023-02-14-extend-laravel-validator-morph-exists</guid>
+            <link>https://muathye.com/snippets/2023-02-14-extend-laravel-validator-morph-exists</link>
+            <guid>https://muathye.com/snippets/2023-02-14-extend-laravel-validator-morph-exists</guid>
             <pubDate>Tue, 14 Feb 2023 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p><img src="/snippets/2023-02-14/extend-laravel-validator-morph-exists.png" alt="An image"></p>
 <p><a href="https://ray.so/#code=PD9waHAKLyogdXNlZnVsIHZhbGlkYXRvciBleHRlbmQgYG1vcnBoX2V4aXN0c2AgKi8KVmFsaWRhdG9yOjpleHRlbmQoJ21vcnBoX2V4aXN0cycsIGZ1bmN0aW9uICgkYXR0cmlidXRlLCAkdmFsdWUsICRwYXJhbWV0ZXJzLCAkdmFsaWRhdG9yKQp7CglpZiAoIW9iamVjdFR5cGUgPSBBcnI6OmdldCgkdmFsaWRhdG9yLT5nZXREYXRhKCksICRwYXJhbWV0ZXJzWzBdLCBmYWxzZSkpIHsKCQlyZXR1cm4gZmFsc2U7Cgl9CgkvLyBUaGUgbW9kZWxzIG5hbWVzcGFjZS4KCXJldHVybiAhZW1wdHkocmVzb2x2ZSgnQXBwXFxNb2RlbHNcXCcuJG9iamVjdFR5cGUpLT5maW5kKCR2YWx1ZSkpOwp9KTsKCi8qIFVzYWdlIG9uIGFueSB2YWxpZGF0b3IgcnVsZXMgb3IgRm9ybVJlcXVlc3QgKi8KcHVibGljIGZ1bmN0aW9uIHJ1bGVzKCkKewoJcmV0dXJuIFsKCQknY29tbWVudGFibGVfaWQnID0-IFsncmVxdWlyZWQnLCAnbW9ycGhfZXhpc3RzOmNvbW1lbnRhYmxlX3R5cGUnXSwKCQknY29tbWVudGFibGVfdHlwZScgPT4gWydyZXF1aXJlZCcsICdzdHJpbmcnXSwKCV07Cn0KCi8qKiBnaXRodWIuY29tL211YXRoLXllICov&amp;darkMode=true&amp;background=true&amp;title=extend-laravel-validator-morph-exists.php&amp;language=php&amp;padding=64&amp;width=920" target="_blank" rel="noreferrer">ray.so</a></p>
