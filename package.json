@@ -24,5 +24,8 @@
     "vitepress": "^1.0.0-rc.4",
     "vue": "^3.2.37",
     "workbox-precaching": "^6.5.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
   }
 }
