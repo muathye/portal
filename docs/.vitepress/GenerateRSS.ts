@@ -2,6 +2,8 @@ import path from 'path'
 import { writeFileSync } from 'fs'
 import { Feed } from 'feed'
 import { createContentLoader, type SiteConfig } from 'vitepress'
+import dotenv from 'dotenv';
+dotenv.config();
 
 // TODO: use .env file for APP_URL
 const baseUrl = process.env.APP_URL ?? ''
