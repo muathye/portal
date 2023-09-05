@@ -2,23 +2,20 @@ import path from 'path'
 import { writeFileSync } from 'fs'
 import { Feed } from 'feed'
 import { createContentLoader, type SiteConfig } from 'vitepress'
-import dotenv from 'dotenv';
-dotenv.config();
 
-// TODO: use .env file for APP_URL
-const baseUrl = process.env.APP_URL ?? ''
+const hostname = 'https://muathye.com'
+const currentYear = new Date().getFullYear()
 
 export async function GenerateRSS(config: SiteConfig) {
   const feed = new Feed({
     title: 'Muath Alsowadi - Web designer and developer',
     description: 'Founder of @open-sale. Co-founder of @YemenOpenSource. Passionate and highly skilled senior full-stack web developer proficient in HTML, CSS, JavaScript, Vue.js, PHP, SQL, Laravel, and API development, with a strong commitment to leveraging technology to create innovative solutions and positively impact the world.',
-    id: baseUrl,
-    link: baseUrl,
+    id: hostname,
+    link: hostname,
     language: 'en',
     image: 'https://muathye.com/images/muathye.png',
-    favicon: `${baseUrl}/favicon.ico`,
-    copyright:
-        'Copyright (c) 2022-present, Muath Alsowadi'
+    favicon: `${hostname}/favicon.ico`,
+    copyright: `Copyright (c) 2022-${currentYear}, Muath Alsowadi`
   })
 
   const articles = await createContentLoader('articles/*.md', {
@@ -46,8 +43,8 @@ export async function GenerateRSS(config: SiteConfig) {
   for (const { url, excerpt, frontmatter, html } of [...articles, ...snippets]) {
     feed.addItem({
       title: frontmatter.title,
-      id: `${baseUrl}${url}`,
-      link: `${baseUrl}${url}`,
+      id: `${hostname}${url}`,
+      link: `${hostname}${url}`,
       description: excerpt,
       content: html,
       author: [

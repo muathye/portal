@@ -4,8 +4,8 @@ import { Feed } from 'feed'
 import { defineConfig, createContentLoader, type SiteConfig } from 'vitepress'
 import { withPwa } from '@vite-pwa/vitepress'
 import { GenerateRSS } from './GenerateRSS'
-import dotenv from 'dotenv';
-dotenv.config();
+
+const hostname = 'https://muathye.com'
 
 export default withPwa(defineConfig({
     vite: {
@@ -148,7 +148,5 @@ export default withPwa(defineConfig({
         },
     },
     buildEnd: GenerateRSS,
-    sitemap: {
-        hostname: process.env.APP_URL ?? ''
-    },
+    sitemap: { hostname },
 }))
