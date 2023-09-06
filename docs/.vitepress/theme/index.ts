@@ -1,7 +1,8 @@
 // .vitepress/theme/index.ts
 import DefaultTheme from 'vitepress/theme'
-import Footer from '../components/Footer.vue'
-import BlogLayout from '../layouts/Blog.vue'
+// import Footer from '../elements/Footer.vue'
+import BlogLayout from './layouts/Blog.vue'
+import './tailwind.css'
 import './custom.css'
 
 
@@ -13,6 +14,6 @@ export default {
   enhanceApp({ app }) {
     // register your custom global components
     // todo: https://vitejs.dev/guide/features.html#glob-import
-    app.component('footer', Footer)
+    // app.component('footer', Footer)
   }
 }

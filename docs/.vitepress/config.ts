@@ -79,6 +79,11 @@ export default withPwa(defineConfig({
             activeMatch: '/snippets|/snippets/'
         },
         {
+            text: 'Series',
+            link: '/series',
+            activeMatch: '/series|/series/'
+        },
+        {
             text: 'عربي (ar)',
             link: 'https://ar.muathye.com',
             target: '_blank'

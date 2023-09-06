@@ -1,7 +1,7 @@
 <!--.vitepress/theme/MyLayout.vue-->
 <script setup>
 import DefaultTheme from 'vitepress/theme'
-import Footer from '../components/Footer.vue'
+import Footer from '../elements/Footer.vue'
 
 const { Layout } = DefaultTheme
 
@@ -41,7 +41,23 @@ const { Layout } = DefaultTheme
         <!-- 404 -->
         <template #not-found></template>
         <!-- always -->
-        <template #layout-top></template>
+        <template #layout-top>
+            <div class="absolute right-0 top-0 h-full w-full flex justify-end">
+                <div class="w-28 h-28 overflow-hidden flex rounded-xl relative blur-2xl">
+                    <span class="absolute w-16 h-16 -top-1 -right-1 bg-green-500 rounded-md rotate-45"></span>
+                    <span class="absolute w-16 h-16 -bottom-1 -right-1 bg-[#FCDC58] rounded-md rotate-45"></span>
+                    <span class="absolute w-16 h-16 -bottom-1 -left-1 bg-primary rounded-md rotate-45"></span>
+                </div>
+            </div>
+
+            <div class="absolute left-0 bottom-0 h-full w-full flex items-end">
+                <div class="w-28 h-28 overflow-hidden flex rounded-xl relative blur-2xl">
+                    <span class="absolute w-16 h-16 -top-1 -right-1 bg-green-500 rounded-md rotate-45"></span>
+                    <span class="absolute w-16 h-16 -bottom-1 -right-1 bg-[#FCDC58] rounded-md rotate-45"></span>
+                    <span class="absolute w-16 h-16 -bottom-1 -left-1 bg-primary rounded-md rotate-45"></span>
+                </div>
+            </div>
+        </template>
         <template #layout-bottom><Footer /></template>
         <template #nav-bar-title-before></template>
         <template #nav-bar-title-after></template>

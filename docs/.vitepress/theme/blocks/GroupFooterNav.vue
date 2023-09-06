@@ -1,0 +1,5 @@
+<template>
+    <div class="grid md:grid-cols-2 gap-8 h-max">
+        <slot></slot>
+    </div>
+</template>
