@@ -24,10 +24,10 @@ head:
       content: This SQL script drops certain types of constraints from all tables in the database.
   - - meta
     - name: og:image
-      content: https://muathye.com/snippets/2023-05-25/drop-all-constraints-from-all-tables-of-a-database.svg
+      content: https://muathye.com/snippets/2023-05-25/drop-all-constraints-from-all-tables-of-a-database.webp
 ---
 
-![An image](/snippets/2023-05-25/drop-all-constraints-from-all-tables-of-a-database.svg)
+![An image](/snippets/2023-05-25/drop-all-constraints-from-all-tables-of-a-database.webp)
 
 [ray.so](https://ray.so/#code=REVDTEFSRSBAc3FsIE5WQVJDSEFSKE1BWCk7ClNFVCBAc3FsID0gTicnOwoKU0VMRUNUIEBzcWwgPSBAc3FsICsgTicKICBBTFRFUiBUQUJMRSAnICsgUVVPVEVOQU1FKHMubmFtZSkgKyBOJy4nCiAgKyBRVU9URU5BTUUodC5uYW1lKSArIE4nIERST1AgQ09OU1RSQUlOVCAnCiAgKyBRVU9URU5BTUUoYy5uYW1lKSArICc7JwpGUk9NIHN5cy5vYmplY3RzIEFTIGMKSU5ORVIgSk9JTiBzeXMudGFibGVzIEFTIHQKT04gYy5wYXJlbnRfb2JqZWN0X2lkID0gdC5bb2JqZWN0X2lkXQpJTk5FUiBKT0lOIHN5cy5zY2hlbWFzIEFTIHMgCk9OIHQuW3NjaGVtYV9pZF0gPSBzLltzY2hlbWFfaWRdCldIRVJFIGMuW3R5cGVdIElOICgnRCcsJ0MnLCdGJywnUEsnLCdVUScpCk9SREVSIEJZIGMuW3R5cGVdOwoKUFJJTlQgQHNxbDsKRVhFQyBzeXMuc3BfZXhlY3V0ZXNxbCBAc3FsOw&width=708&theme=sunset&title=Drop+all+constraints+from+all+tables+of+a+database)
 

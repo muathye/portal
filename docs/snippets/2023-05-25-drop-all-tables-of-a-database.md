@@ -24,10 +24,10 @@ head:
       content: The code block drops all base tables in the current database using dynamic SQL.
   - - meta
     - name: og:image
-      content: https://muathye.com/snippets/2023-05-25/drop-all-tables-of-a-database.svg
+      content: https://muathye.com/snippets/2023-05-25/drop-all-tables-of-a-database.webp
 ---
 
-![An image](/snippets/2023-05-25/drop-all-tables-of-a-database.svg)
+![An image](/snippets/2023-05-25/drop-all-tables-of-a-database.webp)
 
 [ray.so](https://ray.so/#code=REVDTEFSRSBAc3FsIE5WQVJDSEFSKG1heCk9JycKClNFTEVDVCBAc3FsICs9ICcgRHJvcCB0YWJsZSAnICsgUVVPVEVOQU1FKFRBQkxFX1NDSEVNQSkgKyAnLicrIFFVT1RFTkFNRShUQUJMRV9OQU1FKSArICc7ICcKRlJPTSAgIElORk9STUFUSU9OX1NDSEVNQS5UQUJMRVMKV0hFUkUgIFRBQkxFX1RZUEUgPSAnQkFTRSBUQUJMRScKCkV4ZWMgU3BfZXhlY3V0ZXNxbCBAc3Fs&width=708&theme=sunset&title=Drop+all+tables+of+a+database)
 
