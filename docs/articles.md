@@ -63,6 +63,13 @@ a.article-heading:hover {
 </div>
 
 <div class="article-list article-text-center">
+  <span>13 Nov 2023</span>
+  <a class="article-heading" href="/articles/2023-11-13-auto-fill-otp-input">
+      Implementing Auto-fill OTP Input with JavaScript
+  </a>
+</div>
+
+<div class="article-list article-text-center">
   <span>25 Aug 2023</span>
   <a class="article-heading" href="/articles/2023-08-25-exploring-mysql-command-to-retrieve-all-columns-of-all-tables-with-available-options">
       Exploring MySQL Command to Retrieve All Columns of All Tables with Available Options
